@@ -1,0 +1,62 @@
+:root {
+  /* Colors */
+  --color-dark: #1a1a1a;
+  --color-grey-dark: #1d1d1d;
+  --color-light: #fbfbfb;
+  --color-primary: #e31e33;
+  --color-secondary: #0f3175;
+  --color-grey: #eceaea;
+  --color-danger: #d80027;
+  --background-color: #f5f5f5;
+
+  --background-radial: radial-gradient(ellipse at right, #0f3175, #0f3175);
+
+  --background-linear: linear-gradient(#0d5401, #5dbb4e);
+
+  /* Typography */
+  --header: 'Oswald', sans-serif;
+  --text: 'Lato', sans-serif;
+
+  --fw-900: 900;
+  --fw-700: 700;
+  --fw-600: 600;
+  --fw-400: 400;
+  --fw-300: 300;
+  --fw-200: 200;
+
+  --fs-text: 16px;
+  --fs-section-subtitle: 1.5rem;
+  --fs-1: 2rem;
+  --fs-2: calc(2.3rem + 1vw);
+  --fs-3: calc(1.3rem + 1vw);
+  --fs-4: 1.7rem;
+  --fs-5: 1rem;
+  --fs-6: 0.813rem;
+  --fs-7: 0.75rem;
+
+  /* mobie */
+  --font-m-subtitle: 18px;
+
+  /* desctop */
+  --font-d-btn: 14px;
+  --font-d-slide: 20px;
+  --font-d-section-header: 36px;
+
+  /* Transition */
+  --transition: 0.75s cubic-bezier(0.71, 0.01, 0.24, 0.99);
+  --deley: 0.5s;
+
+  /* Response */
+
+  --screen-xxl: 1400px;
+  --screen-xl: 1200px;
+  --screen-l: 992px;
+  --screen-md: 768px;
+  --screen-sm: 576px;
+
+  --shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Img shpashes */
+
+$backgroundImage: '../../images/photos/splash.jpg';
