@@ -1,7 +1,8 @@
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
-import enTranslation from './en.json';
-import plTranslation from './pl.json';
+import enTranslation from './en/en.json';
+import plTranslation from './pl/pl.json';
+import deTranslation from './de/de.json';
 
 const resources = {
   en: {
@@ -9,6 +10,9 @@ const resources = {
   },
   pl: {
     translation: plTranslation,
+  },
+  de: {
+    translation: deTranslation,
   },
 };
 

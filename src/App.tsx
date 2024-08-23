@@ -1,4 +1,5 @@
 import React from 'react';
+import { BrowserRouter } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { Container, Navbar } from './layout';
 import { photos } from './img';
@@ -8,18 +9,22 @@ function App() {
   const { t } = useTranslation();
 
   return (
-    <Container>
-      <img
-        className={styles.img}
-        src={photos.ameriqubeText}
-        alt='Ameriqube Logo'
-      />
-      <h1 className={styles.title}>{t('welcome')}</h1>
-      <p className={styles.subtitle}>
-        We apologize, but the site is temporarily under construction.
-      </p>
+    <BrowserRouter>
       <Navbar />
-    </Container>
+      <div className={styles.main}>
+        <Container>
+          <img
+            className={styles.img}
+            src={photos.ameriqubeText}
+            alt='Ameriqube Logo'
+          />
+          <h1 className={styles.title}>{t('welcome')}</h1>
+          <p className={styles.subtitle}>
+            We apologize, but the site is temporarily under construction.
+          </p>
+        </Container>
+      </div>
+    </BrowserRouter>
   );
 }
 

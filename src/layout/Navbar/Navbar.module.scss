@@ -1,17 +1,22 @@
-.buttonWrap {
-  display: flex;
-  gap: 20px;
+@import '../../styles/main.scss';
 
-  button {
-    padding: 10px 20px;
-    font-size: 16px;
-    color: #ffffff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: var(--transition);
+  background-color: var(--color-dark);
+  z-index: 1000;
 
-    &:hover {
-      opacity: 0.8;
+  .container {
+    @include flex(row, center, space-between);
+    gap: 20px;
+    overflow: visible;
+
+    .navigation {
+      @include flex(row, stretch, flex-end);
+      gap: 20px;
     }
   }
 }
