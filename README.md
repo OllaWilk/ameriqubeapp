@@ -51,6 +51,38 @@ ameriqubeapp
 └── tsconfig.json
 ```
 
+## 🦋 Branch Naming Conventions
+
+In my project, I follow a consistent branch naming convention to ensure clarity and organization. Here are the standard branch names and their purposes:
+
+1. **Main Branch**
+
+   - **`main`**: The primary branch that always contains the stable version of the application.
+
+2. **Development Branch**
+
+   - **`develop`**: Branch for integrating new features and fixes before merging them into the main branch.
+
+3. **Feature Branches**
+
+   - Use the prefix `feature/`:
+
+4. **Bugfix Branches**
+
+   - Use the prefix `fix/`:
+
+5. **Refactor Branches**
+
+   - Use the prefix `refactor/`:
+
+6. **Test Branches**
+
+   - Use the prefix `test/`:
+
+7. **Documentation Branches**
+
+   - Use the prefix `docs/`:
+
 ## :dragon_face: Installation project
 
 **Clone the project:**
