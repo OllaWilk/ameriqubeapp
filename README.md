@@ -1,10 +1,10 @@
-# :construction_worker: HeadHunter MegaK v0.1.0 frontend
+# :construction_worker: AmeriQube
 
 Ameriqube Company is headquartered in Pennsylvania, United States, and serves as the parent company for IceQube and Smart Qube. This application is designed to support and streamline the operations for Ameriqube and its subsidiaries, leveraging innovative solutions to enhance business processes and engagement.
 
 ## :bear: Resources
 
-**Live demo:** IN PROGRESS \
+**Live demo:** [live](https://ameriqubeapp.vercel.app/) \
 **Github frontend:** https://github.com/OllaWilk/ameriqubeapp \
 
 ## :cow: Tech Stack
@@ -13,8 +13,8 @@ Ameriqube Company is headquartered in Pennsylvania, United States, and serves as
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
 ![Redux](https://img.shields.io/badge/redux-%23593d88.svg?style=for-the-badge&logo=redux&logoColor=white)
 ![SASS](https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white)
-[![style: styled-components](https://img.shields.io/badge/style-%F0%9F%92%85%20styled--components-orange.svg?colorB=daa357&colorA=db748e)](https://github.com/styled-components/styled-components)
-![i18next version](https://img.shields.io/npm/v/i18next.svg?label=i18next)
+![Styled-Components](https://img.shields.io/badge/styled--components-ffd700.svg?style=for-the-badge&logo=styled-components&logoColor=white)
+![i18next](https://img.shields.io/badge/i18next-0052CC.svg?style=for-the-badge&logo=i18next&logoColor=white)
 
 ## :camel: Project structure
 
