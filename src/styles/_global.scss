@@ -17,19 +17,6 @@ body {
   line-height: 1.7;
 }
 
-.container {
-  width: 70vw;
-  margin: 0 auto;
-  overflow: hidden;
-
-  transition: var(--transition);
-  transition-delay: --var(--deley);
-
-  @media screen and (max-width: 1200px) {
-    width: 92%;
-  }
-}
-
 li {
   list-style-type: none;
 }
