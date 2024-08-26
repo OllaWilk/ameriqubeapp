@@ -1,0 +1,11 @@
+// RenderNavLinks.module.scss
+.link {
+  display: flex;
+  color: var(--color-light);
+  padding: 16px 25px;
+}
+
+.linkActive {
+  color: var(--color-light);
+  background-color: var(--color-primary);
+}
