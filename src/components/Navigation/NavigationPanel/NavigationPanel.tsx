@@ -16,17 +16,17 @@ const navLinks: NavLinkType[] = [
 const productLinks: ProductLink[] = [
   {
     label: 'IceQube',
-    path: '/iceqube.com',
+    path: 'https://iceqube.com',
     logo: photos.icequbeLogo,
     description:
-      'ICE QUBE SUPPLIES A WIDE RANGE OF HIGH QUALITY CLIMATE CONTROL PRODUCTS. THE OFFER INCLUDES AIR CONDITIONERS FOR ZONES I AND II, INDUSTRIAL AIR CONDITIONERS AND SPECIALIZED AIR CONDITIONING SOLUTIONS. ICEQUBE AIR CONDITIONERS ARE CHARACTERIZED BY EXCEPTIONAL RELIABILITY. THEY MEET HIGH INDUSTRY REQUIREMENTS AND PROVIDE PRECISE TEMPERATURE AND HUMIDITY CONTROL IN VARIOUS WORK ENVIRONMENTS',
+      'Ice qube supplies a wide range of high quality climate control products. the offer includes air conditioners for zones I and II, industrial air conditioners and specialized air conditioning solutions. Iceqube air conditioners are characterized by exceptional reliability. They meet high industry requirements and provide precise temperature and humidity control in various work environments.',
   },
   {
     label: 'SmartQube',
-    path: '/products-services/smartqube',
+    path: 'https://smartqube.com',
     logo: photos.smartqubeLogo,
     description:
-      'SMARTQUBE OFFERS A COMPREHENSIVE RANGE OF SERVICES, FROM EQUIPMENT MAINTENANCE, CALIBRATION, AND TROUBLESHOOTING. USING ICEQUBE SOLUTIONS, WE DESIGN INNOVATIVE SOLUTIONS TAILORED TO THE CHANGING NEEDS OF VARIOUS INDUSTRIES. ADDITIONALLY, AS A DISTRIBUTOR IN EUROPE, SMARTQUBE FACILITATES SEAMLESS ACCESS TO CUTTING-EDGE SOLUTIONS, ENABLING BUSINESSES TO THRIVE IN AN EVER-CHANGING LANDSCAPE.',
+      'Smartqube offers a comprehensive range of services, from equipment maintenance, calibration, and troubleshooting. using iceqube solutions, we design innovative solutions tailored to the changing needs of various industries. additionally, as a distributor in europe, smartqube facilitates seamless access to cutting-edge solutions, enabling businesses to thrive in an ever-changing landscape.',
   },
 ];
 
@@ -47,9 +47,13 @@ const NavigationPanel: FC<NavigationPanelProps> = ({ className }) => {
       {navLinks.map(({ label, path }, index) => (
         <li
           key={`${index}-${label}`}
-          className={
+          className={`${
             label === 'PRODUCTS & SERVICES' ? styles.dropLink : styles.link
-          }
+          } ${
+            dropdownVisible && label === 'PRODUCTS & SERVICES'
+              ? styles.activeDropdown
+              : styles.backgroundColor
+          }`}
           onClick={() => handleToggleDropdown(label)}
         >
           {label === 'PRODUCTS & SERVICES' ? (
