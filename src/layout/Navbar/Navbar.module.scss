@@ -8,15 +8,33 @@
   transition: var(--transition);
   background-color: var(--color-dark);
   z-index: 1000;
+  @include flex(row, center, center);
+  padding: 20px 0;
 
   .container {
-    @include flex(row, center, space-between);
+    @include flex(row, flex-end, space-between);
     gap: 20px;
     overflow: visible;
 
     .navigation {
-      @include flex(row, stretch, flex-end);
+      width: calc(100% - 100px);
+      @include flex(row, center, flex-end);
       gap: 20px;
+
+      .sideNavigation {
+        display: none;
+      }
+
+      @include lg-max {
+        .navigationPanel {
+          display: none;
+        }
+
+        .sideNavigation {
+          display: block;
+          color: red;
+        }
+      }
     }
   }
 }

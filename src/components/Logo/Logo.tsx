@@ -7,7 +7,7 @@ const Logo = () => {
   return (
     <Link to='/home'>
       <h1 className={styles.logo}>
-        <img src={photos.ameriqubeText} alt='ameri qube logo' />
+        <img src={photos.ameriqube} alt='ameri qube logo' />
       </h1>
     </Link>
   );
