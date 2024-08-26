@@ -1,26 +1,4 @@
-.dropdownLink {
-  display: flex;
-  align-items: center;
-  padding: 10px;
-  color: var(--color-light);
-  text-decoration: none;
-
-  &:hover {
-    background-color: var(--color-primary);
-  }
-}
-
-.dropdownLogo {
-  width: 40px;
-  height: 40px;
-  margin-right: 10px;
-}
-
-.description {
-  font-size: 0.875rem;
-  margin: 5px 0 0;
-  color: var(--color-light);
-}
+@import '../../styles/mixins';
 
 .dropdownMenu {
   position: absolute;
@@ -28,6 +6,37 @@
   left: 0;
   background-color: var(--color-dark);
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-  padding: 10px;
   z-index: 10;
+  @include flex(column, center, center);
+  text-transform: none;
+}
+
+.dropdownLink {
+  &:hover {
+    transition: var(--transition);
+    background-color: var(--color-grey-dark);
+  }
+
+  .dropdownLogo {
+    width: 100px;
+  }
+
+  .link {
+    color: var(--color-light);
+    text-align: justify;
+    @include flex(row, center, center);
+    gap: 20px;
+    padding: 30px;
+  }
+
+  // strong {
+  //   border-bottom: 2px solid var(--color-primary);
+  //   padding: 10px 0;
+  // }
+}
+
+.description {
+  font-size: 0.875rem;
+  margin: 10px 0;
+  color: var(--color-light);
 }
