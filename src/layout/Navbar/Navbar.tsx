@@ -11,10 +11,10 @@ import styles from './Navbar.module.scss';
 const Navbar = () => (
   <header className={styles.navbar}>
     <Container className={styles.container}>
-      <Logo />
+      <Logo className={styles.logoLeft} />
       <nav className={styles.navigation}>
         <NavigationPanel className={styles.navigationPanel} />
-        <LocalizedPanel />
+        <LocalizedPanel className={styles.display} />
         <SideNavigation className={styles.sideNavigation} />
       </nav>
     </Container>

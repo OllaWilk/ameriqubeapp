@@ -28,15 +28,26 @@
     gap: 20px;
     padding: 30px;
   }
-
-  // strong {
-  //   border-bottom: 2px solid var(--color-primary);
-  //   padding: 10px 0;
-  // }
 }
 
 .description {
   font-size: 0.875rem;
   margin: 10px 0;
   color: var(--color-light);
+}
+
+.linkContact {
+  display: flex;
+  color: var(--color-light);
+  padding: 16px 25px;
+  transition: var(--transition);
+  text-transform: uppercase;
+
+  &:hover {
+    background-color: var(--color-primary);
+  }
+}
+
+.linkActive {
+  color: var(--color-primary);
 }

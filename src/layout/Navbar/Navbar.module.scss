@@ -7,14 +7,35 @@
   width: 100%;
   transition: var(--transition);
   background-color: var(--color-dark);
-  z-index: 1000;
-  @include flex(row, center, center);
   padding: 20px 0;
+  @include flex(row, center, center);
 
   .container {
     @include flex(row, flex-end, space-between);
     gap: 20px;
     overflow: visible;
+
+    .logoLeft {
+      display: block;
+    }
+
+    @include lg-max {
+      gap: 0;
+
+      .display {
+        display: none;
+      }
+    }
+
+    @include sm-max {
+      .logoLeft {
+        display: block;
+      }
+
+      .logoCenter {
+        display: none;
+      }
+    }
 
     .navigation {
       width: calc(100% - 100px);
@@ -26,14 +47,21 @@
       }
 
       @include lg-max {
+        width: 100%;
+
         .navigationPanel {
           display: none;
         }
 
         .sideNavigation {
           display: block;
-          color: red;
+          color: var(--color-light);
         }
+      }
+
+      @include sm-max {
+        flex-direction: row;
+        gap: 0;
       }
     }
   }
