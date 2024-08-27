@@ -1,4 +1,26 @@
 {
   "welcome": "Welcome to our site",
-  "login": "AmeriQube"
+  "login": "AmeriQube",
+  "navigation": {
+    "navLinks": [
+      { "label": "HOME", "path": "/" },
+      { "label": "ABOUT", "path": "/about" },
+      { "label": "PRODUCTS & SERVICES", "path": null },
+      { "label": "CONTACT", "path": "/contact" }
+    ],
+    "productLinks": [
+      {
+        "label": "IceQube",
+        "path": "https://iceqube.com",
+        "logo": "/logos/AmeriQube_IceQube-White.png",
+        "description": "Ice qube supplies a wide range of high quality climate control products. The offer includes air conditioners for zones I and II, industrial air conditioners and specialized air conditioning solutions. Iceqube air conditioners are characterized by exceptional reliability. They meet high industry requirements and provide precise temperature and humidity control in various work environments."
+      },
+      {
+        "label": "SmartQube",
+        "path": "https://smartqube.com",
+        "logo": "/logos/AmeriQube_SmartQube-White.png",
+        "description": "Smartqube offers a comprehensive range of services, from equipment maintenance, calibration, and troubleshooting. Using iceqube solutions, we design innovative solutions tailored to the changing needs of various industries. Additionally, as a distributor in Europe, Smartqube facilitates seamless access to cutting-edge solutions, enabling businesses to thrive in an ever-changing landscape."
+      }
+    ]
+  }
 }

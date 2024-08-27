@@ -1,49 +1,27 @@
-import React, { FC, useCallback, useState } from 'react';
+import React, { FC, useState } from 'react';
 import { Squash as Hamburger } from 'hamburger-react';
+import { useTranslation } from 'react-i18next';
 import { RenderNavLinks } from '../RenderNavLinks/RenderNavLinks';
-
-import styles from './SideNavigation.module.scss';
-import { photos } from '../../../img';
-import { NavLinkType, ProductLink } from '../../../types/navigation-types';
 import { ButtonNavBar } from '../../Buttons';
 import { Dropdown } from '../../Dropdown/Dropdown';
+import styles from './SideNavigation.module.scss';
+import { NavLinkType, ProductLink } from '../../../types/navigation-types';
 
 interface SideNavigationProps {
   className?: string;
 }
 
-const navLinks: NavLinkType[] = [
-  { label: 'HOME', path: '/' },
-  { label: 'ABOUT', path: '/about' },
-  { label: 'PRODUCTS & SERVICES', path: '/products-services' },
-  { label: 'CONTACT', path: '/contact' },
-];
-
-const productLinks: ProductLink[] = [
-  {
-    label: 'IceQube',
-    path: 'https://iceqube.com',
-    logo: photos.icequbeLogo,
-    description:
-      'Ice qube supplies a wide range of high quality climate control products. the offer includes air conditioners for zones I and II, industrial air conditioners and specialized air conditioning solutions. Iceqube air conditioners are characterized by exceptional reliability. They meet high industry requirements and provide precise temperature and humidity control in various work environments.',
-  },
-  {
-    label: 'SmartQube',
-    path: 'https://smartqube.com',
-    logo: photos.smartqubeLogo,
-    description:
-      'Smartqube offers a comprehensive range of services, from equipment maintenance, calibration, and troubleshooting. using iceqube solutions, we design innovative solutions tailored to the changing needs of various industries. additionally, as a distributor in europe, smartqube facilitates seamless access to cutting-edge solutions, enabling businesses to thrive in an ever-changing landscape.',
-  },
-];
-
 const SideNavigation: FC<SideNavigationProps> = ({ className }) => {
+  const { t } = useTranslation();
   const [isOpen, setOpen] = useState(false);
   const [dropdownVisible, setDropdownVisible] = useState(false);
 
-  const handleToggleDropdown = useCallback((label: string) => {
-    label === 'PRODUCTS & SERVICES' &&
-      setDropdownVisible((prevState) => !prevState);
-  }, []);
+  const navLinks: NavLinkType[] = t('navigation.navLinks', {
+    returnObjects: true,
+  });
+  const productLinks: ProductLink[] = t('navigation.productLinks', {
+    returnObjects: true,
+  });
 
   return (
     <div className={`${styles.sideNavigationWrapper} ${className}`}>
@@ -53,22 +31,20 @@ const SideNavigation: FC<SideNavigationProps> = ({ className }) => {
           {navLinks.map(({ label, path }, index) => (
             <li
               key={`${index}-${label}`}
-              className={`${
-                label === 'PRODUCTS & SERVICES' ? styles.dropLink : styles.link
-              } ${
-                dropdownVisible && label === 'PRODUCTS & SERVICES'
+              className={`${!path ? styles.dropLink : styles.link} ${
+                dropdownVisible && !path
                   ? styles.activeDropdown
                   : styles.backgroundColor
               }`}
-              onClick={() => handleToggleDropdown(label)}
+              onClick={() => setDropdownVisible((prev) => !prev)}
             >
-              {label === 'PRODUCTS & SERVICES' ? (
+              {!path ? (
                 <ButtonNavBar label={label} />
               ) : (
                 <RenderNavLinks label={label} path={path} />
               )}
 
-              {label === 'PRODUCTS & SERVICES' && dropdownVisible && (
+              {!path && dropdownVisible && (
                 <Dropdown
                   productLinks={productLinks}
                   urlContact={'/contact'}

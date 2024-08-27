@@ -15,7 +15,12 @@ const Dropdown = ({ productLinks, urlContact, name }: DropdownProps) => (
       ({ label, path, logo, description }, idx) =>
         path && (
           <li key={idx} className={styles.dropdownLink}>
-            <a href={path} className={styles.link}>
+            <a
+              href={path}
+              target='_blank'
+              rel='noopener noreferrer'
+              className={styles.link}
+            >
               <img
                 src={logo}
                 alt={`${label} logo`}

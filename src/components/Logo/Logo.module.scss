@@ -16,9 +16,5 @@
     height: 100%;
     object-fit: contain;
     display: block;
-
-    @include lg-max {
-      object-fit: cover;
-    }
   }
 }
