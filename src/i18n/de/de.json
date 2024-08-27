@@ -22,5 +22,7 @@
         "description": "SmartQube bietet ein umfassendes Angebot an Dienstleistungen, von der Wartung der Ausrüstung, Kalibrierung bis hin zur Fehlerbehebung. mit den Lösungen von IceQube entwerfen wir innovative Lösungen, die auf die wechselnden Bedürfnisse verschiedener Branchen zugeschnitten sind. zusätzlich erleichtert SmartQube als Distributor in Europa den problemlosen Zugang zu modernen Lösungen und ermöglicht es Unternehmen, sich in einer ständig verändernden Landschaft zu entwickeln."
       }
     ]
-  }
+  },
+  "regions": ["EU", "USA", "GB"],
+  "languages": ["pl", "en", "de"]
 }

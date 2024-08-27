@@ -1,10 +1,10 @@
 import React, { FC, useState } from 'react';
+import { useTranslation } from 'react-i18next';
+import { NavLinkType, ProductLink } from '../../../types/navigation-types';
 import { Dropdown } from '../../Dropdown/Dropdown';
 import { RenderNavLinks } from '../RenderNavLinks/RenderNavLinks';
 import { ButtonNavBar } from '../../Buttons';
 import styles from './NavigationPanel.module.scss';
-import { useTranslation } from 'react-i18next';
-import { NavLinkType, ProductLink } from '../../../types/navigation-types';
 
 interface NavigationPanelProps {
   className?: string;
@@ -21,29 +21,30 @@ const NavigationPanel: FC<NavigationPanelProps> = ({ className }) => {
     returnObjects: true,
   });
 
+  const toggleDropdown = () => setDropdownVisible((prev) => !prev);
+
   return (
     <ul className={`${styles.navigationList} ${className}`}>
-      {navLinks.map(({ label, path }, index) => (
-        <li
-          key={`${index}-${label}`}
-          className={`${!path ? styles.dropLink : styles.link} ${
-            dropdownVisible && !path
-              ? styles.activeDropdown
-              : styles.backgroundColor
-          }`}
-        >
-          {!path ? (
-            <ButtonNavBar
-              label={label}
-              onClick={() => setDropdownVisible((prev) => !prev)}
-            />
-          ) : (
-            <RenderNavLinks label={label} path={path} />
-          )}
-
-          {!path && dropdownVisible && <Dropdown productLinks={productLinks} />}
-        </li>
-      ))}
+      {navLinks.map(({ label, path }, index) => {
+        const isDropdown = !path;
+        return (
+          <li
+            key={index}
+            className={`${isDropdown ? styles.dropLink : styles.link} ${
+              dropdownVisible && isDropdown ? styles.activeDropdown : ''
+            }`}
+          >
+            {isDropdown ? (
+              <>
+                <ButtonNavBar label={label} onClick={toggleDropdown} />
+                {dropdownVisible && <Dropdown productLinks={productLinks} />}
+              </>
+            ) : (
+              <RenderNavLinks label={label} path={path} />
+            )}
+          </li>
+        );
+      })}
     </ul>
   );
 };

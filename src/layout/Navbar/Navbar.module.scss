@@ -21,10 +21,6 @@
 
     @include sm-max {
       gap: 0;
-
-      .display {
-        display: none;
-      }
     }
 
     @include sm-max {
