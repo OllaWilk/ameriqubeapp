@@ -4,9 +4,9 @@
   "navigation": {
     "navLinks": [
       { "label": "HOME", "path": "/" },
-      { "label": "o nas", "path": "/about" },
+      { "label": "O NAS", "path": "/about" },
       { "label": "PRODUKTY & USŁUGI", "path": null },
-      { "label": "kontakt", "path": "/contact" }
+      { "label": "KONTAKT", "path": "/contact" }
     ],
     "productLinks": [
       {
@@ -22,5 +22,7 @@
         "description": "SmartQube oferuje kompleksowy zakres usług, od konserwacji sprzętu, kalibracji, po rozwiązywanie problemów. korzystając z rozwiązań IceQube, projektujemy innowacyjne rozwiązania dostosowane do zmieniających się potrzeb różnych branż. dodatkowo, jako dystrybutor w Europie, SmartQube ułatwia bezproblemowy dostęp do nowoczesnych rozwiązań, umożliwiając firmom rozwój w ciągle zmieniającym się środowisku."
       }
     ]
-  }
+  },
+  "regions": ["EU", "USA", "GB"],
+  "languages": ["pl", "en", "de"]
 }

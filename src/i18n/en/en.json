@@ -22,5 +22,7 @@
         "description": "Smartqube offers a comprehensive range of services, from equipment maintenance, calibration, and troubleshooting. Using iceqube solutions, we design innovative solutions tailored to the changing needs of various industries. Additionally, as a distributor in Europe, Smartqube facilitates seamless access to cutting-edge solutions, enabling businesses to thrive in an ever-changing landscape."
       }
     ]
-  }
+  },
+  "regions": ["EU", "USA", "GB"],
+  "languages": ["pl", "en", "de"]
 }

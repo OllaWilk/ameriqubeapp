@@ -1,11 +1,11 @@
 import React, { FC, useState } from 'react';
 import { Squash as Hamburger } from 'hamburger-react';
 import { useTranslation } from 'react-i18next';
+import { NavLinkType, ProductLink } from '../../../types/navigation-types';
 import { RenderNavLinks } from '../RenderNavLinks/RenderNavLinks';
 import { ButtonNavBar } from '../../Buttons';
 import { Dropdown } from '../../Dropdown/Dropdown';
 import styles from './SideNavigation.module.scss';
-import { NavLinkType, ProductLink } from '../../../types/navigation-types';
 
 interface SideNavigationProps {
   className?: string;
