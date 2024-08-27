@@ -1,8 +1,12 @@
-import React, { ChangeEvent } from 'react';
+import React, { ChangeEvent, FC } from 'react';
 import { useTranslation } from 'react-i18next';
 import styles from './LocalizedPanel.module.scss';
 
-const LocalizedPanel = () => {
+interface LocalizedPanelProps {
+  className?: string;
+}
+
+const LocalizedPanel: FC<LocalizedPanelProps> = ({ className }) => {
   const { i18n } = useTranslation();
 
   const handleLanguageChange = (event: ChangeEvent<HTMLSelectElement>) => {
@@ -10,7 +14,7 @@ const LocalizedPanel = () => {
     i18n.changeLanguage(language);
   };
   return (
-    <div className={styles.selectContainer}>
+    <div className={`${styles.selectContainer} ${className}`}>
       <select
         className={styles.select}
         onChange={handleLanguageChange}
@@ -19,6 +23,11 @@ const LocalizedPanel = () => {
         <option value='en'>EN</option>
         <option value='pl'>PL</option>
         <option value='de'>DE</option>
+      </select>
+      <select className={styles.select} onChange={handleLanguageChange}>
+        <option value='us'>US</option>
+        <option value='eu'>EU</option>
+        <option value='gb'>GB</option>
       </select>
     </div>
   );
