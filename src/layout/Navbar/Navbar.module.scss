@@ -19,7 +19,7 @@
       display: block;
     }
 
-    @include lg-max {
+    @include sm-max {
       gap: 0;
 
       .display {

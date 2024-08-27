@@ -1,4 +1,26 @@
 {
   "welcome": "Willkommen auf unserer Webseite",
-  "login": "AmeriQube"
+  "login": "AmeriQube",
+  "navigation": {
+    "navLinks": [
+      { "label": "STARTSEITE", "path": "/" },
+      { "label": "ÜBER UNS", "path": "/about" },
+      { "label": "PRODUKTE & DIENSTLEISTUNGEN", "path": null },
+      { "label": "KONTAKT", "path": "/contact" }
+    ],
+    "productLinks": [
+      {
+        "label": "IceQube",
+        "path": "https://iceqube.com",
+        "logo": "/logos/AmeriQube_IceQube-White.png",
+        "description": "Ice Qube bietet eine breite Palette von hochwertigen Produkten für die Klimakontrolle an. das Angebot umfasst Klimaanlagen für die Zonen I und II, industrielle Klimaanlagen sowie spezialisierte Klimatisierungslösungen. IceQube-Klimaanlagen zeichnen sich durch außergewöhnliche Zuverlässigkeit aus. sie erfüllen hohe Industriestandards und gewährleisten präzise Temperatur- und Feuchtigkeitskontrolle in verschiedenen Arbeitsumgebungen."
+      },
+      {
+        "label": "SmartQube",
+        "path": "https://smartqube.com",
+        "logo": "/logos/AmeriQube_SmartQube-White.png",
+        "description": "SmartQube bietet ein umfassendes Angebot an Dienstleistungen, von der Wartung der Ausrüstung, Kalibrierung bis hin zur Fehlerbehebung. mit den Lösungen von IceQube entwerfen wir innovative Lösungen, die auf die wechselnden Bedürfnisse verschiedener Branchen zugeschnitten sind. zusätzlich erleichtert SmartQube als Distributor in Europa den problemlosen Zugang zu modernen Lösungen und ermöglicht es Unternehmen, sich in einer ständig verändernden Landschaft zu entwickeln."
+      }
+    ]
+  }
 }

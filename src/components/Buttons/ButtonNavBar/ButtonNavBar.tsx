@@ -2,7 +2,10 @@ import React from 'react';
 
 interface Props {
   label: string;
+  onClick?: () => void;
 }
-const ButtonNavBar = ({ label }: Props) => <p>{label}</p>;
+const ButtonNavBar = ({ label, onClick }: Props) => (
+  <p onClick={onClick}>{label}</p>
+);
 
 export { ButtonNavBar };

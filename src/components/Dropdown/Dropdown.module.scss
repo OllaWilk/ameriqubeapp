@@ -13,7 +13,11 @@
 
 .dropdownLink {
   &:hover {
+    background-color: var(--color-grey-dark);
     transition: var(--transition);
+  }
+
+  @include lg-max {
     background-color: var(--color-grey-dark);
   }
 
