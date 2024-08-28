@@ -13,20 +13,7 @@
   }
 
   @include sm-max {
-    padding: 16px 0px 16px 15px;
-  }
-}
-
-.dropdownToggle {
-  background: none;
-  border: none;
-  color: var(--color-light);
-  font-size: 1rem;
-  cursor: pointer;
-  transition: var(--transition);
-
-  &:hover {
-    color: var(--color-primary);
+    padding: 16px 16px 16px 15px;
   }
 }
 
@@ -40,15 +27,4 @@
   padding: 0;
   margin: 0;
   z-index: 1000;
-}
-
-.dropdownItem {
-  padding: 16px 25px;
-  cursor: pointer;
-  color: var(--color-light);
-  transition: var(--transition);
-
-  &:hover {
-    background-color: var(--color-primary);
-  }
 }
