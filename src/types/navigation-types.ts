@@ -17,8 +17,8 @@ export enum Region {
 export enum Language {
   PL = 'PL',
   DE = 'DE',
-  en = 'EN',
+  En = 'EN',
 }
 
 export type RegionType = Region.EU | Region.USA | Region.GB;
-export type LanguagesType = Language.DE | Language.en | Language.PL;
+export type LanguagesType = Language.DE | Language.En | Language.PL;
