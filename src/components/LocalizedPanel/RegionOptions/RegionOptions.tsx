@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
-import { Region, RegionType } from '../../../types/navigation-types';
-import styles from '../DropdownOptions.module.scss';
 import { useTranslation } from 'react-i18next';
+import { RegionType } from '../../../types/navigation-types';
+import { useRegion } from '../../../context/RegionContext';
+import styles from '../DropdownOptions.module.scss';
 
 const RegionOptions = () => {
   const { t } = useTranslation();
+  const { region, setRegion } = useRegion();
   const regions: RegionType[] = t('regions', { returnObjects: true });
-
-  const [region, setRegion] = useState<string>(regions[0] || Region.EU);
   const [isRegionDropdownOpen, setRegionDropdownOpen] = useState(false);
 
   const handleRegionChange = (region: RegionType) => {
