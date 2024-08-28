@@ -4,8 +4,4 @@
   @include flex(row, center, flex-end);
   font-family: var(--text);
   transition: var(--transition);
-
-  &:hover {
-    color: var(--color-primary);
-  }
 }
