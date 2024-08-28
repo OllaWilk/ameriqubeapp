@@ -2,14 +2,16 @@ import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { LanguagesType } from '../../../types/navigation-types';
 import styles from '../DropdownOptions.module.scss';
+import { useLanguageAndRegionCookie } from '../../../utils/useLanguageAndRegionCookie';
 
 const LanguageOptions = () => {
-  const { i18n, t } = useTranslation();
+  const { t } = useTranslation();
+  const { language, changeLanguage } = useLanguageAndRegionCookie();
   const [isLanguageDropdownOpen, setLanguageDropdownOpen] = useState(false);
   const languages: LanguagesType[] = t('languages', { returnObjects: true });
 
   const handleLanguageChange = (language: LanguagesType) => {
-    i18n.changeLanguage(language);
+    changeLanguage(language);
     setLanguageDropdownOpen(false);
   };
 
@@ -19,7 +21,7 @@ const LanguageOptions = () => {
         className={styles.dropdownToggle}
         onClick={() => setLanguageDropdownOpen(!isLanguageDropdownOpen)}
       >
-        {i18n.language.toUpperCase()}
+        {language.toUpperCase()}
       </button>
       {isLanguageDropdownOpen && (
         <ul className={styles.dropdownMenu}>
