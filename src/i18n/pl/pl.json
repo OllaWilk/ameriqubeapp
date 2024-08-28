@@ -1,0 +1,28 @@
+{
+  "welcome": "Witamy na naszej stronie",
+  "login": "AmeriQube",
+  "navigation": {
+    "navLinks": [
+      { "label": "HOME", "path": "/" },
+      { "label": "O NAS", "path": "/about" },
+      { "label": "PRODUKTY & USŁUGI", "path": null },
+      { "label": "KONTAKT", "path": "/contact" }
+    ],
+    "productLinks": [
+      {
+        "label": "IceQube",
+        "path": "https://iceqube.com",
+        "logo": "/logos/AmeriQube_IceQube-White.png",
+        "description": "Ice Qube dostarcza szeroką gamę wysokiej jakości produktów do kontroli klimatu. oferta obejmuje klimatyzatory dla stref I i II, przemysłowe klimatyzatory oraz specjalistyczne rozwiązania klimatyzacyjne. klimatyzatory IceQube charakteryzują się wyjątkową niezawodnością. spełniają wysokie wymagania przemysłowe i zapewniają precyzyjną kontrolę temperatury i wilgotności w różnych środowiskach pracy."
+      },
+      {
+        "label": "SmartQube",
+        "path": "https://smartqube.com",
+        "logo": "/logos/AmeriQube_SmartQube-White.png",
+        "description": "SmartQube oferuje kompleksowy zakres usług, od konserwacji sprzętu, kalibracji, po rozwiązywanie problemów. korzystając z rozwiązań IceQube, projektujemy innowacyjne rozwiązania dostosowane do zmieniających się potrzeb różnych branż. dodatkowo, jako dystrybutor w Europie, SmartQube ułatwia bezproblemowy dostęp do nowoczesnych rozwiązań, umożliwiając firmom rozwój w ciągle zmieniającym się środowisku."
+      }
+    ]
+  },
+  "regions": ["EU", "USA", "GB"],
+  "languages": ["pl", "en", "de"]
+}

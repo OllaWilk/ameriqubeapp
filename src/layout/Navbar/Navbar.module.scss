@@ -1,17 +1,64 @@
-.buttonWrap {
-  display: flex;
-  gap: 20px;
+@import '../../styles/main.scss';
 
-  button {
-    padding: 10px 20px;
-    font-size: 16px;
-    color: #ffffff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: var(--transition);
+  background-color: var(--color-dark);
+  padding: 20px 0;
+  @include flex(row, center, center);
 
-    &:hover {
-      opacity: 0.8;
+  .container {
+    @include flex(row, flex-end, space-between);
+    gap: 20px;
+    overflow: visible;
+
+    .logoLeft {
+      display: block;
+    }
+
+    @include sm-max {
+      gap: 0;
+    }
+
+    @include sm-max {
+      .logoLeft {
+        display: block;
+      }
+
+      .logoCenter {
+        display: none;
+      }
+    }
+
+    .navigation {
+      width: calc(100% - 100px);
+      @include flex(row, center, flex-end);
+      gap: 20px;
+
+      .sideNavigation {
+        display: none;
+      }
+
+      @include lg-max {
+        width: 100%;
+
+        .navigationPanel {
+          display: none;
+        }
+
+        .sideNavigation {
+          display: block;
+          color: var(--color-light);
+        }
+      }
+
+      @include sm-max {
+        flex-direction: row;
+        gap: 0;
+      }
     }
   }
 }
