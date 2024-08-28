@@ -9,11 +9,14 @@ const REGION_COOKIE = 'app_region';
 export const useLanguageAndRegionCookie = () => {
   const { i18n } = useTranslation();
 
+  //Check cookies or set default values
   const initialLanguage =
     (Cookies.get(LANGUAGE_COOKIE) as LanguagesType) ||
     (i18n.language as LanguagesType);
-  const initialRegion = (Cookies.get(REGION_COOKIE) as RegionType) || Region.EU;
+  const initialRegion =
+    (Cookies.get(REGION_COOKIE) as RegionType) || Region.USA;
 
+  // Set state based on initial values
   const [language, setLanguage] = useState<LanguagesType>(initialLanguage);
   const [region, setRegion] = useState<RegionType>(initialRegion);
 
@@ -32,9 +35,13 @@ export const useLanguageAndRegionCookie = () => {
   };
 
   useEffect(() => {
-    changeLanguage(language);
-    changeRegion(region);
-  }, [language, region, changeLanguage]);
+    if (!Cookies.get(LANGUAGE_COOKIE)) {
+      Cookies.set(LANGUAGE_COOKIE, language, { expires: 365 });
+    }
+    if (!Cookies.get(REGION_COOKIE)) {
+      Cookies.set(REGION_COOKIE, region, { expires: 365 });
+    }
+  }, [language, region]);
 
   return {
     language,

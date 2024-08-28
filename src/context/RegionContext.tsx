@@ -1,12 +1,17 @@
-import React, { createContext, useContext, useState, ReactNode } from 'react';
+import React, { createContext, useContext, ReactNode, FC } from 'react';
+import { useLanguageAndRegionCookie } from '../utils/useLanguageAndRegionCookie';
 import { Region, RegionType } from '../types/navigation-types';
 
 interface RegionContextType {
   region: RegionType;
-  setRegion: (region: RegionType) => void;
+  changeRegion: (region: RegionType) => void;
 }
 
-const RegionContext = createContext<RegionContextType | undefined>(undefined);
+const RegionContext = createContext<RegionContextType>({
+  region: Region.USA,
+  // eslint-disable-next-line @typescript-eslint/no-empty-function
+  changeRegion: () => {},
+});
 
 export const useRegion = () => {
   const context = useContext(RegionContext);
@@ -16,13 +21,11 @@ export const useRegion = () => {
   return context;
 };
 
-export const RegionProvider: React.FC<{ children: ReactNode }> = ({
-  children,
-}) => {
-  const [region, setRegion] = useState<RegionType>(Region.EU);
+export const RegionProvider: FC<{ children: ReactNode }> = ({ children }) => {
+  const { region, changeRegion } = useLanguageAndRegionCookie();
 
   return (
-    <RegionContext.Provider value={{ region, setRegion }}>
+    <RegionContext.Provider value={{ region, changeRegion }}>
       {children}
     </RegionContext.Provider>
   );
