@@ -24,5 +24,16 @@
     ]
   },
   "regions": ["EU", "USA", "GB"],
-  "languages": ["pl", "en", "de"]
+  "languages": ["pl", "en", "de"],
+  "cookies": {
+    "title": "POLITYKA COOKIE",
+    "cookieInfoBaner": "Szanowni Państwo, w ramach naszego serwisu stosujemy pliki cookies. Korzystanie z witryny bez zmiany ustawień dotyczących cookies oznacza, że będą one zamieszczane w Państwa urządzeniu końcowym. Jeśli nie wyrażają Państwo zgody, uprzejmie prosimy o dokonanie stosownych zmian w ustawieniach przeglądarki internetowej z tym, że może to wpłynąć na dostępność niektórych funkcjonalności.",
+    "acceptButton": {
+      "text": "zgadzam się"
+    },
+    "asterixInfo": {
+      "url": "/cookies",
+      "text": "więcej o naszej polityce cookies przeczytasz tutaj"
+    }
+  }
 }

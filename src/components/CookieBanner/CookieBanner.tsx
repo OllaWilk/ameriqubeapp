@@ -1,13 +1,20 @@
 import React, { useCallback, useEffect, useState } from 'react';
-import styles from './CookieBanner.module.scss';
+import { CookiePolicy } from '../../types/navigation-types';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import { Modal } from '../Modal/Modal';
 import { Container } from '../../layout';
 import { Paragraph, Subtitle } from '../Typography';
 import { ButtonBlack } from '../Buttons';
+import styles from './CookieBanner.module.scss';
 
 const CookieBanner = () => {
   const [isVisible, setIsVisible] = useState(false);
+  const { t } = useTranslation();
+
+  const cookies: CookiePolicy = t('cookies', {
+    returnObjects: true,
+  });
 
   useEffect(() => {
     setIsVisible(true);
@@ -22,16 +29,18 @@ const CookieBanner = () => {
       <Modal />
       <div className={styles.info}>
         <Container className={styles.wrap}>
-          <Subtitle text={'COOKIE POLICY'} className={styles.underlineText} />
-          <Paragraph
-            text={
-              'Dear Users, as part of our service, we use cookies. Using the website without changing the settings for cookies means that they will be placed on your end device. If you do not agree, please kindly make the appropriate changes in your web browser settings, though this may affect the availability of some functionalities.'
-            }
-          />
+          <Subtitle text={cookies.title} className={styles.underlineText} />
+          <Paragraph text={cookies.cookieInfoBaner} />
           <div className={styles.buttonsWrap}>
-            <ButtonBlack text={'accept cookie'} onClick={handleAccept} />
-            <Link to={'/cookies'} className={styles.goToCookiePolicy}>
-              * more about our cookie policy can be read here <span>here</span>
+            <ButtonBlack
+              text={cookies.acceptButton.text}
+              onClick={handleAccept}
+            />
+            <Link
+              to={cookies.asterixInfo.url}
+              className={styles.goToCookiePolicy}
+            >
+              * {cookies.asterixInfo.text}
             </Link>
           </div>
         </Container>

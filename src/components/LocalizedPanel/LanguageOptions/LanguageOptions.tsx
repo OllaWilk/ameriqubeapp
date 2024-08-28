@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { LanguagesType } from '../../../types/navigation-types';
-import styles from '../DropdownOptions.module.scss';
 import { useLanguageAndRegionCookie } from '../../../utils/useLanguageAndRegionCookie';
+import styles from '../DropdownOptions.module.scss';
 
 const LanguageOptions = () => {
   const { t } = useTranslation();
