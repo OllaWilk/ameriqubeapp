@@ -24,5 +24,16 @@
     ]
   },
   "regions": ["EU", "USA", "GB"],
-  "languages": ["pl", "en", "de"]
+  "languages": ["pl", "en", "de"],
+  "cookies": {
+    "title": "COOKIE POLICY",
+    "cookieInfoBaner": "Dear Users, as part of our service, we use cookies. Using the website without changing the settings for cookies means that they will be placed on your end device. If you do not agree, please kindly make the appropriate changes in your web browser settings, though this may affect the availability of some functionalities.",
+    "acceptButton": {
+      "text": "accept"
+    },
+    "asterixInfo": {
+      "url": "/cookies",
+      "text": "more about our cookie policy can be read here"
+    }
+  }
 }
