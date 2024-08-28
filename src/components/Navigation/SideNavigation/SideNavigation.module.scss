@@ -1,0 +1,65 @@
+@import '../../../styles/mixins';
+
+.sideNavigationWrapper {
+  position: relative;
+}
+
+.sideNavigation {
+  position: fixed;
+  top: 140px;
+  right: -100%;
+  width: 100%;
+  height: calc(100% - 140px);
+  background-color: var(--color-dark);
+  transition: var(--transition);
+  overflow-y: auto;
+  font-family: var(--text);
+  @include flex(column, center, center);
+  padding: 20px;
+
+  @include sm-max {
+    height: calc(100% - 108px);
+    top: 108px;
+  }
+  &.open {
+    right: 0;
+  }
+}
+
+.navigationList {
+  width: 100%;
+  height: 100%;
+
+  .link,
+  .dropLink {
+    cursor: pointer;
+    width: 100%;
+    @include flex(row, center, center);
+    text-align: center;
+    transition: var(--transition);
+
+    &:hover {
+      color: var(--color-light);
+      background-color: var(--color-primary);
+    }
+
+    a {
+      width: 100%;
+      text-align: center;
+      @include flex(column, center, center);
+    }
+  }
+
+  .dropLink {
+    padding: 16px 25px;
+    position: relative;
+
+    &.activeDropdown {
+      background-color: var(--color-grey-dark);
+
+      &:hover {
+        background-color: var(--color-grey-dark);
+      }
+    }
+  }
+}
