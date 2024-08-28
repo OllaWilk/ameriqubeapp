@@ -2,7 +2,9 @@ import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { RegionType } from '../../../types/navigation-types';
 import { useLanguageAndRegionCookie } from '../../../utils/useLanguageAndRegionCookie';
+import { DropdownToggleButton } from '../../index';
 import styles from '../DropdownOptions.module.scss';
+import { OptionItem } from '../OptionItem/OptionItem';
 
 const RegionOptions = () => {
   const { t } = useTranslation();
@@ -18,22 +20,18 @@ const RegionOptions = () => {
 
   return (
     <div className={styles.dropdown}>
-      <button
-        className={styles.dropdownToggle}
+      <DropdownToggleButton
+        label={region}
         onClick={() => setRegionDropdownOpen(!isRegionDropdownOpen)}
-      >
-        {region}
-      </button>
+      />
       {isRegionDropdownOpen && (
         <ul className={styles.dropdownMenu}>
           {regions.map((region) => (
-            <li
+            <OptionItem<RegionType>
               key={region}
-              onClick={() => handleRegionChange(region)}
-              className={styles.dropdownItem}
-            >
-              {region}
-            </li>
+              select={region}
+              onSelect={handleRegionChange}
+            />
           ))}
         </ul>
       )}

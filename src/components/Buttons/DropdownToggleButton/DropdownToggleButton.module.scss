@@ -1,0 +1,12 @@
+.dropdownToggle {
+  background: none;
+  border: none;
+  color: var(--color-light);
+  font-size: 1rem;
+  cursor: pointer;
+  transition: var(--transition);
+
+  &:hover {
+    color: var(--color-primary);
+  }
+}
