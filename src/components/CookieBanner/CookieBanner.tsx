@@ -2,6 +2,7 @@ import React, { useCallback, useEffect, useState } from 'react';
 import { CookiePolicy } from '../../types/navigation-types';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import Cookies from 'js-cookie';
 import { Modal } from '../Modal/Modal';
 import { Container } from '../../layout';
 import { Paragraph, Subtitle } from '../Typography';
@@ -17,10 +18,15 @@ const CookieBanner = () => {
   });
 
   useEffect(() => {
-    setIsVisible(true);
+    const userAcceptedCookies = Cookies.get('userAcceptedCookies');
+
+    if (!userAcceptedCookies) {
+      setIsVisible(true);
+    }
   }, []);
 
   const handleAccept = useCallback(() => {
+    Cookies.set('userAcceptedCookies', 'true', { expires: 365 });
     setIsVisible(false);
   }, []);
 
