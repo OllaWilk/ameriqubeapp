@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { LanguagesType } from '../../../types/navigation-types';
-import styles from '../DropdownOptions.module.scss';
 import { useLanguageAndRegionCookie } from '../../../utils/useLanguageAndRegionCookie';
+import { DropdownToggleButton } from '../../index';
+import { OptionItem } from '../OptionItem/OptionItem';
+import styles from '../DropdownOptions.module.scss';
 
 const LanguageOptions = () => {
   const { t } = useTranslation();
@@ -17,22 +19,18 @@ const LanguageOptions = () => {
 
   return (
     <div className={styles.dropdown}>
-      <button
-        className={styles.dropdownToggle}
+      <DropdownToggleButton
+        label={language.toUpperCase()}
         onClick={() => setLanguageDropdownOpen(!isLanguageDropdownOpen)}
-      >
-        {language.toUpperCase()}
-      </button>
+      />
       {isLanguageDropdownOpen && (
         <ul className={styles.dropdownMenu}>
           {languages.map((language) => (
-            <li
+            <OptionItem<LanguagesType>
               key={language}
-              onClick={() => handleLanguageChange(language)}
-              className={styles.dropdownItem}
-            >
-              {language.toUpperCase()}
-            </li>
+              onSelect={handleLanguageChange}
+              select={language}
+            />
           ))}
         </ul>
       )}
