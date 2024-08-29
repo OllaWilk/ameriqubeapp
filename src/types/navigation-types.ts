@@ -8,6 +8,18 @@ export interface ProductLink extends NavLinkType {
   description: string;
 }
 
+export interface CookiePolicy {
+  title: string;
+  cookieInfoBaner: string;
+  acceptButton: {
+    text: string;
+  };
+  asterixInfo: {
+    url: string;
+    text: string;
+  };
+}
+
 export enum Region {
   EU = 'EU',
   USA = 'USA',
