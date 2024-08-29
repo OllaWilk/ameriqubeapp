@@ -1,7 +1,10 @@
 export { Logo } from './Logo/Logo';
 export { LocalizedPanel } from './LocalizedPanel/LocalizedPanel';
+export { CookieBanner } from './CookieBanner/CookieBanner';
 export { LanguageOptions } from './LocalizedPanel/LanguageOptions/LanguageOptions';
 export { RegionOptions } from './LocalizedPanel/RegionOptions/RegionOptions';
+export { Modal } from './Modal/Modal';
 export { Dropdown } from './Dropdown/Dropdown';
 export * from './Navigation';
 export * from './Buttons';
+export * from './Typography';
