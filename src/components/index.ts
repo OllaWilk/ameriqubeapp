@@ -1,4 +1,5 @@
 export { Logo } from './Logo/Logo';
+export { LineOrnament } from './LineOrnament/LineOrnament';
 export { LocalizedPanel } from './LocalizedPanel/LocalizedPanel';
 export { CookieBanner } from './CookieBanner/CookieBanner';
 export { LanguageOptions } from './LocalizedPanel/LanguageOptions/LanguageOptions';
