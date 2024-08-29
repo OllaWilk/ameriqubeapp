@@ -7,6 +7,7 @@ import { Modal } from '../Modal/Modal';
 import { Container } from '../../layout';
 import { Paragraph, Subtitle } from '../Typography';
 import { ButtonBlack } from '../Buttons';
+
 import styles from './CookieBanner.module.scss';
 
 const CookieBanner = () => {

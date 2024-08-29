@@ -5,6 +5,7 @@
   @include flex(row, center, flex-end);
   position: relative;
   font-family: var(--text);
+  flex-wrap: wrap;
 
   .link,
   .dropLink {

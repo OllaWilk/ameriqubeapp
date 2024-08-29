@@ -2,6 +2,7 @@ import React from 'react';
 import { ProductLink } from '../../types/navigation-types';
 import { NavLink } from 'react-router-dom';
 import styles from './Dropdown.module.scss';
+import { Paragraph } from '../Typography';
 
 interface DropdownProps {
   productLinks: ProductLink[];
@@ -28,7 +29,7 @@ const Dropdown = ({ productLinks, urlContact, name }: DropdownProps) => (
               />
               <div>
                 <strong>{label}</strong>
-                <p className={styles.description}>{description}</p>
+                <Paragraph className={styles.description} text={description} />
               </div>
             </a>
           </li>

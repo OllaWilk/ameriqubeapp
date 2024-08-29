@@ -19,9 +19,7 @@ function App() {
             alt='Ameriqube Logo'
           />
           <h1 className={styles.title}>{t('welcome')}</h1>
-          <p className={styles.subtitle}>
-            We apologize, but the site is temporarily under construction.
-          </p>
+          <p className={styles.subtitle}>{t('notFound')}</p>
         </Container>
       </div>
     </BrowserRouter>

@@ -1,5 +1,6 @@
 {
   "welcome": "Willkommen auf unserer Webseite",
+  "notFound": "Die von Ihnen gesuchte Seite scheint verschoben, gelöscht worden zu sein oder existiert nicht. Wir entschuldigen uns für die Unannehmlichkeiten.",
   "login": "AmeriQube",
   "navigation": {
     "navLinks": [
