@@ -9,13 +9,20 @@
 
 body {
   background-color: var(--color-light);
-  font-family: var(--text-font);
+  font-family: var(--text);
   font-size: var(--fs-text);
   color: var(--color-dark);
   letter-spacing: 1px;
   text-align: center;
   line-height: 1.7;
   word-wrap: break-word;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--header);
 }
 
 li {
