@@ -1,6 +1,5 @@
 {
   "welcome": "Welcome to our site",
-  "notFound": "The page you're looking for appears to have been moved, deleted, or doesn't exist. We apologize for the inconveniences.",
   "login": "AmeriQube",
   "navigation": {
     "navLinks": [
@@ -36,5 +35,6 @@
       "url": "/cookies",
       "text": "more about our cookie policy can be read here"
     }
-  }
+  },
+  "notFound": "The page you're looking for appears to have been moved, deleted, or doesn't exist. We apologize for the inconveniences."
 }
