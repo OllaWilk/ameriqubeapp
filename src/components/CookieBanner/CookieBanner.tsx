@@ -10,7 +10,7 @@ import { ButtonBlack } from '../Buttons';
 
 import styles from './CookieBanner.module.scss';
 
-const CookieBanner = () => {
+export const CookieBanner = () => {
   const [isVisible, setIsVisible] = useState(false);
   const { t } = useTranslation();
 
@@ -56,5 +56,3 @@ const CookieBanner = () => {
     </div>
   ) : null;
 };
-
-export { CookieBanner };

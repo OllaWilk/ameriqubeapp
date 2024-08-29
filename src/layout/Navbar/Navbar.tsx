@@ -8,7 +8,7 @@ import {
 } from '../../components/index';
 import styles from './Navbar.module.scss';
 
-const Navbar = () => (
+export const Navbar = () => (
   <header className={styles.navbar}>
     <Container className={styles.container}>
       <Logo className={styles.logoLeft} />
@@ -20,5 +20,3 @@ const Navbar = () => (
     </Container>
   </header>
 );
-
-export { Navbar };

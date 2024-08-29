@@ -10,7 +10,7 @@ interface NavigationPanelProps {
   className?: string;
 }
 
-const NavigationPanel: FC<NavigationPanelProps> = ({ className }) => {
+export const NavigationPanel: FC<NavigationPanelProps> = ({ className }) => {
   const { t } = useTranslation();
   const [dropdownVisible, setDropdownVisible] = useState(false);
 
@@ -48,5 +48,3 @@ const NavigationPanel: FC<NavigationPanelProps> = ({ className }) => {
     </ul>
   );
 };
-
-export { NavigationPanel };

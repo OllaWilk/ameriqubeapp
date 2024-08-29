@@ -6,7 +6,10 @@ interface Props<T> {
   onSelect: (select: T) => void;
 }
 
-const OptionItem = <T extends ReactNode>({ select, onSelect }: Props<T>) => {
+export const OptionItem = <T extends ReactNode>({
+  select,
+  onSelect,
+}: Props<T>) => {
   const uppercase = typeof select === 'string' ? select.toUpperCase() : '';
 
   return (
@@ -15,5 +18,3 @@ const OptionItem = <T extends ReactNode>({ select, onSelect }: Props<T>) => {
     </li>
   );
 };
-
-export { OptionItem };

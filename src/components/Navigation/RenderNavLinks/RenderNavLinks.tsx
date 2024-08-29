@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 import { NavLinkType } from '../../../types/navigation-types';
 import styles from './RenderNavLinks.module.scss';
 
-const RenderNavLinks = ({ label, path }: NavLinkType) => {
+export const RenderNavLinks = ({ label, path }: NavLinkType) => {
   return path ? (
     <NavLink
       to={path}
@@ -15,5 +15,3 @@ const RenderNavLinks = ({ label, path }: NavLinkType) => {
     </NavLink>
   ) : null;
 };
-
-export { RenderNavLinks };

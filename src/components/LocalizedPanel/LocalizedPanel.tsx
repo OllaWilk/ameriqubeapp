@@ -8,7 +8,7 @@ interface LocalizedPanelProps {
   className?: string;
 }
 
-const LocalizedPanel: FC<LocalizedPanelProps> = ({ className }) => {
+export const LocalizedPanel: FC<LocalizedPanelProps> = ({ className }) => {
   return (
     <div className={`${styles.panel} ${className}`}>
       <LanguageOptions />
@@ -17,5 +17,3 @@ const LocalizedPanel: FC<LocalizedPanelProps> = ({ className }) => {
     </div>
   );
 };
-
-export { LocalizedPanel };

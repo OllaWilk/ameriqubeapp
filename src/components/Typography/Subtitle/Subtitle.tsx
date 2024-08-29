@@ -6,8 +6,6 @@ interface Props {
   className?: string;
 }
 
-const Subtitle = ({ text, className }: Props) => (
+export const Subtitle = ({ text, className }: Props) => (
   <h3 className={`${styles.subtitle} ${className}`}>{text}</h3>
 );
-
-export { Subtitle };

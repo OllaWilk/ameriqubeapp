@@ -6,7 +6,7 @@ import { DropdownToggleButton } from '../../index';
 import { OptionItem } from '../OptionItem/OptionItem';
 import styles from '../DropdownOptions.module.scss';
 
-const LanguageOptions = () => {
+export const LanguageOptions = () => {
   const { t } = useTranslation();
   const { language, changeLanguage } = useLanguageAndRegionCookie();
   const [isLanguageDropdownOpen, setLanguageDropdownOpen] = useState(false);
@@ -37,5 +37,3 @@ const LanguageOptions = () => {
     </div>
   );
 };
-
-export { LanguageOptions };
