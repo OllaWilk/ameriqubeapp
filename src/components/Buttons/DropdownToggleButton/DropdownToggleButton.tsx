@@ -6,12 +6,10 @@ interface Props {
   onClick: () => void;
 }
 
-const DropdownToggleButton: FC<Props> = ({ label, onClick }) => {
+export const DropdownToggleButton: FC<Props> = ({ label, onClick }) => {
   return (
     <button className={styles.dropdownToggle} onClick={onClick}>
       {label}
     </button>
   );
 };
-
-export { DropdownToggleButton };

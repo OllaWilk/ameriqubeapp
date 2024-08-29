@@ -6,7 +6,7 @@ import { DropdownToggleButton } from '../../index';
 import styles from '../DropdownOptions.module.scss';
 import { OptionItem } from '../OptionItem/OptionItem';
 
-const RegionOptions = () => {
+export const RegionOptions = () => {
   const { t } = useTranslation();
   const { region, changeRegion } = useLanguageAndRegionCookie();
   const regions: RegionType[] = t('regions', { returnObjects: true });
@@ -38,5 +38,3 @@ const RegionOptions = () => {
     </div>
   );
 };
-
-export { RegionOptions };

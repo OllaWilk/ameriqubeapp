@@ -5,8 +5,6 @@ interface Props {
   className?: string;
 }
 
-const Paragraph: FC<Props> = ({ text, className }) => (
+export const Paragraph: FC<Props> = ({ text, className }) => (
   <div className={className}>{text}</div>
 );
-
-export { Paragraph };
