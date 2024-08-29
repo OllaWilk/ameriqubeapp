@@ -27,6 +27,7 @@ const CookieBanner = () => {
 
   const handleAccept = useCallback(() => {
     Cookies.set('userAcceptedCookies', 'true', { expires: 365 });
+    window.location.reload(); //reload window after cookie accept
     setIsVisible(false);
   }, []);
 
