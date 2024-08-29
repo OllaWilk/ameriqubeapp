@@ -7,7 +7,7 @@ interface LogoProps {
   className?: string;
 }
 
-const Logo: FC<LogoProps> = ({ className }) => {
+export const Logo: FC<LogoProps> = ({ className }) => {
   return (
     <Link to='/home'>
       <h1 className={`${className} ${styles.logo}`}>
@@ -16,5 +16,3 @@ const Logo: FC<LogoProps> = ({ className }) => {
     </Link>
   );
 };
-
-export { Logo };

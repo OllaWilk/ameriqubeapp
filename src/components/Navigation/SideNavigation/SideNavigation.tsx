@@ -11,7 +11,7 @@ interface SideNavigationProps {
   className?: string;
 }
 
-const SideNavigation: FC<SideNavigationProps> = ({ className }) => {
+export const SideNavigation: FC<SideNavigationProps> = ({ className }) => {
   const { t } = useTranslation();
   const [isOpen, setOpen] = useState(false);
   const [dropdownVisible, setDropdownVisible] = useState(false);
@@ -58,5 +58,3 @@ const SideNavigation: FC<SideNavigationProps> = ({ className }) => {
     </div>
   );
 };
-
-export { SideNavigation };

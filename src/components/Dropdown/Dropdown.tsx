@@ -10,7 +10,7 @@ interface DropdownProps {
   name?: string;
 }
 
-const Dropdown = ({ productLinks, urlContact, name }: DropdownProps) => (
+export const Dropdown = ({ productLinks, urlContact, name }: DropdownProps) => (
   <ul className={styles.dropdownMenu}>
     {productLinks.map(
       ({ label, path, logo, description }, idx) =>
@@ -49,5 +49,3 @@ const Dropdown = ({ productLinks, urlContact, name }: DropdownProps) => (
     )}
   </ul>
 );
-
-export { Dropdown };
