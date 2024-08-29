@@ -32,12 +32,11 @@
     gap: 20px;
     padding: 30px;
   }
-}
 
-.description {
-  font-size: 0.875rem;
-  margin: 10px 0;
-  color: var(--color-light);
+  strong {
+    display: inline-block;
+    margin: 10px 0;
+  }
 }
 
 .linkContact {
@@ -54,4 +53,10 @@
 
 .linkActive {
   color: var(--color-primary);
+}
+
+.description {
+  font-size: 0.8rem;
+  color: var(--color-light);
+  text-align: justify;
 }
