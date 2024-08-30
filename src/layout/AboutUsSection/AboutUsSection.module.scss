@@ -1,0 +1,18 @@
+@import '../../styles/mixins';
+
+.section {
+  text-align: justify;
+  @include flex(row, center, space-between);
+  flex-wrap: wrap;
+  padding: 4rem 0;
+
+  @include md-max {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .ornament {
+    width: 77px;
+    margin-bottom: 1rem;
+  }
+}

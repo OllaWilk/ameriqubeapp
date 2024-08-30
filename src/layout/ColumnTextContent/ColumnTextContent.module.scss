@@ -1,0 +1,9 @@
+@import '../../styles/mixins';
+
+.textContainer {
+  flex: 1 1 70%;
+
+  @include md-min {
+    padding: 0;
+  }
+}

@@ -6,8 +6,6 @@ interface ContainerProps {
   className?: string;
 }
 
-const Container: FC<ContainerProps> = ({ children, className }) => {
+export const Container: FC<ContainerProps> = ({ children, className }) => {
   return <div className={`${styles.container} ${className}`}>{children}</div>;
 };
-
-export { Container };

@@ -1,6 +1,5 @@
 {
   "welcome": "Willkommen auf unserer Webseite",
-  "notFound": "Die von Ihnen gesuchte Seite scheint verschoben, gelöscht worden zu sein oder existiert nicht. Wir entschuldigen uns für die Unannehmlichkeiten.",
   "login": "AmeriQube",
   "navigation": {
     "navLinks": [
@@ -28,7 +27,7 @@
   "languages": ["pl", "en", "de"],
   "cookies": {
     "title": "COOKIE-RICHTLINIE",
-    "cookieInfoBaner": "Sehr geehrte Nutzer, im Rahmen unseres Dienstes verwenden wir Cookies. Die Nutzung der Website ohne Änderung der Cookie-Einstellungen bedeutet, dass diese auf Ihrem Endgerät platziert werden. Wenn Sie nicht einverstanden sind, bitten wir Sie höflich, die entsprechenden Änderungen in Ihren Webbrowser-Einstellungen vorzunehmen, dies kann jedoch die Verfügbarkeit einiger Funktionen beeinträchtigen.",
+    "cookieInfoBaner": "Bei AmeriQube trifft Innovation auf Zuverlässigkeit im Bereich der Klimatisierungs- und Gehäuselösungen.",
     "acceptButton": {
       "text": "akzeptieren"
     },
@@ -36,5 +35,16 @@
       "url": "/cookies",
       "text": "mehr über unsere Cookie-Richtlinie können Sie lesen hier"
     }
-  }
+  },
+  "pages": {
+    "about": {
+      "title": "AmeriQube",
+      "intro": "Innovation, die die Zukunft verbindet",
+      "aboutSection": {
+        "header": "DE LOREM IPSUM",
+        "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam laudantium aspernatur cupiditate iusto nulla corporis odio quibusdam reprehenderit eaque, non, suscipit cumque tempore laborum vero libero ratione quisquam provident magnam.Reprehenderit, praesentium, illo aliquid, tempore natus quasi accusamus suscipit non atque molestiae doloribus? Sit officiis fugit quae nisi vero voluptas et fuga deserunt rerum repellendus. Corporis labore quas necessitatibus facilis. Harum ipsa at in. Ipsam nemo facilis eos quae omnis debitis, maiores, ipsa distinctio ducimus nobis veniam? Provident, reprehenderit fuga accusamus at, laudantium ipsum vero, nesciunt ea veniam odit vitae! Autem aut quas reiciendis amet facere, asperiores velit corporis iure expedita reprehenderit sed modi alias vero nesciunt quis ea! Facere dicta possimus quo minus ad porro alias hic nulla sunt."
+      }
+    }
+  },
+  "notFound": "Die von Ihnen gesuchte Seite scheint verschoben, gelöscht worden zu sein oder existiert nicht. Wir entschuldigen uns für die Unannehmlichkeiten."
 }
