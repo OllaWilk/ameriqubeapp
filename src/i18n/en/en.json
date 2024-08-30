@@ -36,5 +36,26 @@
       "text": "more about our cookie policy can be read here"
     }
   },
+  "pages": {
+    "about": {
+      "title": "AmeriQube",
+      "intro": "Innovation that connects the future",
+      "aboutSection": {
+        "header": "Lorem ipsum",
+        "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam laudantium aspernatur cupiditate iusto nulla corporis odio quibusdam reprehenderit eaque, non, suscipit cumque tempore laborum vero libero ratione quisquam provident magnam.Reprehenderit, praesentium, illo aliquid, tempore natus quasi accusamus suscipit non atque molestiae doloribus? Sit officiis fugit quae nisi vero voluptas et fuga deserunt rerum repellendus. Corporis labore quas necessitatibus facilis. Harum ipsa at in. Ipsam nemo facilis eos quae omnis debitis, maiores, ipsa distinctio ducimus nobis veniam? Provident, reprehenderit fuga accusamus at, laudantium ipsum vero, nesciunt ea veniam odit vitae! Autem aut quas reiciendis amet facere, asperiores velit corporis iure expedita reprehenderit sed modi alias vero nesciunt quis ea! Facere dicta possimus quo minus ad porro alias hic nulla sunt."
+      },
+      "ourMissionSection": {
+        "header": "Empowering excellence, defining standards",
+        "subtitle": "OUR MISSION",
+        "description": "At AmeriQube, our mission is to continuously strive for excellence in the field of climate control and enclosure solutions worldwide. As the parent company to ICEqube and SMARTqube, we inherit a long tradition of excellence spanning decades of innovation and reliability. We commit to pushing the boundaries of what's possible in critical applications, providing cutting-edge products and services to diverse industries such as telecommunications, oil and gas, and industrial automation. We stand as a symbol of innovation and steadfastness. Our mission also includes providing our customers with unparalleled assistance and solutions tailored to their unique needs. We not only meet expectations but exceed them, ensuring optimal performance and peace of mind for every project. Join us in shaping the future of climate control and enclosure solutions. Together, we're building a world where excellence knows no limits."
+      }
+    }
+  },
+  "contactBanner": {
+    "title": "Don't hesitate to contact us any time.",
+    "subtitle": "Have any questions ?",
+    "button": "contact us",
+    "to": "contact"
+  },
   "notFound": "The page you're looking for appears to have been moved, deleted, or doesn't exist. We apologize for the inconveniences."
 }

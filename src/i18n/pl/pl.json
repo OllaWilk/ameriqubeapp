@@ -1,6 +1,5 @@
 {
   "welcome": "Witamy na naszej stronie",
-  "notFound": "Strona, której szukasz, najwyraźniej została przeniesiona, usunięta lub nie istnieje. Przepraszamy za niedogodności.",
   "login": "AmeriQube",
   "navigation": {
     "navLinks": [
@@ -36,5 +35,27 @@
       "url": "/cookies",
       "text": "więcej o naszej polityce cookies przeczytasz tutaj"
     }
-  }
+  },
+  "pages": {
+    "about": {
+      "title": "AmeriQube",
+      "intro": "Innowacja, która łączy przyszłość",
+      "aboutSection": {
+        "header": "PL LOREM IPSUM",
+        "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam laudantium aspernatur cupiditate iusto nulla corporis odio quibusdam reprehenderit eaque, non, suscipit cumque tempore laborum vero libero ratione quisquam provident magnam.Reprehenderit, praesentium, illo aliquid, tempore natus quasi accusamus suscipit non atque molestiae doloribus? Sit officiis fugit quae nisi vero voluptas et fuga deserunt rerum repellendus. Corporis labore quas necessitatibus facilis. Harum ipsa at in. Ipsam nemo facilis eos quae omnis debitis, maiores, ipsa distinctio ducimus nobis veniam? Provident, reprehenderit fuga accusamus at, laudantium ipsum vero, nesciunt ea veniam odit vitae! Autem aut quas reiciendis amet facere, asperiores velit corporis iure expedita reprehenderit sed modi alias vero nesciunt quis ea! Facere dicta possimus quo minus ad porro alias hic nulla sunt."
+      },
+      "ourMissionSection": {
+        "header": "Wspieranie Doskonałości, Definiowanie Standardów",
+        "subtitle": "NASZA MISJA",
+        "description": "W AmeriQube naszą misją jest nieustanne dążenie do doskonałości w dziedzinie kontroli klimatu i rozwiązań obudowy na całym świecie. Jako spółka macierzysta ICEqube i SMARTqube, dziedziczymy długą tradycję doskonałości, która obejmuje dziesięciolecia innowacji i niezawodności. Zobowiązujemy się do przesuwania granic możliwości w krytycznych zastosowaniach, dostarczając najnowocześniejsze produkty i usługi dla różnorodnych branż takich jak telekomunikacja, przemysł naftowy i gazowy oraz automatyka przemysłowa. Stoimy jako symbol innowacji i niezłomności. Nasza misja obejmuje również zapewnienie naszym klientom niezrównanej pomocy i rozwiązań dostosowanych do ich unikalnych potrzeb. Nie tylko spełniamy oczekiwania, ale je przekraczamy, zapewniając optymalną wydajność i spokój ducha dla każdego projektu. Dołącz do nas w kształtowaniu przyszłości kontroli klimatu i rozwiązań obudowy. Razem budujemy świat, w którym doskonałość nie zna granic."
+      }
+    }
+  },
+  "contactBanner": {
+    "title": "Nie wahaj się skontaktować z nami w dowolnym czasie.",
+    "subtitle": "Masz jakieś pytania ?",
+    "button": "SKONTAKTUJ SIĘ Z NAMI",
+    "to": "contact"
+  },
+  "notFound": "Strona, której szukasz, najwyraźniej została przeniesiona, usunięta lub nie istnieje. Przepraszamy za niedogodności."
 }
