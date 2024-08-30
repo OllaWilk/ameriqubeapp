@@ -1,6 +1,10 @@
 import React from 'react';
 import styles from './SplashHeading.module.scss';
 
-export const SplashHeading = () => {
-  return <h2 className={styles.mainHeading}>AMERIqube</h2>;
+interface Props {
+  text: string | undefined;
+}
+
+export const SplashHeading = ({ text }: Props) => {
+  return <h2 className={styles.mainHeading}>{text}</h2>;
 };

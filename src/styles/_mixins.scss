@@ -61,13 +61,13 @@
 
 // Tablet devices
 @mixin md-max {
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 600px) {
     @content;
   }
 }
 
 @mixin md-min {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 600px) {
     @content;
   }
 }

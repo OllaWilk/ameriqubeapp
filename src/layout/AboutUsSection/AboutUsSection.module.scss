@@ -1,0 +1,26 @@
+@import '../../styles/mixins';
+
+.section {
+  text-align: justify;
+  @include flex(row, center, space-between);
+  flex-wrap: wrap;
+  padding: 4rem 0;
+  min-height: 60vh;
+
+  @include md-max {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  img {
+    width: 70%;
+  }
+
+  .ornament {
+    margin-bottom: 1rem;
+
+    @include lg-max {
+      margin: 0 auto 1rem auto;
+    }
+  }
+}

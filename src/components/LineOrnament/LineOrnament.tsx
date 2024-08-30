@@ -1,4 +1,10 @@
-import React from 'react';
+import React, { FC } from 'react';
 import styles from './LineOrnament.module.scss';
 
-export const LineOrnament = () => <div className={styles.ornament}></div>;
+interface OrnamentProps {
+  className?: string;
+}
+
+export const LineOrnament: FC<OrnamentProps> = ({ className }) => (
+  <div className={`${styles.ornament} ${className}`}></div>
+);
