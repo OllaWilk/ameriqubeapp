@@ -1,9 +1,9 @@
 import React from 'react';
-import styles from './ContactBanner.module.scss';
 import { useTranslation } from 'react-i18next';
 import { ContactBannerType } from '../../types/aboutPage-types';
 import { ButtonBlack, SectionHeader } from '../../components';
 import { Container } from '../Container/Container';
+import styles from './ContactBanner.module.scss';
 
 export const ContactBanner = () => {
   const { t } = useTranslation();

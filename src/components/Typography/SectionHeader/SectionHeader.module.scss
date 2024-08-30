@@ -1,5 +1,17 @@
+@import '../../../styles/mixins';
+
 .heading {
   font-size: 2rem;
   font-weight: bold;
   margin-bottom: 0.5rem;
+
+  @include md-max {
+    font-size: 1.5rem;
+    margin-bottom: 0.4rem;
+  }
+
+  @include sm-max {
+    font-size: 1.25rem;
+    margin-bottom: 0.35rem;
+  }
 }

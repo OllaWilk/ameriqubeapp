@@ -3,7 +3,11 @@
 .textContainer {
   flex: 1 1 70%;
 
-  @include md-min {
-    padding: 0;
+  @include lg-max {
+    flex: 1 1 30%;
+  }
+
+  @include md-max {
+    flex: 1 1 100%;
   }
 }
