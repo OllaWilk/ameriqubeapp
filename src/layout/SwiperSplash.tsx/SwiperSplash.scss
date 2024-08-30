@@ -1,0 +1,42 @@
+@import '../../styles/mixins';
+
+.splash {
+  transition-delay: var(--deley);
+  background: var(--background-radial);
+  min-height: 60vh;
+  padding-top: 140px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100vw;
+  z-index: -2;
+  @include flex(column, center, center);
+
+  .container {
+    height: 100%;
+    overflow: visible;
+
+    .slick-slider {
+      // @include flex(column, center, center);
+      height: 100%;
+      width: 100%;
+      z-index: 0;
+
+      .slick-arrow .slick-prev {
+        height: 100px;
+        width: 40px;
+      }
+    }
+
+    .slide {
+      // height: 50%; /* Ustawienie wysokości slajdu na pełną wysokość kontenera */
+      // display: flex;
+      // flex-direction: column;
+      // align-items: center; /* Wyrównanie zawartości slajdu do środka */
+      // justify-content: center; /* Wyrównanie zawartości slajdu do środka */
+      text-align: center;
+
+      div {
+        margin: auto;
+      }
+    }
+  }
+}
