@@ -1,7 +1,12 @@
 import React from 'react';
 import { AboutUs } from '../../types/aboutPage-types';
 import { useTranslation } from 'react-i18next';
-import { AboutUsSection, Container, TextSplash } from '../../layout';
+import {
+  AboutUsSection,
+  ContactBanner,
+  Container,
+  TextSplash,
+} from '../../layout';
 
 export const AboutPage = () => {
   const { t } = useTranslation();
@@ -21,6 +26,7 @@ export const AboutPage = () => {
           description={aboutSection.description}
         />
       </Container>
+      <ContactBanner />
     </>
   );
 };
