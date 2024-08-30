@@ -1,0 +1,24 @@
+@import '../../styles/mixins';
+
+.section {
+  text-align: justify;
+  @include flex(row, center, space-between);
+  flex-wrap: wrap;
+  padding: 4rem 0;
+  min-height: 60vh;
+
+  @include md-max {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .subtitle {
+    color: var(--color-primary);
+    padding: 0.2rem 0;
+  }
+
+  .ornament {
+    width: 77px;
+    margin-bottom: 1rem;
+  }
+}

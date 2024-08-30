@@ -6,7 +6,7 @@ import {
   ContactBanner,
   Container,
   TextSplash,
-  OurMission,
+  OurMissionSection,
 } from '../../layout';
 
 export const AboutPage = () => {
@@ -16,7 +16,7 @@ export const AboutPage = () => {
     returnObjects: true,
   });
 
-  const { title, intro, aboutSection } = aboutContent;
+  const { title, intro, aboutSection, ourMissionSection } = aboutContent;
 
   return (
     <>
@@ -29,7 +29,11 @@ export const AboutPage = () => {
       </Container>
       <ContactBanner />
       <Container>
-        <OurMission />
+        <OurMissionSection
+          header={ourMissionSection.header}
+          description={ourMissionSection.description}
+          subtitle={ourMissionSection.subtitle}
+        />
       </Container>
     </>
   );

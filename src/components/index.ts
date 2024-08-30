@@ -7,6 +7,7 @@ export { LanguageOptions } from './LocalizedPanel/LanguageOptions/LanguageOption
 export { RegionOptions } from './LocalizedPanel/RegionOptions/RegionOptions';
 export { Modal } from './Modal/Modal';
 export { Dropdown } from './Dropdown/Dropdown';
+export { Video } from './Video/Video';
 export * from './Navigation';
 export * from './Buttons';
 export * from './Typography';

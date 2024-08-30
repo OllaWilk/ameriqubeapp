@@ -7,5 +7,5 @@ interface Props {
 }
 
 export const ColumnTextContent: FC<Props> = ({ children }) => {
-  return <div className={styles.textContainer}>{children}</div>;
+  return <article className={styles.textContainer}>{children}</article>;
 };

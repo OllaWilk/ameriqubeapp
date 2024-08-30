@@ -5,6 +5,11 @@ export interface AboutUs {
     header: string;
     description: string;
   };
+  ourMissionSection: {
+    header: string;
+    subtitle: string;
+    description: string;
+  };
 }
 
 export interface ContactBannerType {
