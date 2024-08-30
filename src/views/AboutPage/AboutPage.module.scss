@@ -1,14 +1,1 @@
 @import '../../styles/mixins';
-
-.splash {
-  transition-delay: var(--deley);
-  background: var(--background-radial);
-  min-height: 60vh;
-  padding-top: 140px;
-  height: 500px;
-
-  .carouselWrap {
-    @include flex(column, center, center);
-    height: 100%;
-  }
-}
