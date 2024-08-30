@@ -6,6 +6,7 @@ import {
   ContactBanner,
   Container,
   TextSplash,
+  OurMission,
 } from '../../layout';
 
 export const AboutPage = () => {
@@ -27,6 +28,9 @@ export const AboutPage = () => {
         />
       </Container>
       <ContactBanner />
+      <Container>
+        <OurMission />
+      </Container>
     </>
   );
 };
