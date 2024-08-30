@@ -4,3 +4,4 @@ export { TextSplash } from './TextSplash/TextSplash';
 export { AboutUsSection } from './AboutUsSection/AboutUsSection';
 export { ContactBanner } from './ContactBanner/ContactBanner';
 export { OurMissionSection } from './OurMissionSection/OurMissionSection';
+export { SwiperSplash } from './SwiperSplash.tsx/SwiperSplash';
