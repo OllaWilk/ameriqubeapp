@@ -12,8 +12,15 @@
     gap: 20px;
   }
 
+  img {
+    width: 70%;
+  }
+
   .ornament {
-    width: 77px;
     margin-bottom: 1rem;
+
+    @include lg-max {
+      margin: 0 auto 1rem auto;
+    }
   }
 }

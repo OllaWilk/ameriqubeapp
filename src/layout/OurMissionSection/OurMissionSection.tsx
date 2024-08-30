@@ -1,11 +1,12 @@
 import React from 'react';
+import { photos } from '../../img';
 import { ColumnTextContent } from '../ColumnTextContent/ColumnTextContent';
 import {
   LineOrnament,
-  Video,
   Paragraph,
   SectionHeader,
   Subtitle,
+  LogoText,
 } from '../../components';
 import styles from './OurMissionSection.module.scss';
 
@@ -18,7 +19,7 @@ interface Props {
 export const OurMissionSection = ({ header, description, subtitle }: Props) => {
   return (
     <section className={styles.section}>
-      <Video />
+      <LogoText src={photos.automationjpg} />
       <ColumnTextContent>
         <Subtitle text={subtitle} className={styles.subtitle} />
         <SectionHeader text={header} />

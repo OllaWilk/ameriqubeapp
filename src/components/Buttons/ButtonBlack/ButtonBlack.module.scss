@@ -16,4 +16,8 @@
   @include lg-max {
     width: 100%;
   }
+
+  @include md-max {
+    padding: 9px 9px;
+  }
 }

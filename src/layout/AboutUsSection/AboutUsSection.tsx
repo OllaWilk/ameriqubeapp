@@ -1,4 +1,5 @@
 import React from 'react';
+import { photos } from '../../img';
 import {
   LineOrnament,
   LogoText,
@@ -15,7 +16,7 @@ interface Props {
 export const AboutUsSection = ({ header, description }: Props) => {
   return (
     <section className={styles.section}>
-      <LogoText />
+      <LogoText src={photos.ameriqubeText} />
       <ColumnTextContent>
         <SectionHeader text={header} />
         <LineOrnament className={styles.ornament} />

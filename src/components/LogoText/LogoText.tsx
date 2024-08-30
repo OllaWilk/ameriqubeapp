@@ -1,13 +1,12 @@
 import React from 'react';
-import { photos } from '../../img';
 import styles from './LogoText.module.scss';
 
-export const LogoText = () => (
+interface Props {
+  src: string;
+}
+
+export const LogoText = ({ src }: Props) => (
   <div className={styles.logoContainer}>
-    <img
-      src={photos.ameriqubeText}
-      alt='Ameriqube Logo'
-      className={styles.logo}
-    />
+    <img src={src} alt='Ameriqube Logo' className={styles.logo} />
   </div>
 );
