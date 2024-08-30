@@ -46,5 +46,11 @@
       }
     }
   },
+  "contactBanner": {
+    "title": "Nie wahaj się skontaktować z nami w dowolnym czasie.",
+    "subtitle": "Masz jakieś pytania ?",
+    "button": "SKONTAKTUJ SIĘ Z NAMI",
+    "to": "contact"
+  },
   "notFound": "Strona, której szukasz, najwyraźniej została przeniesiona, usunięta lub nie istnieje. Przepraszamy za niedogodności."
 }

@@ -6,3 +6,10 @@ export interface AboutUs {
     description: string;
   };
 }
+
+export interface ContactBannerType {
+  title: string;
+  subtitle: string;
+  button: string;
+  to: string;
+}

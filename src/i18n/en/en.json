@@ -46,5 +46,11 @@
       }
     }
   },
+  "contactBanner": {
+    "title": "Don't Hesitate to Contact Us Any Time.",
+    "subtitle": "Have Any Questions ?",
+    "button": "contact us",
+    "to": "contact"
+  },
   "notFound": "The page you're looking for appears to have been moved, deleted, or doesn't exist. We apologize for the inconveniences."
 }

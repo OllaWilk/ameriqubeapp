@@ -46,5 +46,11 @@
       }
     }
   },
+  "contactBanner": {
+    "title": "Zögern Sie nicht, uns jederzeit zu kontaktieren.",
+    "subtitle": "Haben Sie Fragen ?",
+    "button": "KONTAKTIEREN SIE UNS",
+    "to": "contact"
+  },
   "notFound": "Die von Ihnen gesuchte Seite scheint verschoben, gelöscht worden zu sein oder existiert nicht. Wir entschuldigen uns für die Unannehmlichkeiten."
 }
