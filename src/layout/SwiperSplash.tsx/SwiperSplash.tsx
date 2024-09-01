@@ -1,24 +1,18 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 import Slider from 'react-slick';
+import { Slide } from '../../types/homePage-types';
+import { Container } from '../Container/Container';
+
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import { Container } from '../Container/Container';
-import {
-  LineOrnament,
-  SplashHeading,
-  SplashSubHeading,
-} from '../../components';
 import './SwiperSplash.scss';
-import { Button } from '../../types/homePage-types';
 
 interface Props {
-  slides: [];
-  title: string;
-  intro: string;
-  buttonRed: Button;
-  buttonTransparent?: Button;
+  slides?: Slide;
+  children: ReactNode;
 }
-export const SwiperSplash = ({ slides }: Props) => {
+
+export const SwiperSplash = ({ children }: Props) => {
   const settings = {
     dots: true, // Wyświetla kropki nawigacyjne
     infinite: true, // Nieskończone przewijanie
@@ -31,29 +25,7 @@ export const SwiperSplash = ({ slides }: Props) => {
   return (
     <section className='splash'>
       <Container className='container'>
-        <Slider {...settings}>
-          {slides.map((slide, index) => (
-            <div key={index} className='slide'>
-              <SplashHeading text={slide.title} />
-              <LineOrnament />
-              <SplashSubHeading text={slide.intro} />
-
-              <div className='buttons'>
-                <a href={slide.buttonRed[0]} className='button-red'>
-                  {slide.buttonRed[1]}
-                </a>
-                {slide.buttonTransparent && (
-                  <a
-                    href={slide.buttonTransparent[0]}
-                    className='button-transparent'
-                  >
-                    {slide.buttonTransparent[1]}
-                  </a>
-                )}
-              </div>
-            </div>
-          ))}
-        </Slider>
+        <Slider {...settings}>{children}</Slider>
       </Container>
     </section>
   );
