@@ -1,0 +1,34 @@
+@import '../../styles/mixins';
+
+.iceQubeProducts {
+  background-color: blue;
+  @include md-max {
+    padding-top: 108px;
+    min-height: 100vh;
+  }
+}
+
+.section {
+  text-align: justify;
+  @include flex(row, stretch, space-between);
+  //   flex-wrap: wrap;
+  padding: 5rem 0;
+  min-height: 60vh;
+
+  @include md-max {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .subtitle {
+    color: var(--color-primary);
+    padding: 0.2rem 0;
+  }
+
+  .ornament {
+    margin-bottom: 1rem;
+
+    @include lg-max {
+      margin: 0 auto 1rem auto;
+    }
+  }
+}

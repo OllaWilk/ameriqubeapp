@@ -101,9 +101,42 @@
             "link": "https://smartqube.com"
           }
         }
+      ],
+      "productsCarousel": [
+        {
+          "title": "Air Conditioners",
+          "description": "High-performance air conditioners designed for demanding industrial environments.",
+          "button": {
+            "text": "Learn More",
+            "link": "https://iceqube.com/products/air-conditioners"
+          }
+        },
+        {
+          "title": "Enclosures",
+          "description": "Durable and customizable enclosures suitable for various industrial applications.",
+          "button": {
+            "text": "Learn More",
+            "link": "https://iceqube.com/products/enclosures"
+          }
+        },
+        {
+          "title": "Heat Exchangers",
+          "description": "Efficient heat exchangers providing reliable temperature control.",
+          "button": {
+            "text": "Learn More",
+            "link": "https://iceqube.com/products/heat-exchangers"
+          }
+        },
+        {
+          "title": "Filters & Accessories",
+          "description": "Wide range of filters and accessories to complement your climate control solutions.",
+          "button": {
+            "text": "Learn More",
+            "link": "https://iceqube.com/products/filters-accessories"
+          }
+        }
       ]
     },
-
     "about": {
       "title": "AmeriQube",
       "intro": "Innovation that connects the future",

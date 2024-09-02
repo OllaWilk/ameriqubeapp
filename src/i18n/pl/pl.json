@@ -101,6 +101,40 @@
             "link": "/design-future"
           }
         }
+      ],
+      "productsCarousel": [
+        {
+          "title": "Klimatyzatory",
+          "description": "Wydajne klimatyzatory zaprojektowane do wymagających środowisk przemysłowych.",
+          "button": {
+            "text": "Dowiedz się więcej",
+            "link": "https://iceqube.com/products/air-conditioners"
+          }
+        },
+        {
+          "title": "Obudowy",
+          "description": "Trwałe i dostosowywalne obudowy odpowiednie do różnych zastosowań przemysłowych.",
+          "button": {
+            "text": "Dowiedz się więcej",
+            "link": "https://iceqube.com/products/enclosures"
+          }
+        },
+        {
+          "title": "Wymienniki Ciepła",
+          "description": "Efektywne wymienniki ciepła zapewniające niezawodną kontrolę temperatury.",
+          "button": {
+            "text": "Dowiedz się więcej",
+            "link": "https://iceqube.com/products/heat-exchangers"
+          }
+        },
+        {
+          "title": "Filtry i Akcesoria",
+          "description": "Szeroka gama filtrów i akcesoriów uzupełniających rozwiązania do kontroli klimatu.",
+          "button": {
+            "text": "Dowiedz się więcej",
+            "link": "https://iceqube.com/products/filters-accessories"
+          }
+        }
       ]
     },
 

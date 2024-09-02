@@ -9,6 +9,11 @@ export interface HomeSwiper {
   swiper: Slide[];
 }
 
+export interface Button {
+  text: string;
+  link: string;
+}
+
 export interface Welcome {
   sectionTitle: string;
   companyName: string;
@@ -17,13 +22,15 @@ export interface Welcome {
   button: Button;
 }
 
-export interface Button {
-  text: string;
-  link: string;
-}
-
 export interface Product {
   logo: string;
+  title: string;
+  description: string;
+  button: Button;
+}
+
+export interface ProductCarouselItem {
+  img: string;
   title: string;
   description: string;
   button: Button;

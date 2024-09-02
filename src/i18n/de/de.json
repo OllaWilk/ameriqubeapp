@@ -101,6 +101,40 @@
             "link": "/design-future"
           }
         }
+      ],
+      "productsCarousel": [
+        {
+          "title": "Klimaanlagen",
+          "description": "Leistungsstarke Klimaanlagen, die für anspruchsvolle industrielle Umgebungen entwickelt wurden.",
+          "button": {
+            "text": "Mehr erfahren",
+            "link": "https://iceqube.com/products/air-conditioners"
+          }
+        },
+        {
+          "title": "Gehäuse",
+          "description": "Robuste und anpassbare Gehäuse, die für verschiedene industrielle Anwendungen geeignet sind.",
+          "button": {
+            "text": "Mehr erfahren",
+            "link": "https://iceqube.com/products/enclosures"
+          }
+        },
+        {
+          "title": "Wärmetauscher",
+          "description": "Effiziente Wärmetauscher, die eine zuverlässige Temperaturkontrolle bieten.",
+          "button": {
+            "text": "Mehr erfahren",
+            "link": "https://iceqube.com/products/heat-exchangers"
+          }
+        },
+        {
+          "title": "Filter und Zubehör",
+          "description": "Eine breite Palette an Filtern und Zubehör zur Ergänzung Ihrer Klimakontrolllösungen.",
+          "button": {
+            "text": "Mehr erfahren",
+            "link": "https://iceqube.com/products/filters-accessories"
+          }
+        }
       ]
     },
 

@@ -16,8 +16,6 @@ export const ProductsSection = () => {
     returnObjects: true,
   });
 
-  console.log(products);
-
   return (
     <section className={styles.productSection}>
       <Container className={styles.container}>
