@@ -1,0 +1,109 @@
+@import '../../styles/mixins';
+
+.imgWrap {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.addressWrap {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+
+  .usa,
+  .europe {
+    position: absolute;
+    cursor: pointer;
+  }
+
+  .usa {
+    top: 35%;
+    width: 30%;
+    height: 30%;
+
+    @include md-max {
+      top: 30%;
+    }
+
+    &:hover {
+      .usaAdress {
+        opacity: 1;
+      }
+    }
+  }
+
+  .europe {
+    top: 30%;
+    left: 45%;
+    width: 20%;
+    height: 20%;
+
+    @include md-max {
+      top: 33%;
+    }
+
+    &:hover {
+      .europeAdress {
+        opacity: 1;
+      }
+    }
+  }
+
+  .europeAdress,
+  .usaAdress {
+    @include flex(column, center, center);
+    background-color: var(--color-light);
+    border-radius: 2px;
+    box-shadow: var(--shadow);
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 300px;
+    transition: var(--transition);
+    position: absolute;
+    opacity: 0;
+  }
+
+  .europeAdress {
+    top: 70px;
+    left: 100px;
+
+    @include lg-max {
+      top: 80px;
+      left: -0px;
+    }
+
+    @include md-max {
+      top: 70px;
+      left: -70px;
+    }
+  }
+
+  .usaAdress {
+    top: 60px;
+    left: -10px;
+
+    @include md-max {
+      top: 130px;
+    }
+  }
+
+  @include md-max {
+    top: 0%;
+    width: 100%;
+  }
+
+  @include sm-max {
+    display: none;
+  }
+}

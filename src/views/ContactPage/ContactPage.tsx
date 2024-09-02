@@ -1,14 +1,30 @@
 import React from 'react';
-import { Container, TextSplash } from '../../layout';
-import { UnderConstruction } from '../UnderConstruction/UnderConstruction';
+import { useTranslation } from 'react-i18next';
+import { Container, Map, TextSplash } from '../../layout';
+import styles from './ContactPage.module.scss';
+import { ContactType } from '../../types/contactPage-Types';
 
 export const ContactPage = () => {
+  const { t } = useTranslation();
+
+  const contact: ContactType = t('pages.contact', {
+    returnObjects: true,
+  });
+
   return (
     <>
-      <TextSplash />
-      <Container>
-        <UnderConstruction />
-      </Container>
+      <TextSplash
+        splashHeading={contact.splashHeading}
+        splashHeader={contact.splashHeader}
+        className={styles.splash}
+      />
+      <div className={styles.imgBakground}>
+        <Container>
+          <div className={styles.contactPage}>
+            <Map />
+          </div>
+        </Container>
+      </div>
     </>
   );
 };

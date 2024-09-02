@@ -9,6 +9,8 @@ import evPro from './images/icequbeProducts/EV-Group-Picture-Final.png';
 import evProLogo from './images/icequbeProducts/WHITE-PRO-600x158.png';
 import networkQubeLogo from './images/icequbeProducts/Enclosure-Modularity-Website.png';
 import networkQube from './images/icequbeProducts/networkQUBE.png';
+import splash from './images/splashContact.jpg';
+import worldMap from './images/worldMap.png';
 
 export const icequbeProducts = {
   evPro,
@@ -24,6 +26,8 @@ export const photos = {
   smartqubeLogo,
   automation,
   automationjpg,
+  splash,
+  worldMap,
 };
 
 export const videos = {

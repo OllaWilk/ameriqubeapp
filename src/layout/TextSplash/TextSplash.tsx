@@ -10,10 +10,15 @@ import styles from './TextSplash.module.scss';
 interface Props {
   splashHeader?: string;
   splashHeading?: string;
+  className?: string;
 }
 
-export const TextSplash = ({ splashHeader, splashHeading }: Props) => (
-  <section className={styles.splash}>
+export const TextSplash = ({
+  splashHeader,
+  splashHeading,
+  className,
+}: Props) => (
+  <section className={`${styles.splash} ${className}`}>
     <Container className={styles.wrap}>
       <SplashHeading text={splashHeading} />
       <LineOrnament />
