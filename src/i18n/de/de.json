@@ -68,7 +68,20 @@
             "Optimierte Lösungen"
           ]
         }
-      ]
+      ],
+      "welcome": {
+        "sectionTitle": "willkommen bei",
+        "companyName": "AMERIqube",
+        "introParagraph": "Bei AmeriQube treffen Innovation und Zuverlässigkeit aufeinander im Bereich der Klimakontrolle und Gehäuselösungen. Als Muttergesellschaft von ICEqube und SMARTqube wahren wir ein Erbe der Exzellenz, das sich über Jahrzehnte erstreckt, indem wir moderne Produkte und Dienstleistungen für die Industrie weltweit liefern.",
+        "additionalParagraphs": [
+          "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum unde voluptatibus eveniet! Ipsam, numquam repellendus! Ut nam eum distinctio cupiditate, veritatis nesciunt. Beatae necessitatibus aspernatur magni excepturi provident praesentium repudiandae?",
+          "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio aperiam optio nam. Odit, nostrum? Quam, et earum iusto quaerat ad dolore praesentium cum suscipit corrupti nobis perspiciatis, velit optio cumque. Id sequi, illo perspiciatis quam, doloribus quasi animi, iste deserunt nisi ratione ipsum explicabo iusto sint illum quod saepe praesentium qui commodi doloremque eveniet harum distinctio! Blanditiis eaque unde porro."
+        ],
+        "button": {
+          "text": "Über uns",
+          "link": "/about"
+        }
+      }
     },
 
     "about": {

@@ -1,6 +1,5 @@
 import React from 'react';
-import { Container, SwiperSplash } from '../../layout';
-import { UnderConstruction } from '../UnderConstruction/UnderConstruction';
+import { AmeriQubeWelcome, ContactBanner, SwiperSplash } from '../../layout';
 import { useTranslation } from 'react-i18next';
 import { Slide } from '../../types/homePage-types';
 import {
@@ -42,9 +41,8 @@ export const HomePage = () => {
           </div>
         ))}
       </SwiperSplash>
-      <Container>
-        <UnderConstruction />
-      </Container>
+      <AmeriQubeWelcome />
+      <ContactBanner />
     </div>
   );
 };
