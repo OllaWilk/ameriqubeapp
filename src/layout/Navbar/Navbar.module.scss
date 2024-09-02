@@ -9,6 +9,7 @@
   background-color: var(--color-dark);
   padding: 20px 0;
   @include flex(row, center, center);
+  z-index: 999;
 
   .container {
     @include flex(row, flex-end, space-between);

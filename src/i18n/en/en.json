@@ -40,32 +40,32 @@
     "home": {
       "swiper": [
         {
-          "title": "comprehensive approach to your projects",
-          "intro": "we integrate innovation and technology to deliver comprehensive solutions for every aspect of your project",
+          "title": "Innovative Project Solutions",
+          "intro": "We blend innovation and technology to deliver top-tier solutions for your projects.",
           "buttonRed": ["/contact", "contact us"],
           "buttonTransparent": ["/about", "read more"]
         },
         {
-          "title": "advanced air conditioners for every environment",
-          "intro": "high-quality air conditioners of our own production, designed for efficient operation even in industrial zones zone 1 and zone 2",
-          "buttonRed": ["https://iceqube.com", "visit iceqube"],
+          "title": "Advanced Air Conditioning",
+          "intro": "Versatile enclosures designed to meet the unique demands of the telecom and network sectors.",
+          "buttonRed": ["https://iceqube.com", "Explore ICEqube"],
           "buttonTransparent": [
             "https://iceqube.com/technical/calculator",
-            "visit the website and calculate your project today"
+            "Project Calculator"
           ]
         },
         {
-          "title": "individual approach to projects, with the possibility of modifications and solutions",
-          "intro": "iceqube offers a wide range of industrial wall-mounted and free-standing enclosures, as well as modular enclosures with dual and single access for the telecommunications and network market",
-          "buttonRed": ["https://iceqube.com", "visit iceqube"]
+          "title": "Customizable Industrial Enclosures",
+          "intro": "Iceqube offers a wide range of industrial wall-mounted and free-standing enclosures, as well as modular enclosures with dual and single access for the telecommunications and network market.",
+          "buttonRed": ["https://iceqube.com", "Discover ICEqube"]
         },
         {
-          "title": "engineering at its finest",
-          "intro": "our team of engineers specializes in design, maintenance, and plug-and-play solutions, offering comprehensive onsite and remote support for the most demanding projects",
+          "title": "Expert Engineering Support",
+          "intro": "Our engineers provide on-site and remote support tailored to your project’s needs.",
           "buttonRed": ["https://smartqube.com", "visit smartqube"],
           "buttonTransparent": [
             "https://smartqube.com/integration",
-            "comprehensive industrial integration solutions"
+            "Streamlined Solutions"
           ]
         }
       ]
