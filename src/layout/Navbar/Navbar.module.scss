@@ -40,7 +40,6 @@
     .navigation {
       width: calc(100% - 100px);
       @include flex(row, center, flex-end);
-      // gap: 20px;
 
       .sideNavigation {
         display: none;
