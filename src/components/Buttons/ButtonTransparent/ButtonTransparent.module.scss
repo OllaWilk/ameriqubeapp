@@ -1,0 +1,22 @@
+@import '../../../styles//mixins';
+
+.buttonTransparent {
+  @include btn;
+  background-color: transparent;
+  border: 1px solid var(--color-light);
+  color: var(--color-light);
+  font-size: 1rem;
+
+  &:hover {
+    background-color: var(--color-dark);
+    border: 1px solid var(--color-dark);
+  }
+
+  @include lg-max {
+    width: 100%;
+  }
+
+  @include md-max {
+    padding: 9px 9px;
+  }
+}
