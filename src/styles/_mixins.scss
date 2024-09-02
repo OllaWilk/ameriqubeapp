@@ -1,11 +1,11 @@
 @mixin btn {
-  padding: 10px 30px;
+  padding: 7px 30px;
   font-family: var(--text-font);
-  font-size: var(--font-d-btn);
-  font-weight: var(--fw-900);
+  font-size: 1rem;
   text-transform: uppercase;
   transition: var(--transition);
   cursor: pointer;
+  border-radius: 5px;
 }
 
 @mixin flex($flex-direction, $align-items, $justify-content) {

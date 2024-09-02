@@ -40,32 +40,32 @@
     "home": {
       "swiper": [
         {
-          "title": "umfassender ansatz für ihre projekte",
-          "intro": "wir integrieren innovation und technologie, um umfassende lösungen für jeden aspekt ihres projekts zu bieten",
-          "buttonRed": ["/contact", "kontaktieren sie uns"],
-          "buttonTransparent": ["/about", "mehr lesen"]
+          "title": "Innovative Projektlösungen",
+          "intro": "Wir kombinieren Innovation und Technologie, um erstklassige Lösungen für Ihre Projekte zu liefern.",
+          "buttonRed": ["/contact", "Kontaktieren Sie uns"],
+          "buttonTransparent": ["/about", "Erfahren Sie mehr"]
         },
         {
-          "title": "fortschrittliche klimaanlagen für jede umgebung",
-          "intro": "hochwertige klimaanlagen aus eigener produktion, entwickelt für einen effizienten betrieb auch in industriegebieten zone 1 und zone 2",
-          "buttonRed": ["https://iceqube.com", "besuchen sie iceqube"],
+          "title": "Fortschrittliche Klimatisierung",
+          "intro": "Unsere Klimaanlagen bewähren sich auch in den härtesten Industrieumgebungen.",
+          "buttonRed": ["https://iceqube.com", "Entdecken Sie ICEqube"],
           "buttonTransparent": [
             "https://iceqube.com/technical/calculator",
-            "besuchen sie die website und berechnen sie ihr projekt noch heute"
+            "Projektkalkulator"
           ]
         },
         {
-          "title": "individueller ansatz für projekte mit möglichkeiten zur anpassung und lösungen",
-          "intro": "iceqube bietet eine breite palette an industriellen wand- und freistehenden gehäusen sowie modularen gehäusen mit doppeltem und einfachem zugang für den telekommunikations- und netzwerkmarkt",
-          "buttonRed": ["https://iceqube.com", "besuchen sie iceqube"]
+          "title": "Anpassbare Industriegehäuse",
+          "intro": "Vielseitige Gehäuse, die den einzigartigen Anforderungen des Telekommunikations- und Netzsektors gerecht werden.",
+          "buttonRed": ["https://iceqube.com", "Entdecken Sie ICEqube"]
         },
         {
-          "title": "ingenieurkunst auf höchstem niveau",
-          "intro": "unser team von ingenieuren ist spezialisiert auf design, wartung und plug-and-play-lösungen und bietet umfassende unterstützung vor ort und aus der ferne für die anspruchsvollsten projekte",
-          "buttonRed": ["https://smartqube.com", "besuchen sie smartqube"],
+          "title": "Fachkundige Ingenieurunterstützung",
+          "intro": "Unsere Ingenieure bieten maßgeschneiderte Unterstützung vor Ort und aus der Ferne, angepasst an die Bedürfnisse Ihres Projekts.",
+          "buttonRed": ["https://smartqube.com", "Besuchen Sie SmartQube"],
           "buttonTransparent": [
             "https://smartqube.com/integration",
-            "umfassende industrielle integrationslösungen"
+            "Optimierte Lösungen"
           ]
         }
       ]
