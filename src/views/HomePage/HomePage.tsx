@@ -1,14 +1,24 @@
 import React from 'react';
-import { Container, TextSplash } from '../../layout';
-import { UnderConstruction } from '../UnderConstruction/UnderConstruction';
+import {
+  AmeriQubeWelcome,
+  ContactBanner,
+  ProductsSection,
+  SwiperSplash,
+  SwiperSplashHome,
+} from '../../layout';
+
+import styles from './HomePage.module.scss';
 
 export const HomePage = () => {
   return (
-    <>
-      <TextSplash />
-      <Container>
-        <UnderConstruction />
-      </Container>
-    </>
+    <div className={styles.main}>
+      <SwiperSplashHome />
+      <AmeriQubeWelcome />
+      <ProductsSection />
+      <ContactBanner />
+      <SwiperSplash className={styles.iceQubeProducts}>
+        <p>dd</p>
+      </SwiperSplash>
+    </div>
   );
 };

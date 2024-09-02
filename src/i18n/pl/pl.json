@@ -37,6 +37,73 @@
     }
   },
   "pages": {
+    "home": {
+      "swiper": [
+        {
+          "title": "Innowacyjne Rozwiązania Projektowe",
+          "intro": "Łączymy innowacje i technologię, aby dostarczać najlepsze rozwiązania dla Twoich projektów.",
+          "buttonRed": ["/contact", "Skontaktuj się"],
+          "buttonTransparent": ["/about", "Dowiedz się więcej"]
+        },
+        {
+          "title": "Zaawansowana Klimatyzacja",
+          "intro": "Nasze klimatyzatory sprawdzają się nawet w najtrudniejszych warunkach przemysłowych.",
+          "buttonRed": ["https://iceqube.com", "Odkryj ICEqube"],
+          "buttonTransparent": [
+            "https://iceqube.com/technical/calculator",
+            "Kalkulator Projektu"
+          ]
+        },
+        {
+          "title": "Dostosowywane Obudowy Przemysłowe",
+          "intro": "Wszechstronne obudowy zaprojektowane, aby sprostać unikalnym wymaganiom sektora telekomunikacyjnego i sieciowego.",
+          "buttonRed": ["https://iceqube.com", "Poznaj ICEqube"]
+        },
+        {
+          "title": "Wsparcie Techniczne Ekspertów",
+          "intro": "Nasi inżynierowie zapewniają wsparcie na miejscu i zdalnie, dostosowane do potrzeb Twojego projektu.",
+          "buttonRed": ["https://smartqube.com", "Odwiedź SmartQube"],
+          "buttonTransparent": [
+            "https://smartqube.com/integration",
+            "Szczegółowe Rozwiązania"
+          ]
+        }
+      ],
+      "welcome": {
+        "sectionTitle": "witaj w",
+        "companyName": "AMERIqube",
+        "introParagraph": "W AmeriQube innowacja spotyka się z niezawodnością w dziedzinie kontroli klimatu i rozwiązań obudów. Jako firma macierzysta ICEqube i SMARTqube podtrzymujemy dziedzictwo doskonałości, które trwa od dziesięcioleci, dostarczając nowoczesne produkty i usługi dla przemysłu na całym świecie.",
+        "additionalParagraphs": [
+          "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum unde voluptatibus eveniet! Ipsam, numquam repellendus! Ut nam eum distinctio cupiditate, veritatis nesciunt. Beatae necessitatibus aspernatur magni excepturi provident praesentium repudiandae?",
+          "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio aperiam optio nam. Odit, nostrum? Quam, et earum iusto quaerat ad dolore praesentium cum suscipit corrupti nobis perspiciatis, velit optio cumque. Id sequi, illo perspiciatis quam, doloribus quasi animi, iste deserunt nisi ratione ipsum explicabo iusto sint illum quod saepe praesentium qui commodi doloremque eveniet harum distinctio! Blanditiis eaque unde porro."
+        ],
+        "button": {
+          "text": "O nas",
+          "link": "/about"
+        }
+      },
+      "products": [
+        {
+          "logo": "icequbeLogo",
+          "title": "Rozwiązania chłodnicze",
+          "description": "Ice Qube dostarcza szeroką gamę wysokiej jakości produktów do kontroli klimatu. Oferta obejmuje klimatyzatory do stref I i II, przemysłowe klimatyzatory oraz specjalistyczne rozwiązania klimatyzacyjne. Klimatyzatory ICEqube charakteryzują się wyjątkową niezawodnością. Spełniają wysokie wymagania przemysłu i zapewniają precyzyjną kontrolę temperatury i wilgotności w różnych środowiskach pracy.",
+          "button": {
+            "text": "Czytaj więcej",
+            "link": "/cooling-solutions"
+          }
+        },
+        {
+          "logo": "smartqubeLogo",
+          "title": "Zaprojektujemy przyszłość",
+          "description": "SMARTqube oferuje kompleksową gamę usług, od konserwacji sprzętu, kalibracji po rozwiązywanie problemów. Korzystając z rozwiązań ICEqube, projektujemy innowacyjne rozwiązania dostosowane do zmieniających się potrzeb różnych branż. Dodatkowo, jako dystrybutor w Europie, SMARTqube umożliwia łatwy dostęp do najnowocześniejszych rozwiązań, umożliwiając firmom rozwój w stale zmieniającym się otoczeniu.",
+          "button": {
+            "text": "Czytaj więcej",
+            "link": "/design-future"
+          }
+        }
+      ]
+    },
+
     "about": {
       "title": "AmeriQube",
       "intro": "Innowacja, która łączy przyszłość",
