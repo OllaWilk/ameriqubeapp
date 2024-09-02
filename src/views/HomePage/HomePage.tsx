@@ -1,5 +1,10 @@
 import React from 'react';
-import { AmeriQubeWelcome, ContactBanner, SwiperSplash } from '../../layout';
+import {
+  AmeriQubeWelcome,
+  ContactBanner,
+  ProductsSection,
+  SwiperSplash,
+} from '../../layout';
 import { useTranslation } from 'react-i18next';
 import { Slide } from '../../types/homePage-types';
 import {
@@ -42,6 +47,7 @@ export const HomePage = () => {
         ))}
       </SwiperSplash>
       <AmeriQubeWelcome />
+      <ProductsSection />
       <ContactBanner />
     </div>
   );

@@ -8,3 +8,4 @@ export { SwiperSplash } from './SwiperSplash.tsx/SwiperSplash';
 export { AmeriQubeWelcome } from './AmeriQubeWelcome/AmeriQubeWelcome';
 export { BackgroundSquare } from './BackgroundSquare/BackgroundSquare';
 export { ColumnTextContent } from './ColumnTextContent/ColumnTextContent';
+export { ProductsSection } from './ProductsSection/ProductsSection';

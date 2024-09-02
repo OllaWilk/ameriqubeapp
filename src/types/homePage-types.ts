@@ -21,3 +21,10 @@ export interface Button {
   text: string;
   link: string;
 }
+
+export interface Product {
+  logo: string;
+  title: string;
+  description: string;
+  button: Button;
+}

@@ -81,7 +81,27 @@
           "text": "Über uns",
           "link": "/about"
         }
-      }
+      },
+      "products": [
+        {
+          "logo": "icequbeLogo",
+          "title": "Kühlungslösungen",
+          "description": "Ice Qube liefert ein breites Sortiment an hochwertigen Klimakontrollprodukten. Das Angebot umfasst Klimaanlagen für Zonen I und II, industrielle Klimaanlagen und spezialisierte Klimatisierungslösungen. Die Klimaanlagen von ICEqube zeichnen sich durch außergewöhnliche Zuverlässigkeit aus. Sie erfüllen hohe Branchenanforderungen und bieten präzise Temperatur- und Feuchtigkeitskontrolle in verschiedenen Arbeitsumgebungen.",
+          "button": {
+            "text": "Mehr lesen",
+            "link": "/cooling-solutions"
+          }
+        },
+        {
+          "logo": "smartqubeLogo",
+          "title": "Wir werden die Zukunft gestalten",
+          "description": "SMARTqube bietet ein umfassendes Dienstleistungsspektrum, von der Gerätewartung über die Kalibrierung bis hin zur Fehlerbehebung. Mit den Lösungen von ICEqube entwerfen wir innovative Lösungen, die auf die sich ändernden Bedürfnisse verschiedener Branchen zugeschnitten sind. Darüber hinaus erleichtert SMARTqube als Distributor in Europa den nahtlosen Zugang zu modernsten Lösungen, damit Unternehmen in einer sich ständig verändernden Landschaft erfolgreich sein können.",
+          "button": {
+            "text": "Mehr lesen",
+            "link": "/design-future"
+          }
+        }
+      ]
     },
 
     "about": {
