@@ -4,9 +4,11 @@ import { UnderConstruction } from '../UnderConstruction/UnderConstruction';
 import { useTranslation } from 'react-i18next';
 import { Slide } from '../../types/homePage-types';
 import {
+  ButtonRed,
+  ButtonTransparent,
   LineOrnament,
-  SplashHeading,
-  SplashSubHeading,
+  Paragraph,
+  SectionHeader,
 } from '../../components';
 import styles from './HomePage.module.scss';
 
@@ -18,34 +20,31 @@ export const HomePage = () => {
   });
 
   return (
-    <>
-      <SwiperSplash>
+    <div className={styles.main}>
+      <SwiperSplash className={styles.swiperSplash}>
         {slides.map((slide, index) => (
           <div key={index} className={styles.slide}>
-            <SplashHeading text={slide.title} />
-            <LineOrnament />
-            <SplashSubHeading text={slide.intro} />
-
-            <div className='buttons'>
-              <a href={slide.buttonRed[0]} className='button-red'>
-                {slide.buttonRed[1]}
-              </a>
+            <SectionHeader
+              text={slide.title}
+              className={styles.sectionHeader}
+            />
+            <LineOrnament className={styles.ornament} />
+            <Paragraph text={slide.intro} className={styles.paragraph} />
+            <div className={styles.buttons}>
+              <ButtonRed to={slide.buttonRed[0]} text={slide.buttonRed[1]} />
               {slide.buttonTransparent && (
-                <a
-                  href={slide.buttonTransparent[0]}
-                  className='button-transparent'
-                >
-                  {slide.buttonTransparent[1]}
-                </a>
+                <ButtonTransparent
+                  to={slide.buttonTransparent[0]}
+                  text={slide.buttonTransparent[1]}
+                />
               )}
             </div>
-            <p>{slide.title}</p>
           </div>
         ))}
       </SwiperSplash>
       <Container>
         <UnderConstruction />
       </Container>
-    </>
+    </div>
   );
 };

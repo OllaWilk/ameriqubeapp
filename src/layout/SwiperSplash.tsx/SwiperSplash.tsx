@@ -1,6 +1,5 @@
 import React, { ReactNode } from 'react';
 import Slider from 'react-slick';
-import { Slide } from '../../types/homePage-types';
 import { Container } from '../Container/Container';
 
 import 'slick-carousel/slick/slick.css';
@@ -8,22 +7,24 @@ import 'slick-carousel/slick/slick-theme.css';
 import './SwiperSplash.scss';
 
 interface Props {
-  slides?: Slide;
   children: ReactNode;
+  className?: string;
 }
 
-export const SwiperSplash = ({ children }: Props) => {
+export const SwiperSplash = ({ children, className }: Props) => {
   const settings = {
-    dots: true, // Wyświetla kropki nawigacyjne
-    infinite: true, // Nieskończone przewijanie
-    speed: 500, // Prędkość przejścia między slajdami
-    slidesToShow: 1, // Liczba wyświetlanych slajdów naraz
-    slidesToScroll: 1, // Liczba slajdów przewijanych naraz
-    arrows: true, // Wyświetla strzałki nawigacyjne
+    dots: true, // Displays navigation dots
+    infinite: true, // Infinite scrolling
+    speed: 500, // Speed of slide transitions
+    slidesToShow: 1, // Number of slides shown at once
+    slidesToScroll: 1, // Number of slides scrolled at a time
+    arrows: true, // Displays navigation arrows
+    autoplay: false, // Enables automatic sliding
+    autoplaySpeed: 8000, // Time between slide changes (8000 ms = 8 seconds)
   };
 
   return (
-    <section className='splash'>
+    <section className={`splash ${className}`}>
       <Container className='container'>
         <Slider {...settings}>{children}</Slider>
       </Container>
