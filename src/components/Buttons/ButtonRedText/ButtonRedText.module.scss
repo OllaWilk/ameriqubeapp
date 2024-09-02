@@ -5,12 +5,10 @@
   background-color: transparent;
   color: var(--color-primary);
   font-weight: bold;
-  padding-right: 0;
+  padding: 0;
 
   &:hover {
-    background-color: var(--color-primary);
-    color: var(--color-light);
-    padding-right: 30px;
+    color: var(--color-secondary);
   }
 
   @include lg-max {

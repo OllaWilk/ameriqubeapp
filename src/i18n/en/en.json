@@ -81,7 +81,27 @@
           "text": "About us",
           "link": "/about"
         }
-      }
+      },
+      "products": [
+        {
+          "logo": "icequbeLogo",
+          "title": "Cooling Solutions",
+          "description": "ICEqube supplies a wide range of high-quality climate control products. The offer includes air conditioners for zones I and II, industrial air conditioners, and specialized air conditioning solutions. ICEqube air conditioners are characterized by exceptional reliability. They meet high industry requirements and provide precise temperature and humidity control in various work environments.",
+          "button": {
+            "text": "Read More",
+            "link": "/cooling-solutions"
+          }
+        },
+        {
+          "logo": "smartqubeLogo",
+          "title": "We Will Design the Future",
+          "description": "SMARTqube offers a comprehensive range of services, from equipment maintenance, calibration, and troubleshooting. Using ICEqube solutions, we design innovative solutions tailored to the changing needs of various industries. Additionally, as a distributor in Europe, SMARTqube facilitates seamless access to cutting-edge solutions, enabling businesses to thrive in an ever-changing landscape.",
+          "button": {
+            "text": "Read More",
+            "link": "/design-future"
+          }
+        }
+      ]
     },
 
     "about": {
