@@ -23,6 +23,14 @@ export const SideNavigation: FC<SideNavigationProps> = ({ className }) => {
     returnObjects: true,
   });
 
+  const handleDropdownToggle = (path: string | null) => {
+    if (!path) {
+      setDropdownVisible((prev) => !prev);
+    }
+  };
+
+  console.log(navLinks, productLinks);
+
   return (
     <div className={`${styles.sideNavigationWrapper} ${className}`}>
       <Hamburger toggled={isOpen} toggle={setOpen} size={24} />
@@ -36,7 +44,7 @@ export const SideNavigation: FC<SideNavigationProps> = ({ className }) => {
                   ? styles.activeDropdown
                   : styles.backgroundColor
               }`}
-              onClick={() => setDropdownVisible((prev) => !prev)}
+              onClick={() => handleDropdownToggle(path)}
             >
               {!path ? (
                 <ButtonNavBar label={label} />
