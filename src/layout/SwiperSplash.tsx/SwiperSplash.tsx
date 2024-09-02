@@ -19,7 +19,7 @@ export const SwiperSplash = ({ children, className }: Props) => {
     slidesToShow: 1, // Number of slides shown at once
     slidesToScroll: 1, // Number of slides scrolled at a time
     arrows: true, // Displays navigation arrows
-    autoplay: false, // Enables automatic sliding
+    autoplay: true, // Enables automatic sliding
     autoplaySpeed: 8000, // Time between slide changes (8000 ms = 8 seconds)
   };
 
