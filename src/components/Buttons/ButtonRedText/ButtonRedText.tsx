@@ -10,7 +10,7 @@ interface Props {
 
 export const ButtonRedText: FC<Props> = ({ text, onClick, to }) => {
   return to ? (
-    <Link to={to} className={styles.buttonRed}>
+    <Link to={to} className={styles.buttonRed} target='_blank'>
       {text}
     </Link>
   ) : (
