@@ -3,6 +3,7 @@
 .swiperSplash {
   padding-top: 140px;
   min-height: 70vh;
+  background: var(--background-radial);
 
   @include md-max {
     padding-top: 108px;

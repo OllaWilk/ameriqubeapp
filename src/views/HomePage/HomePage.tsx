@@ -2,8 +2,8 @@ import React from 'react';
 import {
   AmeriQubeWelcome,
   ContactBanner,
+  // IcequbeProducts,
   ProductsSection,
-  SwiperSplash,
   SwiperSplashHome,
 } from '../../layout';
 
@@ -15,10 +15,8 @@ export const HomePage = () => {
       <SwiperSplashHome />
       <AmeriQubeWelcome />
       <ProductsSection />
+      {/* <IcequbeProducts /> */}
       <ContactBanner />
-      <SwiperSplash className={styles.iceQubeProducts}>
-        <p>dd</p>
-      </SwiperSplash>
     </div>
   );
 };

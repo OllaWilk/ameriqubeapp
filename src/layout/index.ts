@@ -10,3 +10,4 @@ export { BackgroundSquare } from './BackgroundSquare/BackgroundSquare';
 export { ColumnTextContent } from './ColumnTextContent/ColumnTextContent';
 export { ProductsSection } from './ProductsSection/ProductsSection';
 export { SwiperSplashHome } from './SwiperSplashHome/SwiperSplashHome';
+export { IcequbeProducts } from './IcequbeProducts/IcequbeProducts';
