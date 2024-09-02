@@ -1,0 +1,36 @@
+@import '../../styles/mixins';
+
+.imgBakground {
+  @include splash;
+  @include flex(row, flex-start, space-between);
+  padding: 90px 0;
+  background-image: url('../../img/images/splashContact.jpg');
+
+  &::before {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .contactPage {
+    @include flex(column, center, center);
+    position: relative;
+    background-color: var(--color-light);
+    padding: 30px;
+    border-radius: 7px;
+    flex-grow: 1;
+    height: auto;
+
+    @include sm-max {
+      padding: 20px 10px;
+    }
+  }
+}
+
+.text {
+  @extend .text;
+  color: var(--color-light);
+  padding-bottom: 27px;
+
+  @include sm-max {
+    padding-bottom: 0;
+  }
+}

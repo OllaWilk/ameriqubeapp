@@ -1,6 +1,7 @@
 @import '../../styles/mixins';
 
 .productSection {
+  @include splash;
   @include flex(row, flex-start, space-between);
   padding: 90px 0;
   background-image: url('../../img/images/splash.jpg');
@@ -8,8 +9,6 @@
   &::before {
     background-color: rgba(0, 0, 0, 0.7);
   }
-
-  @include splash;
 
   @include sm-max {
     min-height: 100svh;

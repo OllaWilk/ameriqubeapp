@@ -11,3 +11,4 @@ export { ColumnTextContent } from './ColumnTextContent/ColumnTextContent';
 export { ProductsSection } from './ProductsSection/ProductsSection';
 export { SwiperSplashHome } from './SwiperSplashHome/SwiperSplashHome';
 export { IcequbeProducts } from './IcequbeProducts/IcequbeProducts';
+export { Map } from './Map/Map';
