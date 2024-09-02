@@ -8,3 +8,16 @@ export interface Slide {
 export interface HomeSwiper {
   swiper: Slide[];
 }
+
+export interface Welcome {
+  sectionTitle: string;
+  companyName: string;
+  introParagraph: string;
+  additionalParagraphs: string[];
+  button: Button;
+}
+
+export interface Button {
+  text: string;
+  link: string;
+}

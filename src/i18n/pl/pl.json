@@ -68,7 +68,20 @@
             "Szczegółowe Rozwiązania"
           ]
         }
-      ]
+      ],
+      "welcome": {
+        "sectionTitle": "witaj w",
+        "companyName": "AMERIqube",
+        "introParagraph": "W AmeriQube innowacja spotyka się z niezawodnością w dziedzinie kontroli klimatu i rozwiązań obudów. Jako firma macierzysta ICEqube i SMARTqube podtrzymujemy dziedzictwo doskonałości, które trwa od dziesięcioleci, dostarczając nowoczesne produkty i usługi dla przemysłu na całym świecie.",
+        "additionalParagraphs": [
+          "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum unde voluptatibus eveniet! Ipsam, numquam repellendus! Ut nam eum distinctio cupiditate, veritatis nesciunt. Beatae necessitatibus aspernatur magni excepturi provident praesentium repudiandae?",
+          "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio aperiam optio nam. Odit, nostrum? Quam, et earum iusto quaerat ad dolore praesentium cum suscipit corrupti nobis perspiciatis, velit optio cumque. Id sequi, illo perspiciatis quam, doloribus quasi animi, iste deserunt nisi ratione ipsum explicabo iusto sint illum quod saepe praesentium qui commodi doloremque eveniet harum distinctio! Blanditiis eaque unde porro."
+        ],
+        "button": {
+          "text": "O nas",
+          "link": "/about"
+        }
+      }
     },
 
     "about": {
