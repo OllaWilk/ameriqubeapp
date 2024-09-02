@@ -17,6 +17,7 @@
     max-width: 90%;
     height: 100%;
     object-fit: cover;
+    border-radius: 8px;
 
     @include lg-max {
       max-width: 50%;

@@ -1,3 +1,4 @@
+export { Card } from './Card/Card';
 export { Logo } from './Logo/Logo';
 export { LogoText } from './LogoText/LogoText';
 export { LineOrnament } from './LineOrnament/LineOrnament';

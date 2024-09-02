@@ -37,6 +37,73 @@
     }
   },
   "pages": {
+    "home": {
+      "swiper": [
+        {
+          "title": "Innovative Projektlösungen",
+          "intro": "Wir kombinieren Innovation und Technologie, um erstklassige Lösungen für Ihre Projekte zu liefern.",
+          "buttonRed": ["/contact", "Kontaktieren Sie uns"],
+          "buttonTransparent": ["/about", "Erfahren Sie mehr"]
+        },
+        {
+          "title": "Fortschrittliche Klimatisierung",
+          "intro": "Unsere Klimaanlagen bewähren sich auch in den härtesten Industrieumgebungen.",
+          "buttonRed": ["https://iceqube.com", "Entdecken Sie ICEqube"],
+          "buttonTransparent": [
+            "https://iceqube.com/technical/calculator",
+            "Projektkalkulator"
+          ]
+        },
+        {
+          "title": "Anpassbare Industriegehäuse",
+          "intro": "Vielseitige Gehäuse, die den einzigartigen Anforderungen des Telekommunikations- und Netzsektors gerecht werden.",
+          "buttonRed": ["https://iceqube.com", "Entdecken Sie ICEqube"]
+        },
+        {
+          "title": "Fachkundige Ingenieurunterstützung",
+          "intro": "Unsere Ingenieure bieten maßgeschneiderte Unterstützung vor Ort und aus der Ferne, angepasst an die Bedürfnisse Ihres Projekts.",
+          "buttonRed": ["https://smartqube.com", "Besuchen Sie SmartQube"],
+          "buttonTransparent": [
+            "https://smartqube.com/integration",
+            "Optimierte Lösungen"
+          ]
+        }
+      ],
+      "welcome": {
+        "sectionTitle": "willkommen bei",
+        "companyName": "AMERIqube",
+        "introParagraph": "Bei AmeriQube treffen Innovation und Zuverlässigkeit aufeinander im Bereich der Klimakontrolle und Gehäuselösungen. Als Muttergesellschaft von ICEqube und SMARTqube wahren wir ein Erbe der Exzellenz, das sich über Jahrzehnte erstreckt, indem wir moderne Produkte und Dienstleistungen für die Industrie weltweit liefern.",
+        "additionalParagraphs": [
+          "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum unde voluptatibus eveniet! Ipsam, numquam repellendus! Ut nam eum distinctio cupiditate, veritatis nesciunt. Beatae necessitatibus aspernatur magni excepturi provident praesentium repudiandae?",
+          "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio aperiam optio nam. Odit, nostrum? Quam, et earum iusto quaerat ad dolore praesentium cum suscipit corrupti nobis perspiciatis, velit optio cumque. Id sequi, illo perspiciatis quam, doloribus quasi animi, iste deserunt nisi ratione ipsum explicabo iusto sint illum quod saepe praesentium qui commodi doloremque eveniet harum distinctio! Blanditiis eaque unde porro."
+        ],
+        "button": {
+          "text": "Über uns",
+          "link": "/about"
+        }
+      },
+      "products": [
+        {
+          "logo": "icequbeLogo",
+          "title": "Kühlungslösungen",
+          "description": "Ice Qube liefert ein breites Sortiment an hochwertigen Klimakontrollprodukten. Das Angebot umfasst Klimaanlagen für Zonen I und II, industrielle Klimaanlagen und spezialisierte Klimatisierungslösungen. Die Klimaanlagen von ICEqube zeichnen sich durch außergewöhnliche Zuverlässigkeit aus. Sie erfüllen hohe Branchenanforderungen und bieten präzise Temperatur- und Feuchtigkeitskontrolle in verschiedenen Arbeitsumgebungen.",
+          "button": {
+            "text": "Mehr lesen",
+            "link": "/cooling-solutions"
+          }
+        },
+        {
+          "logo": "smartqubeLogo",
+          "title": "Wir werden die Zukunft gestalten",
+          "description": "SMARTqube bietet ein umfassendes Dienstleistungsspektrum, von der Gerätewartung über die Kalibrierung bis hin zur Fehlerbehebung. Mit den Lösungen von ICEqube entwerfen wir innovative Lösungen, die auf die sich ändernden Bedürfnisse verschiedener Branchen zugeschnitten sind. Darüber hinaus erleichtert SMARTqube als Distributor in Europa den nahtlosen Zugang zu modernsten Lösungen, damit Unternehmen in einer sich ständig verändernden Landschaft erfolgreich sein können.",
+          "button": {
+            "text": "Mehr lesen",
+            "link": "/design-future"
+          }
+        }
+      ]
+    },
+
     "about": {
       "title": "AmeriQube",
       "intro": "Innovation, die die Zukunft verbindet",
