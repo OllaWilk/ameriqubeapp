@@ -29,8 +29,6 @@ export const SideNavigation: FC<SideNavigationProps> = ({ className }) => {
     }
   };
 
-  console.log(navLinks, productLinks);
-
   return (
     <div className={`${styles.sideNavigationWrapper} ${className}`}>
       <Hamburger toggled={isOpen} toggle={setOpen} size={24} />

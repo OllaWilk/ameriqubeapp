@@ -6,14 +6,17 @@
   left: 0;
   width: 100%;
   transition: var(--transition);
-  background-color: var(--color-dark);
   padding: 20px 0;
   @include flex(row, center, center);
   z-index: 999;
+  background-color: transparent;
+
+  &.scrolled {
+    background-color: var(--color-dark);
+  }
 
   .container {
     @include flex(row, flex-end, space-between);
-    // gap: 20px;
     overflow: visible;
 
     .logoLeft {
