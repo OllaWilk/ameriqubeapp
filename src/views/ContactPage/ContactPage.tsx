@@ -1,8 +1,8 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { Container, Map, TextSplash } from '../../layout';
-import styles from './ContactPage.module.scss';
+import { Container, GlobalPartner, Map, TextSplash } from '../../layout';
 import { ContactType } from '../../types/contactPage-Types';
+import styles from './ContactPage.module.scss';
 
 export const ContactPage = () => {
   const { t } = useTranslation();
@@ -25,6 +25,7 @@ export const ContactPage = () => {
               usaAddress={contact.usaAddress}
               europeAddress={contact.europeAddress}
             />
+            <GlobalPartner />
           </div>
         </Container>
       </div>

@@ -1,5 +1,9 @@
 @import '../../styles/mixins';
 
+.mapPositoiner {
+  position: relative;
+}
+
 //  map
 .mapImageWrapper {
   position: relative;
@@ -43,10 +47,6 @@
       width: 10%;
       height: 10%;
 
-      @include md-max {
-        top: 0%;
-      }
-
       &:hover .addressDetails {
         opacity: 1;
       }
@@ -78,7 +78,7 @@
     width: 250px;
     transition: var(--transition);
     position: absolute;
-    opacity: 1;
+    opacity: 0;
 
     &.europeDetails {
       top: 60px;
