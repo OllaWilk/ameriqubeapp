@@ -10,11 +10,14 @@
     background-color: rgba(0, 0, 0, 0.5);
   }
 
+  @include md-max {
+    padding: 50px 0;
+  }
+
   .contactPage {
     @include flex(column, center, center);
     position: relative;
     background-color: var(--color-light);
-    padding: 30px;
     border-radius: 7px;
     flex-grow: 1;
     height: auto;

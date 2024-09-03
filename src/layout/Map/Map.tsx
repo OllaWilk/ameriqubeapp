@@ -1,23 +1,29 @@
 import React from 'react';
+import { AddressType } from '../../types/contactPage-Types';
 import { photos } from '../../img';
 import styles from './Map.module.scss';
 
-export const Map = () => (
+interface MapProps {
+  usaAddress: AddressType;
+  europeAddress: AddressType;
+}
+
+export const Map = ({ usaAddress, europeAddress }: MapProps) => (
   <>
-    <div className={styles.imgWrap}>
+    <div className={styles.mapImageWrapper}>
       <img alt={'world map'} src={photos.worldMap} />
     </div>
-    <div className={styles.addressWrap}>
-      <div className={styles.usa}>
-        <div className={styles.usaAdress}>
-          <p>141 Wilson Avenue </p>
-          <p>Greensburg, PA 15601</p>
+    <div className={styles.addressWrapper}>
+      <div className={`${styles.addressMarker} ${styles.usa}`}>
+        <div className={`${styles.addressDetails} ${styles.usaDetails}`}>
+          <p>{usaAddress.line1}</p>
+          <p>{usaAddress.line2}</p>
         </div>
       </div>
-      <div className={styles.europe}>
-        <div className={styles.europeAdress}>
-          <p>ul. Rakietowa 29E </p>
-          <p>51-311 Wrocław, Poland</p>
+      <div className={`${styles.addressMarker} ${styles.europe}`}>
+        <div className={`${styles.addressDetails} ${styles.europeDetails}`}>
+          <p>{europeAddress.line1}</p>
+          <p>{europeAddress.line2}</p>
         </div>
       </div>
     </div>

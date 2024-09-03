@@ -137,7 +137,6 @@
         }
       ]
     },
-
     "about": {
       "title": "AmeriQube",
       "intro": "Innowacja, która łączy przyszłość",
@@ -149,6 +148,18 @@
         "header": "Wspieranie Doskonałości, Definiowanie Standardów",
         "subtitle": "NASZA MISJA",
         "description": "W AmeriQube naszą misją jest nieustanne dążenie do doskonałości w dziedzinie kontroli klimatu i rozwiązań obudowy na całym świecie. Jako spółka macierzysta ICEqube i SMARTqube, dziedziczymy długą tradycję doskonałości, która obejmuje dziesięciolecia innowacji i niezawodności. Zobowiązujemy się do przesuwania granic możliwości w krytycznych zastosowaniach, dostarczając najnowocześniejsze produkty i usługi dla różnorodnych branż takich jak telekomunikacja, przemysł naftowy i gazowy oraz automatyka przemysłowa. Stoimy jako symbol innowacji i niezłomności. Nasza misja obejmuje również zapewnienie naszym klientom niezrównanej pomocy i rozwiązań dostosowanych do ich unikalnych potrzeb. Nie tylko spełniamy oczekiwania, ale je przekraczamy, zapewniając optymalną wydajność i spokój ducha dla każdego projektu. Dołącz do nas w kształtowaniu przyszłości kontroli klimatu i rozwiązań obudowy. Razem budujemy świat, w którym doskonałość nie zna granic."
+      }
+    },
+    "contact": {
+      "splashHeader": "Połączmy się i współpracujmy",
+      "splashHeading": "Prosimy o wiadomość",
+      "usaAddress": {
+        "line1": "ulica Wilsona 141",
+        "line2": "Greensburg, PA 15601"
+      },
+      "europeAddress": {
+        "line1": "ul. Rakietowa 29E",
+        "line2": "51-311 Wrocław, Polska"
       }
     }
   },
