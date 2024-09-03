@@ -9,7 +9,7 @@ interface MapProps {
 }
 
 export const Map = ({ usaAddress, europeAddress }: MapProps) => (
-  <>
+  <section className={styles.mapPositoiner}>
     <div className={styles.mapImageWrapper}>
       <img alt={'world map'} src={photos.worldMap} />
     </div>
@@ -27,5 +27,5 @@ export const Map = ({ usaAddress, europeAddress }: MapProps) => (
         </div>
       </div>
     </div>
-  </>
+  </section>
 );

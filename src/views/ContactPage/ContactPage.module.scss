@@ -2,7 +2,6 @@
 
 .imgBakground {
   @include splash;
-  @include flex(row, flex-start, space-between);
   padding: 90px 0;
   background-image: url('../../img/images/splashContact.jpg');
 
@@ -11,16 +10,13 @@
   }
 
   @include md-max {
-    padding: 50px 0;
+    padding: 70px 0;
   }
 
   .contactPage {
-    @include flex(column, center, center);
-    position: relative;
     background-color: var(--color-light);
     border-radius: 7px;
     flex-grow: 1;
-    height: auto;
 
     @include sm-max {
       padding: 20px 10px;

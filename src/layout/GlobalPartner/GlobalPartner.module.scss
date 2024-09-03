@@ -1,0 +1,16 @@
+@import '../../styles/mixins';
+
+.globalPartner {
+  text-align: left;
+  @include flex(column, stretch, center);
+  gap: 30px;
+
+  .headerWrap {
+    padding: 0 30px;
+    @include flex(column, flex-start, flex-start);
+
+    div:last-of-type {
+      padding: 20px 0;
+    }
+  }
+}

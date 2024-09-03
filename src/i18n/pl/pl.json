@@ -153,6 +153,8 @@
     "contact": {
       "splashHeader": "Połączmy się i współpracujmy",
       "splashHeading": "Prosimy o wiadomość",
+      "globalPartnerHeder": "Partnerzy Globalni",
+      "globalPArtnersParagraph": "Produkty i usługi AMERIqube są dystrybuowane na całym świecie. Aby uzyskać więcej informacji na temat sprzedaży w Twoim regionie, skontaktuj się z agentem wymienionym poniżej.",
       "usaAddress": {
         "line1": "ulica Wilsona 141",
         "line2": "Greensburg, PA 15601"
@@ -160,7 +162,75 @@
       "europeAddress": {
         "line1": "ul. Rakietowa 29E",
         "line2": "51-311 Wrocław, Polska"
-      }
+      },
+      "globalPartners": [
+        {
+          "country": "Stany Zjednoczone Ameryki ",
+          "companyName": "SMARTqube",
+          "contactName": "Grzegorz Górny",
+          "title": "Sales Director",
+          "phone": "(+48) 790 809 999",
+          "email": "info@smartqube.pl",
+          "website": "www.smartqube.com"
+        },
+        {
+          "country": "Polska / Unia Europejska",
+          "companyName": "SMARTqube",
+          "contactName": "Grzegorz Górny",
+          "title": "Sales Director",
+          "phone": "(+48) 790 809 999",
+          "email": "info@smartqube.pl",
+          "website": "www.smartqube.com"
+        },
+        {
+          "country": "Brazylia",
+          "companyName": "Grupo São Carlos",
+          "contactName": "Daniel Helfensteller",
+          "title": "Sales Director",
+          "phone": ["(+55 51) 3473 9425", "(+55 51) 8421 9787"],
+          "email": "daniel@gruposaocarlos.com.br",
+          "website": "https://gruposaocarlos.com.br"
+        },
+        {
+          "country": "Egipt",
+          "companyName": "PICO Energy",
+          "contactName": "Amr Abou El Ella",
+          "address": "Block 13, Kamaen Algeer, Old Sokhna Road, Kattameya, Cairo, Egypt",
+          "phone": "+20227593445 Ext 210",
+          "cell": "+201222230959",
+          "email": "Amr.AbouElElla@picoenergy.com",
+          "website": "https://www.picoenergy.com"
+        },
+        {
+          "country": "Arabia Saudyjska",
+          "companyName": "Diversified Lines Petroleum Services Co. (DLPS)",
+          "contactName": "Pervaiz I. Kashmiri",
+          "title": "General Manager",
+          "address": "Building No. 39, Anas Bin Malik Street, Doha District, Dhahran, Al-Khobar-31952, Kingdom of Saudi Arabia",
+          "phone": "+966 (13) 8617000 Ext. 1000",
+          "cell": "+966 (0) 500193678",
+          "fax": "+966 (13) 8611222",
+          "email": ["kashmiri@dlps.net", "sales@dlps.net"],
+          "website": "https://www.dlps.net"
+        },
+        {
+          "country": "Singapur",
+          "companyName": "Analytical Systems Engineering Pte Ltd (ASE)",
+          "address": "448 Tagore Industrial Avenue, Singapore 787819",
+          "phone": "(+65) 6484 3202",
+          "fax": "(+65) 6484 2276",
+          "email": "sales@ase.sg"
+        },
+        {
+          "country": "Tajlandia",
+          "companyName": "Megex Co., Ltd.",
+          "contactName": "Chanwit Koomchokpaisam",
+          "address": "21, 18 Soi Bangna-Trad 13 Yak 2, 4 Bangna, Bangna, Bangkok, Thailand 10260",
+          "mobile": "+668 1923 1008",
+          "email": "chanwit@megex.co.th",
+          "website": "www.megex.co.th"
+        }
+      ]
     }
   },
   "contactBanner": {
