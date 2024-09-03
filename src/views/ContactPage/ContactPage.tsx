@@ -21,7 +21,10 @@ export const ContactPage = () => {
       <div className={styles.imgBakground}>
         <Container>
           <div className={styles.contactPage}>
-            <Map />
+            <Map
+              usaAddress={contact.usaAddress}
+              europeAddress={contact.europeAddress}
+            />
           </div>
         </Container>
       </div>

@@ -1,11 +1,11 @@
 export interface ContactType {
   splashHeader: string;
   splashHeading: string;
-  usaAddress: Address;
-  europeAddress: Address;
+  usaAddress: AddressType;
+  europeAddress: AddressType;
 }
 
-export interface Address {
+export interface AddressType {
   line1: string;
   line2: string;
 }

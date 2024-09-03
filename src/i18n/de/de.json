@@ -150,6 +150,18 @@
         "subtitle": "UNSERE MISSION",
         "description": "Bei AmeriQube ist es unsere Mission, kontinuierlich nach Exzellenz im Bereich der Klimakontroll- und Gehäuselösungen weltweit zu streben. Als Muttergesellschaft von ICEqube und SMARTqube erben wir eine lange Tradition der Exzellenz, die Jahrzehnte der Innovation und Zuverlässigkeit umfasst. Wir verpflichten uns dazu, die Grenzen des Möglichen in kritischen Anwendungen zu verschieben, indem wir branchenführende Produkte und Dienstleistungen für verschiedene Industrien wie Telekommunikation, Öl und Gas sowie industrielle Automatisierung bereitstellen. Wir stehen als Symbol für Innovation und Beständigkeit. Unsere Mission umfasst auch, unseren Kunden unübertroffene Unterstützung und maßgeschneiderte Lösungen für ihre einzigartigen Bedürfnisse zu bieten. Wir erfüllen nicht nur Erwartungen, sondern übertreffen sie, indem wir optimale Leistung und Seelenfrieden für jedes Projekt sicherstellen. Schließen Sie sich uns an, um die Zukunft der Klimakontroll- und Gehäuselösungen zu gestalten. Gemeinsam bauen wir eine Welt, in der Exzellenz keine Grenzen kennt."
       }
+    },
+    "contact": {
+      "splashHeader": "Lassen Sie uns verbinden und zusammenarbeiten",
+      "splashHeading": "Bitte hinterlassen Sie eine Nachricht",
+      "usaAddress": {
+        "line1": "Wilson Avenue 141",
+        "line2": "Greensburg, PA 15601"
+      },
+      "europeAddress": {
+        "line1": "ul. Rakietowa 29E",
+        "line2": "51-311 Wrocław, Polen"
+      }
     }
   },
   "contactBanner": {
