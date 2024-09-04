@@ -1,2 +1,16 @@
 export { Navbar } from './Navbar/Navbar';
 export { Container } from './Container/Container';
+export { TextSplash } from './TextSplash/TextSplash';
+export { AboutUsSection } from './AboutUsSection/AboutUsSection';
+export { ContactBanner } from './ContactBanner/ContactBanner';
+export { OurMissionSection } from './OurMissionSection/OurMissionSection';
+export { SwiperSplash } from './SwiperSplash/SwiperSplash';
+export { AmeriQubeWelcome } from './AmeriQubeWelcome/AmeriQubeWelcome';
+export { BackgroundSquare } from './BackgroundSquare/BackgroundSquare';
+export { ColumnTextContent } from './ColumnTextContent/ColumnTextContent';
+export { ProductsSection } from './ProductsSection/ProductsSection';
+export { SwiperSplashHome } from './SwiperSplashHome/SwiperSplashHome';
+export { IcequbeProducts } from './IcequbeProducts/IcequbeProducts';
+export { Map } from './Map/Map';
+export { GlobalPartner } from './GlobalPartner/GlobalPartner';
+export { ContactForm } from './ContactForm/ContactForm';

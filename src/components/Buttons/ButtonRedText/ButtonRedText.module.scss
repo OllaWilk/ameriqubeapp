@@ -1,0 +1,21 @@
+@import '../../../styles//mixins';
+
+.buttonRed {
+  @include btn;
+  background-color: transparent;
+  color: var(--color-primary);
+  font-weight: bold;
+  padding: 0;
+
+  &:hover {
+    color: var(--color-secondary);
+  }
+
+  @include lg-max {
+    width: 100%;
+  }
+
+  @include md-max {
+    padding: 9px 9px;
+  }
+}

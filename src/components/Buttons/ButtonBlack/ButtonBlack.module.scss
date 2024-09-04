@@ -1,0 +1,23 @@
+@import '../../../styles//mixins';
+
+.buttonBlack {
+  @include btn;
+  background-color: var(--color-dark);
+  border: none;
+  color: var(--color-light);
+  font-size: 1rem;
+  transition: var(--transition);
+  padding: 7px 120px;
+
+  &:hover {
+    background-color: var(--color-grey-dark);
+  }
+
+  @include lg-max {
+    width: 100%;
+  }
+
+  @include md-max {
+    padding: 7px 9px;
+  }
+}

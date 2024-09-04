@@ -1,0 +1,10 @@
+.dropdownItem {
+  padding: 16px 25px;
+  cursor: pointer;
+  color: var(--color-light);
+  transition: var(--transition);
+
+  &:hover {
+    background-color: var(--color-primary);
+  }
+}

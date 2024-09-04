@@ -1,0 +1,13 @@
+@import '../../styles/mixins';
+
+.splash {
+  transition-delay: var(--deley);
+  background: var(--background-radial);
+  padding-top: 140px;
+  height: 500px;
+
+  .wrap {
+    @include flex(column, center, center);
+    height: 100%;
+  }
+}

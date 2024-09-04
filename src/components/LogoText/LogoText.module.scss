@@ -1,0 +1,32 @@
+@import '../../styles/mixins';
+
+.logoContainer {
+  @include flex(row, center, space-between);
+  flex: 1 1 50%;
+
+  @include lg-max {
+    flex: 1 1 80%;
+    justify-content: center;
+  }
+
+  @include md-max {
+    flex: 1 1 100%;
+  }
+
+  .logo {
+    max-width: 90%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+
+    @include lg-max {
+      max-width: 50%;
+      margin-bottom: 2rem;
+    }
+
+    @include md-max {
+      max-width: 100%;
+      margin-bottom: 0;
+    }
+  }
+}

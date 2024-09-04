@@ -1,15 +1,16 @@
 :root {
   /* Colors */
   --color-dark: #1a1a1a;
-  --color-grey-dark: #1d1d1d;
+  --color-grey-dark: #323131;
   --color-light: #fbfbfb;
   --color-primary: #e31e33;
-  --color-secondary: #0f3175;
+  --color-secondary: #112b69;
   --color-grey: #eceaea;
-  --color-danger: #d80027;
-  --background-color: #f5f5f5;
+  --color-danger: #a32020;
+  --background-color: #f0f0f0;
+  --color-cart: #f5f5f5;
 
-  --background-radial: radial-gradient(ellipse at right, #0f3175, #0f3175);
+  --background-radial: radial-gradient(circle at center, #0c3993, #031b4b);
 
   --background-linear: linear-gradient(#0d5401, #5dbb4e);
 

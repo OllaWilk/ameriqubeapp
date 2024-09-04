@@ -1,0 +1,15 @@
+@import '../../styles/mixins';
+
+.contactWrap {
+  @include flex(row, flex-start, flex-start);
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.contactWrapColumn {
+  flex-direction: column;
+}
+
+.contactName {
+  font-weight: bold;
+}

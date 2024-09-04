@@ -1,0 +1,53 @@
+@import '../../styles/mixins';
+
+.productSection {
+  @include splash;
+  @include flex(row, flex-start, space-between);
+  padding: 90px 0;
+  background-image: url('../../img/images/splash.jpg');
+
+  &::before {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+
+  @include sm-max {
+    min-height: 100svh;
+    height: auto;
+    padding: 70px 0;
+  }
+
+  .container {
+    @include flex(row, flex-start, center);
+    gap: 70px;
+
+    @include lg-max {
+      flex-wrap: wrap;
+      gap: 40px;
+    }
+
+    @include md-max {
+      flex-direction: column;
+    }
+  }
+
+  .productCart {
+    @include flex(column, center, center);
+    gap: 20px;
+    text-align: left;
+
+    .logo {
+      display: flex;
+      justify-content: center;
+
+      img {
+        max-width: 250px;
+        height: auto;
+        margin: 0;
+
+        @include sm-max {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,270 @@
+{
+  "welcome": "Willkommen auf unserer Webseite",
+  "login": "AmeriQube",
+  "navigation": {
+    "navLinks": [
+      { "label": "STARTSEITE", "path": "/" },
+      { "label": "ÜBER UNS", "path": "/about" },
+      { "label": "PRODUKTE & DIENSTLEISTUNGEN", "path": null },
+      { "label": "KONTAKT", "path": "/contact" }
+    ],
+    "productLinks": [
+      {
+        "label": "IceQube",
+        "path": "https://iceqube.com",
+        "logo": "/logos/AmeriQube_IceQube-White.png",
+        "description": "Ice Qube bietet eine breite Palette von hochwertigen Produkten für die Klimakontrolle an. das Angebot umfasst Klimaanlagen für die Zonen I und II, industrielle Klimaanlagen sowie spezialisierte Klimatisierungslösungen. IceQube-Klimaanlagen zeichnen sich durch außergewöhnliche Zuverlässigkeit aus. sie erfüllen hohe Industriestandards und gewährleisten präzise Temperatur- und Feuchtigkeitskontrolle in verschiedenen Arbeitsumgebungen."
+      },
+      {
+        "label": "SmartQube",
+        "path": "https://smartqube.com",
+        "logo": "/logos/AmeriQube_SmartQube-White.png",
+        "description": "SmartQube bietet ein umfassendes Angebot an Dienstleistungen, von der Wartung der Ausrüstung, Kalibrierung bis hin zur Fehlerbehebung. mit den Lösungen von IceQube entwerfen wir innovative Lösungen, die auf die wechselnden Bedürfnisse verschiedener Branchen zugeschnitten sind. zusätzlich erleichtert SmartQube als Distributor in Europa den problemlosen Zugang zu modernen Lösungen und ermöglicht es Unternehmen, sich in einer ständig verändernden Landschaft zu entwickeln."
+      }
+    ]
+  },
+  "regions": ["EU", "USA", "GB"],
+  "languages": ["pl", "en", "de"],
+  "cookies": {
+    "title": "COOKIE-RICHTLINIE",
+    "cookieInfoBaner": "Bei AmeriQube trifft Innovation auf Zuverlässigkeit im Bereich der Klimatisierungs- und Gehäuselösungen.",
+    "acceptButton": {
+      "text": "akzeptieren"
+    },
+    "asterixInfo": {
+      "url": "/cookies",
+      "text": "mehr über unsere Cookie-Richtlinie können Sie lesen hier"
+    }
+  },
+  "pages": {
+    "home": {
+      "swiper": [
+        {
+          "title": "Innovative Projektlösungen",
+          "intro": "Wir kombinieren Innovation und Technologie, um erstklassige Lösungen für Ihre Projekte zu liefern.",
+          "buttonRed": ["/contact", "Kontaktieren Sie uns"],
+          "buttonTransparent": ["/about", "Erfahren Sie mehr"]
+        },
+        {
+          "title": "Fortschrittliche Klimatisierung",
+          "intro": "Unsere Klimaanlagen bewähren sich auch in den härtesten Industrieumgebungen.",
+          "buttonRed": ["https://iceqube.com", "Entdecken Sie ICEqube"],
+          "buttonTransparent": [
+            "https://iceqube.com/technical/calculator",
+            "Projektkalkulator"
+          ]
+        },
+        {
+          "title": "Anpassbare Industriegehäuse",
+          "intro": "Vielseitige Gehäuse, die den einzigartigen Anforderungen des Telekommunikations- und Netzsektors gerecht werden.",
+          "buttonRed": ["https://iceqube.com", "Entdecken Sie ICEqube"]
+        },
+        {
+          "title": "Fachkundige Ingenieurunterstützung",
+          "intro": "Unsere Ingenieure bieten maßgeschneiderte Unterstützung vor Ort und aus der Ferne, angepasst an die Bedürfnisse Ihres Projekts.",
+          "buttonRed": ["https://smartqube.com", "Besuchen Sie SmartQube"],
+          "buttonTransparent": [
+            "https://smartqube.com/integration",
+            "Optimierte Lösungen"
+          ]
+        }
+      ],
+      "welcome": {
+        "sectionTitle": "willkommen bei",
+        "companyName": "AMERIqube",
+        "introParagraph": "Bei AmeriQube treffen Innovation und Zuverlässigkeit aufeinander im Bereich der Klimakontrolle und Gehäuselösungen. Als Muttergesellschaft von ICEqube und SMARTqube wahren wir ein Erbe der Exzellenz, das sich über Jahrzehnte erstreckt, indem wir moderne Produkte und Dienstleistungen für die Industrie weltweit liefern.",
+        "additionalParagraphs": [
+          "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum unde voluptatibus eveniet! Ipsam, numquam repellendus! Ut nam eum distinctio cupiditate, veritatis nesciunt. Beatae necessitatibus aspernatur magni excepturi provident praesentium repudiandae?",
+          "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio aperiam optio nam. Odit, nostrum? Quam, et earum iusto quaerat ad dolore praesentium cum suscipit corrupti nobis perspiciatis, velit optio cumque. Id sequi, illo perspiciatis quam, doloribus quasi animi, iste deserunt nisi ratione ipsum explicabo iusto sint illum quod saepe praesentium qui commodi doloremque eveniet harum distinctio! Blanditiis eaque unde porro."
+        ],
+        "button": {
+          "text": "Über uns",
+          "link": "/about"
+        }
+      },
+      "products": [
+        {
+          "logo": "icequbeLogo",
+          "title": "Kühlungslösungen",
+          "description": "Ice Qube liefert ein breites Sortiment an hochwertigen Klimakontrollprodukten. Das Angebot umfasst Klimaanlagen für Zonen I und II, industrielle Klimaanlagen und spezialisierte Klimatisierungslösungen. Die Klimaanlagen von ICEqube zeichnen sich durch außergewöhnliche Zuverlässigkeit aus. Sie erfüllen hohe Branchenanforderungen und bieten präzise Temperatur- und Feuchtigkeitskontrolle in verschiedenen Arbeitsumgebungen.",
+          "button": {
+            "text": "Mehr lesen",
+            "link": "/cooling-solutions"
+          }
+        },
+        {
+          "logo": "smartqubeLogo",
+          "title": "Wir werden die Zukunft gestalten",
+          "description": "SMARTqube bietet ein umfassendes Dienstleistungsspektrum, von der Gerätewartung über die Kalibrierung bis hin zur Fehlerbehebung. Mit den Lösungen von ICEqube entwerfen wir innovative Lösungen, die auf die sich ändernden Bedürfnisse verschiedener Branchen zugeschnitten sind. Darüber hinaus erleichtert SMARTqube als Distributor in Europa den nahtlosen Zugang zu modernsten Lösungen, damit Unternehmen in einer sich ständig verändernden Landschaft erfolgreich sein können.",
+          "button": {
+            "text": "Mehr lesen",
+            "link": "/design-future"
+          }
+        }
+      ],
+      "globalPartners": [
+        {
+          "country": "USA",
+          "companyName": "ICEqube",
+          "contactName": "Grzegorz Górny",
+          "title": "Sales Director",
+          "phone": "(+48) 790 809 999",
+          "email": "info@smartqube.pl",
+          "website": "https://www.iceqube.com"
+        },
+        {
+          "country": "Poland / European Union",
+          "companyName": "SMARTqube",
+          "contactName": "Grzegorz Górny",
+          "title": "Sales Director",
+          "phone": "(+48) 790 809 999",
+          "email": "info@smartqube.pl",
+          "website": "https://www.smartqube.com"
+        },
+        {
+          "country": "Brazil",
+          "companyName": "Grupo São Carlos",
+          "contactName": "Daniel Helfensteller",
+          "title": "Sales Director",
+          "phone": ["(+55 51) 3473 9425", "(+55 51) 8421 9787"],
+          "email": "daniel@gruposaocarlos.com.br",
+          "website": "https://gruposaocarlos.com.br"
+        },
+        {
+          "country": "Egypt",
+          "companyName": "PICO Energy",
+          "contactName": "Amr Abou El Ella",
+          "address": "Block 13, Kamaen Algeer, Old Sokhna Road, Kattameya, Cairo, Egypt",
+          "phone": "+20227593445 Ext 210",
+          "cell": "+201222230959",
+          "email": "Amr.AbouElElla@picoenergy.com",
+          "website": "https://www.picoenergy.com"
+        },
+        {
+          "country": "Saudi Arabia",
+          "companyName": "Diversified Lines Petroleum Services Co. (DLPS)",
+          "contactName": "Pervaiz I. Kashmiri",
+          "title": "General Manager",
+          "address": "Building No. 39, Anas Bin Malik Street, Doha District, Dhahran, Al-Khobar-31952, Kingdom of Saudi Arabia",
+          "phone": ["+966 (13) 8617000 Ext. 1000", "+966 (13) 8617000"],
+          "cell": "+966 (0) 500193678",
+          "fax": "+966 (13) 8611222",
+          "email": ["kashmiri@dlps.net", "sales@dlps.net"],
+          "website": "https://www.dlps.net"
+        },
+        {
+          "country": "Singapore",
+          "companyName": "Analytical Systems Engineering Pte Ltd (ASE)",
+          "address": "448 Tagore Industrial Avenue, Singapore 787819",
+          "phone": "(+65) 6484 3202",
+          "fax": "(+65) 6484 2276",
+          "email": "sales@ase.sg"
+        },
+        {
+          "country": "Thailand",
+          "companyName": "Megex Co., Ltd.",
+          "contactName": "Chanwit Koomchokpaisam",
+          "address": "21, 18 Soi Bangna-Trad 13 Yak 2, 4 Bangna, Bangna, Bangkok, Thailand 10260",
+          "phone": "+668 1923 1008",
+          "email": "chanwit@megex.co.th",
+          "website": "https://www.megex.co.th"
+        }
+      ]
+    },
+
+    "about": {
+      "title": "AmeriQube",
+      "intro": "Innovation, die die Zukunft verbindet",
+      "aboutSection": {
+        "header": "DE LOREM IPSUM",
+        "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam laudantium aspernatur cupiditate iusto nulla corporis odio quibusdam reprehenderit eaque, non, suscipit cumque tempore laborum vero libero ratione quisquam provident magnam.Reprehenderit, praesentium, illo aliquid, tempore natus quasi accusamus suscipit non atque molestiae doloribus? Sit officiis fugit quae nisi vero voluptas et fuga deserunt rerum repellendus. Corporis labore quas necessitatibus facilis. Harum ipsa at in. Ipsam nemo facilis eos quae omnis debitis, maiores, ipsa distinctio ducimus nobis veniam? Provident, reprehenderit fuga accusamus at, laudantium ipsum vero, nesciunt ea veniam odit vitae! Autem aut quas reiciendis amet facere, asperiores velit corporis iure expedita reprehenderit sed modi alias vero nesciunt quis ea! Facere dicta possimus quo minus ad porro alias hic nulla sunt."
+      },
+      "ourMissionSection": {
+        "header": "Exzellenz Fördern, Standards Definieren",
+        "subtitle": "UNSERE MISSION",
+        "description": "Bei AmeriQube ist es unsere Mission, kontinuierlich nach Exzellenz im Bereich der Klimakontroll- und Gehäuselösungen weltweit zu streben. Als Muttergesellschaft von ICEqube und SMARTqube erben wir eine lange Tradition der Exzellenz, die Jahrzehnte der Innovation und Zuverlässigkeit umfasst. Wir verpflichten uns dazu, die Grenzen des Möglichen in kritischen Anwendungen zu verschieben, indem wir branchenführende Produkte und Dienstleistungen für verschiedene Industrien wie Telekommunikation, Öl und Gas sowie industrielle Automatisierung bereitstellen. Wir stehen als Symbol für Innovation und Beständigkeit. Unsere Mission umfasst auch, unseren Kunden unübertroffene Unterstützung und maßgeschneiderte Lösungen für ihre einzigartigen Bedürfnisse zu bieten. Wir erfüllen nicht nur Erwartungen, sondern übertreffen sie, indem wir optimale Leistung und Seelenfrieden für jedes Projekt sicherstellen. Schließen Sie sich uns an, um die Zukunft der Klimakontroll- und Gehäuselösungen zu gestalten. Gemeinsam bauen wir eine Welt, in der Exzellenz keine Grenzen kennt."
+      }
+    },
+    "contact": {
+      "splashHeader": "Lassen Sie uns verbinden und zusammenarbeiten",
+      "splashHeading": "Bitte hinterlassen Sie eine Nachricht",
+      "mapTitle": "Besuchen Sie uns",
+      "globalPartnerHeder": "Globale Partner",
+      "globalPArtnersParagraph": "Produkte und Dienstleistungen von AMERIqube werden weltweit vertrieben. Um weitere Informationen zum Verkauf in Ihrer Region zu erhalten, wenden Sie sich bitte an den unten aufgeführten Ansprechpartner.",
+      "usaAddress": {
+        "line1": "Wilson Avenue 141",
+        "line2": "Greensburg, PA 15601"
+      },
+      "europeAddress": {
+        "line1": "ul. Rakietowa 29E",
+        "line2": "51-311 Wrocław, Polen"
+      },
+      "globalPartners": [
+        {
+          "country": "Poland / European Union",
+          "companyName": "SMARTqube",
+          "contactName": "Grzegorz Górny",
+          "title": "Sales Director",
+          "phone": "(+48) 790 809 999",
+          "email": "info@smartqube.pl",
+          "website": "www.smartqube.com"
+        },
+        {
+          "country": "Brazil",
+          "companyName": "Grupo São Carlos",
+          "contactName": "Daniel Helfensteller",
+          "title": "Sales Director",
+          "phone": ["(+55 51) 3473 9425", "(+55 51) 8421 9787"],
+          "email": "daniel@gruposaocarlos.com.br",
+          "website": "https://gruposaocarlos.com.br"
+        },
+        {
+          "country": "Egypt",
+          "companyName": "PICO Energy",
+          "contactName": "Amr Abou El Ella",
+          "address": "Block 13, Kamaen Algeer, Old Sokhna Road, Kattameya, Cairo, Egypt",
+          "phone": "+20227593445 Ext 210",
+          "cell": "+201222230959",
+          "email": "Amr.AbouElElla@picoenergy.com",
+          "website": "https://www.picoenergy.com"
+        },
+        {
+          "country": "Saudi Arabia",
+          "companyName": "Diversified Lines Petroleum Services Co. (DLPS)",
+          "contactName": "Pervaiz I. Kashmiri",
+          "title": "General Manager",
+          "address": "Building No. 39, Anas Bin Malik Street, Doha District, Dhahran, Al-Khobar-31952, Kingdom of Saudi Arabia",
+          "phone": "+966 (13) 8617000 Ext. 1000",
+          "cell": "+966 (0) 500193678",
+          "fax": "+966 (13) 8611222",
+          "email": ["kashmiri@dlps.net", "sales@dlps.net"],
+          "website": "https://www.dlps.net"
+        },
+        {
+          "country": "Singapore",
+          "companyName": "Analytical Systems Engineering Pte Ltd (ASE)",
+          "address": "448 Tagore Industrial Avenue, Singapore 787819",
+          "phone": "(+65) 6484 3202",
+          "fax": "(+65) 6484 2276",
+          "email": "sales@ase.sg"
+        },
+        {
+          "country": "Thailand",
+          "companyName": "Megex Co., Ltd.",
+          "contactName": "Chanwit Koomchokpaisam",
+          "address": "21, 18 Soi Bangna-Trad 13 Yak 2, 4 Bangna, Bangna, Bangkok, Thailand 10260",
+          "mobile": "+668 1923 1008",
+          "email": "chanwit@megex.co.th",
+          "website": "www.megex.co.th"
+        }
+      ]
+    }
+  },
+  "contactBanner": {
+    "title": "Zögern Sie nicht, uns jederzeit zu kontaktieren.",
+    "subtitle": "Haben Sie Fragen ?",
+    "button": "KONTAKTIEREN SIE UNS",
+    "to": "contact"
+  },
+  "notFound": "Die von Ihnen gesuchte Seite scheint verschoben, gelöscht worden zu sein oder existiert nicht. Wir entschuldigen uns für die Unannehmlichkeiten."
+}

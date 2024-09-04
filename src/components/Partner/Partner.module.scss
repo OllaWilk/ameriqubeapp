@@ -1,0 +1,89 @@
+@import '../../styles/mixins';
+
+.titles {
+  text-transform: none;
+  padding: 0 30px;
+}
+
+.distributorInfo {
+  @include flex(row, flex-start, flex-start);
+  margin: 0 auto;
+  padding: 30px;
+  gap: 30px;
+  background-color: white;
+  border-radius: 7px;
+
+  @media (max-width: 865px) {
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    gap: 20px;
+  }
+
+  @include md-max {
+    padding: 0;
+  }
+
+  .map {
+    width: 350px;
+    height: auto;
+    border-radius: 7px 7px;
+
+    @media (max-width: 865px) {
+      width: 350px;
+    }
+
+    @include sm-max {
+      width: 100%;
+    }
+
+    img {
+      border-radius: 7px;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .details {
+    min-width: 450px;
+    width: 450px;
+    @include flex(column, flex-start, flex-start);
+
+    @media (max-width: 865px) {
+      width: calc(100% - 60px);
+      border-radius: 7px 7px;
+      padding: 20px;
+      @include flex(column, center, center);
+      gap: 20px;
+    }
+
+    @include sm-max {
+      min-width: 100%;
+    }
+
+    .partnerName {
+      font-size: 1.3rem;
+      text-transform: none;
+      padding: 10px 0;
+    }
+
+    .contactNameWrap {
+      padding: 20px 0;
+    }
+  }
+}
+
+.ornament {
+  width: calc(100% - 60px);
+  margin: 20px auto;
+  height: 1px;
+
+  @include sm-max {
+    width: 100%;
+  }
+
+  &:last-of-type {
+    display: none;
+  }
+}
