@@ -102,38 +102,72 @@
           }
         }
       ],
-      "productsCarousel": [
+      "globalPartners": [
         {
-          "title": "Klimaanlagen",
-          "description": "Leistungsstarke Klimaanlagen, die für anspruchsvolle industrielle Umgebungen entwickelt wurden.",
-          "button": {
-            "text": "Mehr erfahren",
-            "link": "https://iceqube.com/products/air-conditioners"
-          }
+          "country": "USA",
+          "companyName": "ICEqube",
+          "contactName": "Grzegorz Górny",
+          "title": "Sales Director",
+          "phone": "(+48) 790 809 999",
+          "email": "info@smartqube.pl",
+          "website": "https://www.iceqube.com"
         },
         {
-          "title": "Gehäuse",
-          "description": "Robuste und anpassbare Gehäuse, die für verschiedene industrielle Anwendungen geeignet sind.",
-          "button": {
-            "text": "Mehr erfahren",
-            "link": "https://iceqube.com/products/enclosures"
-          }
+          "country": "Poland / European Union",
+          "companyName": "SMARTqube",
+          "contactName": "Grzegorz Górny",
+          "title": "Sales Director",
+          "phone": "(+48) 790 809 999",
+          "email": "info@smartqube.pl",
+          "website": "https://www.smartqube.com"
         },
         {
-          "title": "Wärmetauscher",
-          "description": "Effiziente Wärmetauscher, die eine zuverlässige Temperaturkontrolle bieten.",
-          "button": {
-            "text": "Mehr erfahren",
-            "link": "https://iceqube.com/products/heat-exchangers"
-          }
+          "country": "Brazil",
+          "companyName": "Grupo São Carlos",
+          "contactName": "Daniel Helfensteller",
+          "title": "Sales Director",
+          "phone": ["(+55 51) 3473 9425", "(+55 51) 8421 9787"],
+          "email": "daniel@gruposaocarlos.com.br",
+          "website": "https://gruposaocarlos.com.br"
         },
         {
-          "title": "Filter und Zubehör",
-          "description": "Eine breite Palette an Filtern und Zubehör zur Ergänzung Ihrer Klimakontrolllösungen.",
-          "button": {
-            "text": "Mehr erfahren",
-            "link": "https://iceqube.com/products/filters-accessories"
-          }
+          "country": "Egypt",
+          "companyName": "PICO Energy",
+          "contactName": "Amr Abou El Ella",
+          "address": "Block 13, Kamaen Algeer, Old Sokhna Road, Kattameya, Cairo, Egypt",
+          "phone": "+20227593445 Ext 210",
+          "cell": "+201222230959",
+          "email": "Amr.AbouElElla@picoenergy.com",
+          "website": "https://www.picoenergy.com"
+        },
+        {
+          "country": "Saudi Arabia",
+          "companyName": "Diversified Lines Petroleum Services Co. (DLPS)",
+          "contactName": "Pervaiz I. Kashmiri",
+          "title": "General Manager",
+          "address": "Building No. 39, Anas Bin Malik Street, Doha District, Dhahran, Al-Khobar-31952, Kingdom of Saudi Arabia",
+          "phone": ["+966 (13) 8617000 Ext. 1000", "+966 (13) 8617000"],
+          "cell": "+966 (0) 500193678",
+          "fax": "+966 (13) 8611222",
+          "email": ["kashmiri@dlps.net", "sales@dlps.net"],
+          "website": "https://www.dlps.net"
+        },
+        {
+          "country": "Singapore",
+          "companyName": "Analytical Systems Engineering Pte Ltd (ASE)",
+          "address": "448 Tagore Industrial Avenue, Singapore 787819",
+          "phone": "(+65) 6484 3202",
+          "fax": "(+65) 6484 2276",
+          "email": "sales@ase.sg"
+        },
+        {
+          "country": "Thailand",
+          "companyName": "Megex Co., Ltd.",
+          "contactName": "Chanwit Koomchokpaisam",
+          "address": "21, 18 Soi Bangna-Trad 13 Yak 2, 4 Bangna, Bangna, Bangkok, Thailand 10260",
+          "phone": "+668 1923 1008",
+          "email": "chanwit@megex.co.th",
+          "website": "https://www.megex.co.th"
         }
       ]
     },

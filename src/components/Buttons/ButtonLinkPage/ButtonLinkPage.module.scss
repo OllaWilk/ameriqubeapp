@@ -1,0 +1,11 @@
+@import '../../../styles/mixins';
+
+.contactName {
+  font-weight: bold;
+}
+
+.contactWrap {
+  @include flex(row, flex-start, flex-start);
+  flex-wrap: wrap;
+  gap: 8px;
+}

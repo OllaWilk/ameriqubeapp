@@ -3,7 +3,9 @@
 .globalPartner {
   text-align: left;
   @include flex(column, stretch, center);
-  gap: 30px;
+  gap: 20px;
+  padding: 20px 0 20px 0;
+  background-color: var(--color-cart);
 
   .headerWrap {
     padding: 0 30px;
