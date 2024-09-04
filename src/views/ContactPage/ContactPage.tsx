@@ -2,6 +2,7 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Container, GlobalPartner, Map, TextSplash } from '../../layout';
 import { ContactType } from '../../types/contactPage-Types';
+import { LineOrnament, SectionHeader } from '../../components';
 import styles from './ContactPage.module.scss';
 
 export const ContactPage = () => {
@@ -21,6 +22,8 @@ export const ContactPage = () => {
       <div className={styles.imgBakground}>
         <Container>
           <div className={styles.contactPage}>
+            <SectionHeader text={contact.mapTitle} className={styles.header} />
+            <LineOrnament className={styles.ornament} />
             <Map
               usaAddress={contact.usaAddress}
               europeAddress={contact.europeAddress}
