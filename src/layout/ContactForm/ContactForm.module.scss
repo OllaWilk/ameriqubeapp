@@ -1,0 +1,74 @@
+@import '../../styles/mixins';
+
+.background {
+  padding: 60px 0;
+  background: var(--background-line);
+  text-align: left;
+  color: var(--color-light);
+
+  .contactForm {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    margin: 50px 0;
+
+    .inputsWrap,
+    .textareaWrap {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .textareaWrap textarea {
+      flex-grow: 1;
+      height: 100%;
+    }
+
+    .checkboxesWrap,
+    .buttonSubmit {
+      grid-column: span 2;
+      width: 100%;
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      padding: 10px;
+      font-size: 14px;
+      border-radius: 5px;
+      border: 1px solid var(--color-light);
+    }
+
+    .inputContent,
+    .checkboxContent {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+
+    .checkboxContent {
+      @include flex(column, flex-start, flex-start);
+
+      input {
+        width: auto;
+        padding: 15px;
+      }
+
+      label {
+        font-size: 14px;
+        font-weight: 600;
+        margin: 10px;
+      }
+    }
+  }
+}
+
+.errorMessage {
+  margin: 20px 0px 0px 0;
+}
+
+.inputError {
+  padding: 10px 10px 5px 10px;
+  background-color: rgba(4, 4, 4, 0.3);
+  border-radius: 7px;
+}

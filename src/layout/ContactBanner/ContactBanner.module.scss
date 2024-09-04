@@ -1,7 +1,7 @@
 @import '../../styles/mixins';
 
 .banner {
-  background-color: var(--color-secondary);
+  background: var(--color-secondary);
   padding: 50px 0;
   @include flex(column, center, center);
   color: var(--color-light);

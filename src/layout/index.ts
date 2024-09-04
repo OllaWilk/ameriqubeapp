@@ -13,3 +13,4 @@ export { SwiperSplashHome } from './SwiperSplashHome/SwiperSplashHome';
 export { IcequbeProducts } from './IcequbeProducts/IcequbeProducts';
 export { Map } from './Map/Map';
 export { GlobalPartner } from './GlobalPartner/GlobalPartner';
+export { ContactForm } from './ContactForm/ContactForm';

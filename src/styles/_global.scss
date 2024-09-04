@@ -47,3 +47,16 @@ button {
 .hamburger-react {
   z-index: 999;
 }
+
+.react-tel-input * {
+  color: var(--color-dark);
+}
+
+.react-tel-input {
+  display: flex;
+  input {
+    display: block;
+    width: 80%;
+    margin-left: 50px;
+  }
+}

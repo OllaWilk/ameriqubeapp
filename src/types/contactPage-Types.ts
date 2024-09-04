@@ -24,3 +24,15 @@ export interface GlobalPartnerType {
   email: string | string[];
   website?: string;
 }
+
+export type FormDataType = {
+  name: string;
+  phoneNumber: string;
+  companyName: string;
+  jobPosition?: string;
+  email: string;
+  message: string;
+  over18: boolean;
+  agreeProcessing1: boolean;
+  agreeProcessing2: boolean;
+};
