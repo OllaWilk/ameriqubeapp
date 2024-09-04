@@ -6,15 +6,21 @@ interface Props {
   text: string;
   onClick?: () => void;
   to?: string;
+  type?: 'submit' | 'reset' | 'button' | undefined;
+  className?: string;
 }
 
-const ButtonBlack: FC<Props> = ({ text, onClick, to }) => {
+const ButtonBlack: FC<Props> = ({ text, onClick, to, type, className }) => {
   return to ? (
     <Link to={to} className={styles.buttonBlack}>
       {text}
     </Link>
   ) : (
-    <button className={styles.buttonBlack} onClick={onClick}>
+    <button
+      className={`${styles.buttonBlack} ${className}`}
+      onClick={onClick}
+      type={type}
+    >
       {text}
     </button>
   );
