@@ -1,4 +1,5 @@
 export { Card } from './Card/Card';
+export { ContactDetail } from './ContactDetail/ContactDetail';
 export { Logo } from './Logo/Logo';
 export { LogoText } from './LogoText/LogoText';
 export { LineOrnament } from './LineOrnament/LineOrnament';

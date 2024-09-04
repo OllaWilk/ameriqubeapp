@@ -2,9 +2,10 @@ import React from 'react';
 import { GlobalPartnerType } from '../../types/contactPage-Types';
 import { partnersLogo } from '../../img/partnersLogo';
 import { countryImages } from '../../img/maps';
-import styles from './Partner.module.scss';
 import { LineOrnament } from '../LineOrnament/LineOrnament';
-import { Paragraph, Subtitle } from '../Typography';
+import { Subtitle } from '../Typography';
+import { ContactDetail } from '../ContactDetail/ContactDetail';
+import styles from './Partner.module.scss';
 
 interface Props {
   partner: GlobalPartnerType;
@@ -27,69 +28,19 @@ export const Partner = ({ partner }: Props) => {
         </div>
         <div className={styles.details}>
           <Subtitle text={partner.companyName} className={styles.partnerName} />
-          <div className={styles.logo}>
-            <img
-              src={partnersLogo[logoKey]}
-              alt={`${partner.companyName} Logo`}
-            />
-          </div>
+          <img
+            src={partnersLogo[logoKey]}
+            alt={`${partner.companyName} Logo`}
+          />
           <div className={styles.contact}>
-            <div className={styles.contactNameWrap}>
-              <p className={styles.contactName}>{partner.contactName}</p>
-              {partner.title && <Paragraph text={partner.title} />}
-            </div>
-            {partner.address && (
-              <div className={styles.contactWrapColumn}>
-                <div className={styles.contactWrap}>
-                  <p>{partner.address}</p>
-                </div>
-              </div>
-            )}
-            {Array.isArray(partner.phone) ? (
-              <div className={styles.contactWrapColumn}>
-                <div className={styles.contactWrap}>
-                  <p className={styles.contactName}>Tel/fax: </p>
-                  <span>{partner.phone[0]}</span>
-                </div>
-                <div className={styles.contactWrap}>
-                  <p className={styles.contactName}>Tel/fax: </p>
-                  <span>{partner.phone[1]}</span>
-                </div>
-              </div>
-            ) : (
-              <div className={styles.contactWrap}>
-                <p className={styles.contactName}>Tel/fax: </p>
-                <span>{partner.phone}</span>
-              </div>
-            )}
-            {partner.cell && (
-              <div className={styles.contactWrap}>
-                <p className={styles.contactName}>Cel: </p>
-                <span>{partner.cell}</span>
-              </div>
-            )}
-            {partner.fax && (
-              <div className={styles.contactWrap}>
-                <p className={styles.contactName}>Fax: </p>
-                <span>{partner.fax}</span>
-              </div>
-            )}
-            <div className={styles.contactWrap}>
-              <p className={styles.contactName}>Email: </p>
-              <p>{partner.email}</p>
-            </div>
-            {partner.website && (
-              <div className={styles.contactWrap}>
-                <p className={styles.contactName}>Website: </p>
-                <a
-                  href={partner.website}
-                  target='_blank'
-                  rel='noopener noreferrer'
-                >
-                  {partner.website}
-                </a>
-              </div>
-            )}
+            <ContactDetail label={partner.contactName} />
+            <ContactDetail label='Position' value={partner.title} />
+            <ContactDetail label='Address' value={partner.address} />
+            <ContactDetail label='Tel/fax' value={partner.phone} />
+            <ContactDetail label='Cel' value={partner.cell} />
+            <ContactDetail label='Fax' value={partner.fax} />
+            <ContactDetail label='Email' value={partner.email} />
+            <ContactDetail label='Website' value={partner.website} isLink />
           </div>
         </div>
       </div>

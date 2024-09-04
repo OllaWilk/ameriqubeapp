@@ -165,25 +165,25 @@
       },
       "globalPartners": [
         {
-          "country": "Stany Zjednoczone Ameryki ",
+          "country": "USA",
+          "companyName": "ICEqube",
+          "contactName": "Grzegorz Górny",
+          "title": "Sales Director",
+          "phone": "(+48) 790 809 999",
+          "email": "info@smartqube.pl",
+          "website": "https://www.iceqube.com"
+        },
+        {
+          "country": "Poland / European Union",
           "companyName": "SMARTqube",
           "contactName": "Grzegorz Górny",
           "title": "Sales Director",
           "phone": "(+48) 790 809 999",
           "email": "info@smartqube.pl",
-          "website": "www.smartqube.com"
+          "website": "https://www.smartqube.com"
         },
         {
-          "country": "Polska / Unia Europejska",
-          "companyName": "SMARTqube",
-          "contactName": "Grzegorz Górny",
-          "title": "Sales Director",
-          "phone": "(+48) 790 809 999",
-          "email": "info@smartqube.pl",
-          "website": "www.smartqube.com"
-        },
-        {
-          "country": "Brazylia",
+          "country": "Brazil",
           "companyName": "Grupo São Carlos",
           "contactName": "Daniel Helfensteller",
           "title": "Sales Director",
@@ -192,7 +192,7 @@
           "website": "https://gruposaocarlos.com.br"
         },
         {
-          "country": "Egipt",
+          "country": "Egypt",
           "companyName": "PICO Energy",
           "contactName": "Amr Abou El Ella",
           "address": "Block 13, Kamaen Algeer, Old Sokhna Road, Kattameya, Cairo, Egypt",
@@ -202,19 +202,19 @@
           "website": "https://www.picoenergy.com"
         },
         {
-          "country": "Arabia Saudyjska",
+          "country": "Saudi Arabia",
           "companyName": "Diversified Lines Petroleum Services Co. (DLPS)",
           "contactName": "Pervaiz I. Kashmiri",
           "title": "General Manager",
           "address": "Building No. 39, Anas Bin Malik Street, Doha District, Dhahran, Al-Khobar-31952, Kingdom of Saudi Arabia",
-          "phone": "+966 (13) 8617000 Ext. 1000",
+          "phone": ["+966 (13) 8617000 Ext. 1000", "+966 (13) 8617000"],
           "cell": "+966 (0) 500193678",
           "fax": "+966 (13) 8611222",
           "email": ["kashmiri@dlps.net", "sales@dlps.net"],
           "website": "https://www.dlps.net"
         },
         {
-          "country": "Singapur",
+          "country": "Singapore",
           "companyName": "Analytical Systems Engineering Pte Ltd (ASE)",
           "address": "448 Tagore Industrial Avenue, Singapore 787819",
           "phone": "(+65) 6484 3202",
@@ -222,13 +222,13 @@
           "email": "sales@ase.sg"
         },
         {
-          "country": "Tajlandia",
+          "country": "Thailand",
           "companyName": "Megex Co., Ltd.",
           "contactName": "Chanwit Koomchokpaisam",
           "address": "21, 18 Soi Bangna-Trad 13 Yak 2, 4 Bangna, Bangna, Bangkok, Thailand 10260",
-          "mobile": "+668 1923 1008",
+          "phone": "+668 1923 1008",
           "email": "chanwit@megex.co.th",
-          "website": "www.megex.co.th"
+          "website": "https://www.megex.co.th"
         }
       ]
     }
