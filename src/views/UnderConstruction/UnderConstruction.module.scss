@@ -1,0 +1,28 @@
+@import '../../styles/mixins';
+
+.main {
+  @include flex(column, center, center);
+  background-color: var(--color-light);
+  transition: var(--transition);
+  transition-delay: --var(--deley);
+  padding: 100px 0;
+  min-height: 50vh;
+  max-height: 100vh;
+
+  .img {
+    width: 300px;
+    margin-bottom: 20px;
+  }
+
+  .title {
+    font-size: 24px;
+    color: #333333;
+    margin-bottom: 10px;
+  }
+
+  .subtitle {
+    font-size: 18px;
+    color: #333333;
+    margin-bottom: 30px;
+  }
+}

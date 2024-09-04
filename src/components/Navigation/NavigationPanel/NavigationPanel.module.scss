@@ -1,0 +1,38 @@
+@import '../../../styles/mixins';
+
+.navigationList {
+  width: 100%;
+  @include flex(row, center, flex-end);
+  position: relative;
+  font-family: var(--text);
+  flex-wrap: wrap;
+
+  .link,
+  .dropLink {
+    transition: var(--transition);
+    cursor: pointer;
+    text-transform: uppercase;
+    display: flex;
+    color: var(--color-light);
+
+    &:hover {
+      background-color: var(--color-primary);
+      color: var(--color-light);
+    }
+  }
+
+  .dropLink p {
+    padding: 16px 25px;
+
+    &.activeDropdown {
+      background-color: var(--color-grey-dark);
+      &:hover {
+        background-color: var(--color-grey-dark);
+      }
+    }
+  }
+
+  .link {
+    padding: 0;
+  }
+}

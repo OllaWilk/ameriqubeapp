@@ -1,0 +1,44 @@
+@import '../../styles/mixins';
+
+.imgBakground {
+  @include splash;
+  padding: 90px 0;
+  background-image: url('../../img/images/splashContact.jpg');
+
+  &::before {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  @include md-max {
+    padding: 70px 0;
+  }
+
+  .contactPage {
+    background-color: var(--color-light);
+    border-radius: 7px;
+    flex-grow: 1;
+
+    @include sm-max {
+      padding: 20px 10px;
+    }
+
+    .header {
+      padding: 30px 0 0 30px;
+      text-align: left;
+    }
+
+    .ornament {
+      margin: 0 0 0 30px;
+    }
+  }
+}
+
+.text {
+  @extend .text;
+  color: var(--color-light);
+  padding-bottom: 27px;
+
+  @include sm-max {
+    padding-bottom: 0;
+  }
+}

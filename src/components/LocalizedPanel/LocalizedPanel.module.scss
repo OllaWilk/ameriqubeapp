@@ -1,0 +1,8 @@
+@import '../../styles/mixins';
+
+.panel {
+  @include flex(row, center, flex-end);
+  font-family: var(--text);
+  transition: var(--transition);
+  z-index: 1200;
+}

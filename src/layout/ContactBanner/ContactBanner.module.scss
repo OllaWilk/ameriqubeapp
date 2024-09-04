@@ -1,0 +1,36 @@
+@import '../../styles/mixins';
+
+.banner {
+  background: var(--color-secondary);
+  padding: 50px 0;
+  @include flex(column, center, center);
+  color: var(--color-light);
+  min-height: 40vh;
+
+  @include md-max {
+    padding: 20px;
+  }
+
+  .textContainer {
+    @include flex(column, flex-start, space-between);
+
+    @include lg-max {
+      align-items: center;
+    }
+
+    .subtitle {
+      font-size: 1.5rem;
+      margin-bottom: 40px;
+      font-weight: bold;
+    }
+
+    .title {
+      font-weight: normal;
+      margin-bottom: 20px;
+    }
+  }
+
+  .buttonContainer {
+    @include flex(column, flex-end, space-between);
+  }
+}

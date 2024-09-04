@@ -1,0 +1,24 @@
+@import '../../../styles/mixins';
+
+.subtitle {
+  font-family: var(--header);
+  color: var(--color-dark);
+  font-weight: 900;
+  font-size: 1.5rem;
+  line-height: 29px;
+  text-transform: uppercase;
+
+  @include lg-max {
+    text-align: center;
+  }
+
+  @include md-max {
+    font-size: 1.2rem;
+    line-height: 24px;
+  }
+
+  @include sm-max {
+    font-size: 1rem;
+    line-height: 21px;
+  }
+}

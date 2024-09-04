@@ -1,0 +1,30 @@
+@import '../../styles/mixins';
+
+.videoContainer {
+  @include flex(row, center, center);
+  flex: 1 1 50%;
+
+  @include lg-max {
+    flex: 1 1 80%;
+  }
+
+  @include md-max {
+    flex: 1 1 100%;
+  }
+
+  .video {
+    max-width: 70%;
+    height: auto;
+
+    @include lg-max {
+      max-width: 50%;
+      margin-bottom: 2rem;
+    }
+
+    @include md-max {
+      max-width: 100%;
+      margin-bottom: 0;
+      object-fit: cover;
+    }
+  }
+}

@@ -1,0 +1,11 @@
+.link {
+  display: flex;
+  color: var(--color-light);
+  padding: 16px 25px;
+  transition: var(--transition);
+}
+
+.linkActive {
+  color: var(--color-primary);
+  font-weight: bold;
+}

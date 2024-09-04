@@ -1,34 +1,41 @@
-import React from 'react';
-import styled from 'styled-components';
-
-import { useTranslation } from 'react-i18next';
+import React, { useState, useEffect } from 'react';
+import { Container } from '../index';
+import {
+  NavigationPanel,
+  Logo,
+  LocalizedPanel,
+  SideNavigation,
+} from '../../components/index';
 import styles from './Navbar.module.scss';
 
-const Navbar = () => {
-  const { i18n } = useTranslation();
+export const Navbar = () => {
+  const [isScrolled, setIsScrolled] = useState(false);
 
-  const handleLanguageChange = (lng: string) => {
-    i18n.changeLanguage(lng);
-  };
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
 
-  interface ButtonProps {
-    color: string;
-  }
-
-  const ColorButton = styled.button<ButtonProps>`
-  background-color: ${({ color }: ButtonProps) => color};
-`;
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   return (
-    <nav className={styles.buttonWrap}>
-      <ColorButton color='#1E3A8A' onClick={() => handleLanguageChange('en')}>
-        English
-      </ColorButton>
-      <ColorButton color='#E31C34' onClick={() => handleLanguageChange('pl')}>
-        Polski
-      </ColorButton>
-    </nav>
+    <header className={`${styles.navbar} ${isScrolled ? styles.scrolled : ''}`}>
+      <Container className={styles.container}>
+        <Logo className={styles.logoLeft} />
+        <nav className={styles.navigation}>
+          <NavigationPanel className={styles.navigationPanel} />
+          <LocalizedPanel className={styles.display} />
+          <SideNavigation className={styles.sideNavigation} />
+        </nav>
+      </Container>
+    </header>
   );
 };
-
-export { Navbar };

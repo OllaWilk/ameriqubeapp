@@ -1,0 +1,244 @@
+{
+  "welcome": "Witamy na naszej stronie",
+  "login": "AmeriQube",
+  "navigation": {
+    "navLinks": [
+      { "label": "HOME", "path": "/" },
+      { "label": "O NAS", "path": "/about" },
+      { "label": "PRODUKTY & USŁUGI", "path": null },
+      { "label": "KONTAKT", "path": "/contact" }
+    ],
+    "productLinks": [
+      {
+        "label": "IceQube",
+        "path": "https://iceqube.com",
+        "logo": "/logos/AmeriQube_IceQube-White.png",
+        "description": "Ice Qube dostarcza szeroką gamę wysokiej jakości produktów do kontroli klimatu. oferta obejmuje klimatyzatory dla stref I i II, przemysłowe klimatyzatory oraz specjalistyczne rozwiązania klimatyzacyjne. klimatyzatory IceQube charakteryzują się wyjątkową niezawodnością. spełniają wysokie wymagania przemysłowe i zapewniają precyzyjną kontrolę temperatury i wilgotności w różnych środowiskach pracy."
+      },
+      {
+        "label": "SmartQube",
+        "path": "https://smartqube.com",
+        "logo": "/logos/AmeriQube_SmartQube-White.png",
+        "description": "SmartQube oferuje kompleksowy zakres usług, od konserwacji sprzętu, kalibracji, po rozwiązywanie problemów. korzystając z rozwiązań IceQube, projektujemy innowacyjne rozwiązania dostosowane do zmieniających się potrzeb różnych branż. dodatkowo, jako dystrybutor w Europie, SmartQube ułatwia bezproblemowy dostęp do nowoczesnych rozwiązań, umożliwiając firmom rozwój w ciągle zmieniającym się środowisku."
+      }
+    ]
+  },
+  "regions": ["EU", "USA", "GB"],
+  "languages": ["pl", "en", "de"],
+  "cookies": {
+    "title": "POLITYKA COOKIE",
+    "cookieInfoBaner": "Szanowni Państwo, w ramach naszego serwisu stosujemy pliki cookies. Korzystanie z witryny bez zmiany ustawień dotyczących cookies oznacza, że będą one zamieszczane w Państwa urządzeniu końcowym. Jeśli nie wyrażają Państwo zgody, uprzejmie prosimy o dokonanie stosownych zmian w ustawieniach przeglądarki internetowej z tym, że może to wpłynąć na dostępność niektórych funkcjonalności.",
+    "acceptButton": {
+      "text": "zgadzam się"
+    },
+    "asterixInfo": {
+      "url": "/cookies",
+      "text": "więcej o naszej polityce cookies przeczytasz tutaj"
+    }
+  },
+  "pages": {
+    "home": {
+      "swiper": [
+        {
+          "title": "Innowacyjne Rozwiązania Projektowe",
+          "intro": "Łączymy innowacje i technologię, aby dostarczać najlepsze rozwiązania dla Twoich projektów.",
+          "buttonRed": ["/contact", "Skontaktuj się"],
+          "buttonTransparent": ["/about", "Dowiedz się więcej"]
+        },
+        {
+          "title": "Zaawansowana Klimatyzacja",
+          "intro": "Nasze klimatyzatory sprawdzają się nawet w najtrudniejszych warunkach przemysłowych.",
+          "buttonRed": ["https://iceqube.com", "Odkryj ICEqube"],
+          "buttonTransparent": [
+            "https://iceqube.com/technical/calculator",
+            "Kalkulator Projektu"
+          ]
+        },
+        {
+          "title": "Dostosowywane Obudowy Przemysłowe",
+          "intro": "Wszechstronne obudowy zaprojektowane, aby sprostać unikalnym wymaganiom sektora telekomunikacyjnego i sieciowego.",
+          "buttonRed": ["https://iceqube.com", "Poznaj ICEqube"]
+        },
+        {
+          "title": "Wsparcie Techniczne Ekspertów",
+          "intro": "Nasi inżynierowie zapewniają wsparcie na miejscu i zdalnie, dostosowane do potrzeb Twojego projektu.",
+          "buttonRed": ["https://smartqube.com", "Odwiedź SmartQube"],
+          "buttonTransparent": [
+            "https://smartqube.com/integration",
+            "Szczegółowe Rozwiązania"
+          ]
+        }
+      ],
+      "welcome": {
+        "sectionTitle": "witaj w",
+        "companyName": "AMERIqube",
+        "introParagraph": "W AmeriQube innowacja spotyka się z niezawodnością w dziedzinie kontroli klimatu i rozwiązań obudów. Jako firma macierzysta ICEqube i SMARTqube podtrzymujemy dziedzictwo doskonałości, które trwa od dziesięcioleci, dostarczając nowoczesne produkty i usługi dla przemysłu na całym świecie.",
+        "additionalParagraphs": [
+          "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum unde voluptatibus eveniet! Ipsam, numquam repellendus! Ut nam eum distinctio cupiditate, veritatis nesciunt. Beatae necessitatibus aspernatur magni excepturi provident praesentium repudiandae?",
+          "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio aperiam optio nam. Odit, nostrum? Quam, et earum iusto quaerat ad dolore praesentium cum suscipit corrupti nobis perspiciatis, velit optio cumque. Id sequi, illo perspiciatis quam, doloribus quasi animi, iste deserunt nisi ratione ipsum explicabo iusto sint illum quod saepe praesentium qui commodi doloremque eveniet harum distinctio! Blanditiis eaque unde porro."
+        ],
+        "button": {
+          "text": "O nas",
+          "link": "/about"
+        }
+      },
+      "products": [
+        {
+          "logo": "icequbeLogo",
+          "title": "Rozwiązania chłodnicze",
+          "description": "Ice Qube dostarcza szeroką gamę wysokiej jakości produktów do kontroli klimatu. Oferta obejmuje klimatyzatory do stref I i II, przemysłowe klimatyzatory oraz specjalistyczne rozwiązania klimatyzacyjne. Klimatyzatory ICEqube charakteryzują się wyjątkową niezawodnością. Spełniają wysokie wymagania przemysłu i zapewniają precyzyjną kontrolę temperatury i wilgotności w różnych środowiskach pracy.",
+          "button": {
+            "text": "Czytaj więcej",
+            "link": "/cooling-solutions"
+          }
+        },
+        {
+          "logo": "smartqubeLogo",
+          "title": "Zaprojektujemy przyszłość",
+          "description": "SMARTqube oferuje kompleksową gamę usług, od konserwacji sprzętu, kalibracji po rozwiązywanie problemów. Korzystając z rozwiązań ICEqube, projektujemy innowacyjne rozwiązania dostosowane do zmieniających się potrzeb różnych branż. Dodatkowo, jako dystrybutor w Europie, SMARTqube umożliwia łatwy dostęp do najnowocześniejszych rozwiązań, umożliwiając firmom rozwój w stale zmieniającym się otoczeniu.",
+          "button": {
+            "text": "Czytaj więcej",
+            "link": "/design-future"
+          }
+        }
+      ],
+      "productsCarousel": [
+        {
+          "title": "Klimatyzatory",
+          "description": "Wydajne klimatyzatory zaprojektowane do wymagających środowisk przemysłowych.",
+          "button": {
+            "text": "Dowiedz się więcej",
+            "link": "https://iceqube.com/products/air-conditioners"
+          }
+        },
+        {
+          "title": "Obudowy",
+          "description": "Trwałe i dostosowywalne obudowy odpowiednie do różnych zastosowań przemysłowych.",
+          "button": {
+            "text": "Dowiedz się więcej",
+            "link": "https://iceqube.com/products/enclosures"
+          }
+        },
+        {
+          "title": "Wymienniki Ciepła",
+          "description": "Efektywne wymienniki ciepła zapewniające niezawodną kontrolę temperatury.",
+          "button": {
+            "text": "Dowiedz się więcej",
+            "link": "https://iceqube.com/products/heat-exchangers"
+          }
+        },
+        {
+          "title": "Filtry i Akcesoria",
+          "description": "Szeroka gama filtrów i akcesoriów uzupełniających rozwiązania do kontroli klimatu.",
+          "button": {
+            "text": "Dowiedz się więcej",
+            "link": "https://iceqube.com/products/filters-accessories"
+          }
+        }
+      ]
+    },
+    "about": {
+      "title": "AmeriQube",
+      "intro": "Innowacja, która łączy przyszłość",
+      "aboutSection": {
+        "header": "PL LOREM IPSUM",
+        "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam laudantium aspernatur cupiditate iusto nulla corporis odio quibusdam reprehenderit eaque, non, suscipit cumque tempore laborum vero libero ratione quisquam provident magnam.Reprehenderit, praesentium, illo aliquid, tempore natus quasi accusamus suscipit non atque molestiae doloribus? Sit officiis fugit quae nisi vero voluptas et fuga deserunt rerum repellendus. Corporis labore quas necessitatibus facilis. Harum ipsa at in. Ipsam nemo facilis eos quae omnis debitis, maiores, ipsa distinctio ducimus nobis veniam? Provident, reprehenderit fuga accusamus at, laudantium ipsum vero, nesciunt ea veniam odit vitae! Autem aut quas reiciendis amet facere, asperiores velit corporis iure expedita reprehenderit sed modi alias vero nesciunt quis ea! Facere dicta possimus quo minus ad porro alias hic nulla sunt."
+      },
+      "ourMissionSection": {
+        "header": "Wspieranie Doskonałości, Definiowanie Standardów",
+        "subtitle": "NASZA MISJA",
+        "description": "W AmeriQube naszą misją jest nieustanne dążenie do doskonałości w dziedzinie kontroli klimatu i rozwiązań obudowy na całym świecie. Jako spółka macierzysta ICEqube i SMARTqube, dziedziczymy długą tradycję doskonałości, która obejmuje dziesięciolecia innowacji i niezawodności. Zobowiązujemy się do przesuwania granic możliwości w krytycznych zastosowaniach, dostarczając najnowocześniejsze produkty i usługi dla różnorodnych branż takich jak telekomunikacja, przemysł naftowy i gazowy oraz automatyka przemysłowa. Stoimy jako symbol innowacji i niezłomności. Nasza misja obejmuje również zapewnienie naszym klientom niezrównanej pomocy i rozwiązań dostosowanych do ich unikalnych potrzeb. Nie tylko spełniamy oczekiwania, ale je przekraczamy, zapewniając optymalną wydajność i spokój ducha dla każdego projektu. Dołącz do nas w kształtowaniu przyszłości kontroli klimatu i rozwiązań obudowy. Razem budujemy świat, w którym doskonałość nie zna granic."
+      }
+    },
+    "contact": {
+      "splashHeader": "Połączmy się i współpracujmy",
+      "splashHeading": "Prosimy o wiadomość",
+      "globalPartnerHeder": "Partnerzy Globalni",
+      "globalPArtnersParagraph": "Produkty i usługi AMERIqube są dystrybuowane na całym świecie. Aby uzyskać więcej informacji na temat sprzedaży w Twoim regionie, skontaktuj się z agentem wymienionym poniżej.",
+      "mapTitle": "Odwiedź nas",
+      "usaAddress": {
+        "line1": "ulica Wilsona 141",
+        "line2": "Greensburg, PA 15601"
+      },
+      "europeAddress": {
+        "line1": "ul. Rakietowa 29E",
+        "line2": "51-311 Wrocław, Polska"
+      },
+      "globalPartners": [
+        {
+          "country": "USA",
+          "companyName": "ICEqube",
+          "contactName": "Grzegorz Górny",
+          "title": "Sales Director",
+          "phone": "(+48) 790 809 999",
+          "email": "info@smartqube.pl",
+          "website": "https://www.iceqube.com"
+        },
+        {
+          "country": "Poland / European Union",
+          "companyName": "SMARTqube",
+          "contactName": "Grzegorz Górny",
+          "title": "Sales Director",
+          "phone": "(+48) 790 809 999",
+          "email": "info@smartqube.pl",
+          "website": "https://www.smartqube.com"
+        },
+        {
+          "country": "Brazil",
+          "companyName": "Grupo São Carlos",
+          "contactName": "Daniel Helfensteller",
+          "title": "Sales Director",
+          "phone": ["(+55 51) 3473 9425", "(+55 51) 8421 9787"],
+          "email": "daniel@gruposaocarlos.com.br",
+          "website": "https://gruposaocarlos.com.br"
+        },
+        {
+          "country": "Egypt",
+          "companyName": "PICO Energy",
+          "contactName": "Amr Abou El Ella",
+          "address": "Block 13, Kamaen Algeer, Old Sokhna Road, Kattameya, Cairo, Egypt",
+          "phone": "+20227593445 Ext 210",
+          "cell": "+201222230959",
+          "email": "Amr.AbouElElla@picoenergy.com",
+          "website": "https://www.picoenergy.com"
+        },
+        {
+          "country": "Saudi Arabia",
+          "companyName": "Diversified Lines Petroleum Services Co. (DLPS)",
+          "contactName": "Pervaiz I. Kashmiri",
+          "title": "General Manager",
+          "address": "Building No. 39, Anas Bin Malik Street, Doha District, Dhahran, Al-Khobar-31952, Kingdom of Saudi Arabia",
+          "phone": ["+966 (13) 8617000 Ext. 1000", "+966 (13) 8617000"],
+          "cell": "+966 (0) 500193678",
+          "fax": "+966 (13) 8611222",
+          "email": ["kashmiri@dlps.net", "sales@dlps.net"],
+          "website": "https://www.dlps.net"
+        },
+        {
+          "country": "Singapore",
+          "companyName": "Analytical Systems Engineering Pte Ltd (ASE)",
+          "address": "448 Tagore Industrial Avenue, Singapore 787819",
+          "phone": "(+65) 6484 3202",
+          "fax": "(+65) 6484 2276",
+          "email": "sales@ase.sg"
+        },
+        {
+          "country": "Thailand",
+          "companyName": "Megex Co., Ltd.",
+          "contactName": "Chanwit Koomchokpaisam",
+          "address": "21, 18 Soi Bangna-Trad 13 Yak 2, 4 Bangna, Bangna, Bangkok, Thailand 10260",
+          "phone": "+668 1923 1008",
+          "email": "chanwit@megex.co.th",
+          "website": "https://www.megex.co.th"
+        }
+      ]
+    }
+  },
+  "contactBanner": {
+    "title": "Nie wahaj się skontaktować z nami w dowolnym czasie.",
+    "subtitle": "Masz jakieś pytania ?",
+    "button": "SKONTAKTUJ SIĘ Z NAMI",
+    "to": "contact"
+  },
+  "notFound": "Strona, której szukasz, najwyraźniej została przeniesiona, usunięta lub nie istnieje. Przepraszamy za niedogodności."
+}

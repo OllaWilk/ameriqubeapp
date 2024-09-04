@@ -1,0 +1,244 @@
+{
+  "welcome": "Welcome to our site",
+  "login": "AmeriQube",
+  "navigation": {
+    "navLinks": [
+      { "label": "HOME", "path": "/" },
+      { "label": "ABOUT", "path": "/about" },
+      { "label": "PRODUCTS & SERVICES", "path": null },
+      { "label": "CONTACT", "path": "/contact" }
+    ],
+    "productLinks": [
+      {
+        "label": "IceQube",
+        "path": "https://iceqube.com",
+        "logo": "/logos/AmeriQube_IceQube-White.png",
+        "description": "Ice qube supplies a wide range of high quality climate control products. The offer includes air conditioners for zones I and II, industrial air conditioners and specialized air conditioning solutions. Iceqube air conditioners are characterized by exceptional reliability. They meet high industry requirements and provide precise temperature and humidity control in various work environments."
+      },
+      {
+        "label": "SmartQube",
+        "path": "https://smartqube.com",
+        "logo": "/logos/AmeriQube_SmartQube-White.png",
+        "description": "Smartqube offers a comprehensive range of services, from equipment maintenance, calibration, and troubleshooting. Using iceqube solutions, we design innovative solutions tailored to the changing needs of various industries. Additionally, as a distributor in Europe, Smartqube facilitates seamless access to cutting-edge solutions, enabling businesses to thrive in an ever-changing landscape."
+      }
+    ]
+  },
+  "regions": ["EU", "USA", "GB"],
+  "languages": ["pl", "en", "de"],
+  "cookies": {
+    "title": "COOKIE POLICY",
+    "cookieInfoBaner": "Dear Users, as part of our service, we use cookies. Using the website without changing the settings for cookies means that they will be placed on your end device. If you do not agree, please kindly make the appropriate changes in your web browser settings, though this may affect the availability of some functionalities.",
+    "acceptButton": {
+      "text": "accept"
+    },
+    "asterixInfo": {
+      "url": "/cookies",
+      "text": "more about our cookie policy can be read here"
+    }
+  },
+  "pages": {
+    "home": {
+      "swiper": [
+        {
+          "title": "Innovative Project Solutions",
+          "intro": "We blend innovation and technology to deliver top-tier solutions for your projects.",
+          "buttonRed": ["/contact", "contact us"],
+          "buttonTransparent": ["/about", "read more"]
+        },
+        {
+          "title": "Advanced Air Conditioning",
+          "intro": "Versatile enclosures designed to meet the unique demands of the telecom and network sectors.",
+          "buttonRed": ["https://iceqube.com", "Explore ICEqube"],
+          "buttonTransparent": [
+            "https://iceqube.com/technical/calculator",
+            "Project Calculator"
+          ]
+        },
+        {
+          "title": "Customizable Industrial Enclosures",
+          "intro": "Iceqube offers a wide range of industrial wall-mounted and free-standing enclosures, as well as modular enclosures with dual and single access for the telecommunications and network market.",
+          "buttonRed": ["https://iceqube.com", "Discover ICEqube"]
+        },
+        {
+          "title": "Expert Engineering Support",
+          "intro": "Our engineers provide on-site and remote support tailored to your project’s needs.",
+          "buttonRed": ["https://smartqube.com", "visit smartqube"],
+          "buttonTransparent": [
+            "https://smartqube.com/integration",
+            "Streamlined Solutions"
+          ]
+        }
+      ],
+      "welcome": {
+        "sectionTitle": "welcome to",
+        "companyName": "AMERIqube",
+        "introParagraph": "At AmeriQube, innovation meets reliability in the realm of climate control and enclosure solutions. As the parent company to ICEqube and SMARTqube, we uphold a legacy of excellence that spans decades, delivering cutting-edge products and services to industries around the globe.",
+        "additionalParagraphs": [
+          "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum unde voluptatibus eveniet! Ipsam, numquam repellendus! Ut nam eum distinctio cupiditate, veritatis nesciunt. Beatae necessitatibus aspernatur magni excepturi provident praesentium repudiandae?",
+          "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio aperiam optio nam. Odit, nostrum? Quam, et earum iusto quaerat ad dolore praesentium cum suscipit corrupti nobis perspiciatis, velit optio cumque.Id sequi, illo perspiciatis quam, doloribus quasi animi, iste deserunt nisi ratione ipsum explicabo iusto sint illum quod saepe praesentium qui commodi doloremque eveniet harum distinctio! Blanditiis eaque unde porro."
+        ],
+        "button": {
+          "text": "About us",
+          "link": "/about"
+        }
+      },
+      "products": [
+        {
+          "logo": "icequbeLogo",
+          "title": "Cooling Solutions",
+          "description": "ICEqube supplies a wide range of high-quality climate control products. The offer includes air conditioners for zones I and II, industrial air conditioners, and specialized air conditioning solutions. ICEqube air conditioners are characterized by exceptional reliability. They meet high industry requirements and provide precise temperature and humidity control in various work environments.",
+          "button": {
+            "text": "Read More",
+            "link": "https://iceqube.com"
+          }
+        },
+        {
+          "logo": "smartqubeLogo",
+          "title": "We Will Design the Future",
+          "description": "SMARTqube offers a comprehensive range of services, from equipment maintenance, calibration, and troubleshooting. Using ICEqube solutions, we design innovative solutions tailored to the changing needs of various industries. Additionally, as a distributor in Europe, SMARTqube facilitates seamless access to cutting-edge solutions, enabling businesses to thrive in an ever-changing landscape.",
+          "button": {
+            "text": "Read More",
+            "link": "https://smartqube.com"
+          }
+        }
+      ],
+      "productsCarousel": [
+        {
+          "title": "Air Conditioners",
+          "description": "High-performance air conditioners designed for demanding industrial environments.",
+          "button": {
+            "text": "Learn More",
+            "link": "https://iceqube.com/products/air-conditioners"
+          }
+        },
+        {
+          "title": "Enclosures",
+          "description": "Durable and customizable enclosures suitable for various industrial applications.",
+          "button": {
+            "text": "Learn More",
+            "link": "https://iceqube.com/products/enclosures"
+          }
+        },
+        {
+          "title": "Heat Exchangers",
+          "description": "Efficient heat exchangers providing reliable temperature control.",
+          "button": {
+            "text": "Learn More",
+            "link": "https://iceqube.com/products/heat-exchangers"
+          }
+        },
+        {
+          "title": "Filters & Accessories",
+          "description": "Wide range of filters and accessories to complement your climate control solutions.",
+          "button": {
+            "text": "Learn More",
+            "link": "https://iceqube.com/products/filters-accessories"
+          }
+        }
+      ]
+    },
+    "about": {
+      "title": "AmeriQube",
+      "intro": "Innovation that connects the future",
+      "aboutSection": {
+        "header": "Lorem ipsum",
+        "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam laudantium aspernatur cupiditate iusto nulla corporis odio quibusdam reprehenderit eaque, non, suscipit cumque tempore laborum vero libero ratione quisquam provident magnam.Reprehenderit, praesentium, illo aliquid, tempore natus quasi accusamus suscipit non atque molestiae doloribus? Sit officiis fugit quae nisi vero voluptas et fuga deserunt rerum repellendus. Corporis labore quas necessitatibus facilis. Harum ipsa at in. Ipsam nemo facilis eos quae omnis debitis, maiores, ipsa distinctio ducimus nobis veniam? Provident, reprehenderit fuga accusamus at, laudantium ipsum vero, nesciunt ea veniam odit vitae! Autem aut quas reiciendis amet facere, asperiores velit corporis iure expedita reprehenderit sed modi alias vero nesciunt quis ea! Facere dicta possimus quo minus ad porro alias hic nulla sunt."
+      },
+      "ourMissionSection": {
+        "header": "Empowering excellence, defining standards",
+        "subtitle": "OUR MISSION",
+        "description": "At AmeriQube, our mission is to continuously strive for excellence in the field of climate control and enclosure solutions worldwide. As the parent company to ICEqube and SMARTqube, we inherit a long tradition of excellence spanning decades of innovation and reliability. We commit to pushing the boundaries of what's possible in critical applications, providing cutting-edge products and services to diverse industries such as telecommunications, oil and gas, and industrial automation. We stand as a symbol of innovation and steadfastness. Our mission also includes providing our customers with unparalleled assistance and solutions tailored to their unique needs. We not only meet expectations but exceed them, ensuring optimal performance and peace of mind for every project. Join us in shaping the future of climate control and enclosure solutions. Together, we're building a world where excellence knows no limits."
+      }
+    },
+    "contact": {
+      "splashHeader": "Let's Connect and Collaborate",
+      "splashHeading": "Please Drop a Message",
+      "mapTitle": "Visit us",
+      "globalPartnerHeder": "Global Partners",
+      "globalPArtnersParagraph": "AMERIqube products and services are distributed worldwide. For more information regarding sales in your geographical area, contact an agent listed below.",
+      "usaAddress": {
+        "line1": "141 Wilson Avenue",
+        "line2": "Greensburg, PA 15601"
+      },
+      "europeAddress": {
+        "line1": "ul. Rakietowa 29E",
+        "line2": "51-311 Wrocław, Poland"
+      },
+      "globalPartners": [
+        {
+          "country": "USA",
+          "companyName": "ICEqube",
+          "contactName": "Grzegorz Górny",
+          "title": "Sales Director",
+          "phone": "(+48) 790 809 999",
+          "email": "info@smartqube.pl",
+          "website": "https://www.iceqube.com"
+        },
+        {
+          "country": "Poland / European Union",
+          "companyName": "SMARTqube",
+          "contactName": "Grzegorz Górny",
+          "title": "Sales Director",
+          "phone": "(+48) 790 809 999",
+          "email": "info@smartqube.pl",
+          "website": "https://www.smartqube.com"
+        },
+        {
+          "country": "Brazil",
+          "companyName": "Grupo São Carlos",
+          "contactName": "Daniel Helfensteller",
+          "title": "Sales Director",
+          "phone": ["(+55 51) 3473 9425", "(+55 51) 8421 9787"],
+          "email": "daniel@gruposaocarlos.com.br",
+          "website": "https://gruposaocarlos.com.br"
+        },
+        {
+          "country": "Egypt",
+          "companyName": "PICO Energy",
+          "contactName": "Amr Abou El Ella",
+          "address": "Block 13, Kamaen Algeer, Old Sokhna Road, Kattameya, Cairo, Egypt",
+          "phone": "+20227593445 Ext 210",
+          "cell": "+201222230959",
+          "email": "Amr.AbouElElla@picoenergy.com",
+          "website": "https://www.picoenergy.com"
+        },
+        {
+          "country": "Saudi Arabia",
+          "companyName": "Diversified Lines Petroleum Services Co. (DLPS)",
+          "contactName": "Pervaiz I. Kashmiri",
+          "title": "General Manager",
+          "address": "Building No. 39, Anas Bin Malik Street, Doha District, Dhahran, Al-Khobar-31952, Kingdom of Saudi Arabia",
+          "phone": ["+966 (13) 8617000 Ext. 1000", "+966 (13) 8617000"],
+          "cell": "+966 (0) 500193678",
+          "fax": "+966 (13) 8611222",
+          "email": ["kashmiri@dlps.net", "sales@dlps.net"],
+          "website": "https://www.dlps.net"
+        },
+        {
+          "country": "Singapore",
+          "companyName": "Analytical Systems Engineering Pte Ltd (ASE)",
+          "address": "448 Tagore Industrial Avenue, Singapore 787819",
+          "phone": "(+65) 6484 3202",
+          "fax": "(+65) 6484 2276",
+          "email": "sales@ase.sg"
+        },
+        {
+          "country": "Thailand",
+          "companyName": "Megex Co., Ltd.",
+          "contactName": "Chanwit Koomchokpaisam",
+          "address": "21, 18 Soi Bangna-Trad 13 Yak 2, 4 Bangna, Bangna, Bangkok, Thailand 10260",
+          "phone": "+668 1923 1008",
+          "email": "chanwit@megex.co.th",
+          "website": "https://www.megex.co.th"
+        }
+      ]
+    }
+  },
+  "contactBanner": {
+    "title": "Don't hesitate to contact us any time.",
+    "subtitle": "Have any questions ?",
+    "button": "contact us",
+    "to": "contact"
+  },
+  "notFound": "The page you're looking for appears to have been moved, deleted, or doesn't exist. We apologize for the inconveniences."
+}

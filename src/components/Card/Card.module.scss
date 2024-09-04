@@ -1,0 +1,15 @@
+.card {
+  flex: 1;
+  background-color: var(--color-light);
+  padding: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+
+  .description {
+    line-height: 1.6;
+    margin: 20px 0;
+    text-align: justify;
+    margin-bottom: 40px;
+    min-height: 200px;
+  }
+}
