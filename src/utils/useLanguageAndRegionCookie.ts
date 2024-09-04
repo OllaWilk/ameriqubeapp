@@ -44,6 +44,7 @@ export const useLanguageAndRegionCookie = () => {
     [cookiesAccepted]
   );
 
+  console.log(region);
   const acceptCookies = useCallback(() => {
     setCookiesAccepted(true);
     Cookies.set(ACCEPTED_COOKIES, 'true', { expires: 365 }); // save cookie acceptance for 1 year
