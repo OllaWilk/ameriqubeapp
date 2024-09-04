@@ -231,7 +231,35 @@
           "email": "chanwit@megex.co.th",
           "website": "https://www.megex.co.th"
         }
-      ]
+      ],
+      "contactForm": {
+        "title": "Nie wahaj się skontaktować z nami w dowolnym momencie.",
+        "submitSuccess": "Formularz został pomyślnie wysłany!",
+        "namePlaceholder": "Wpisz swoje imię i nazwisko *",
+        "phonePlaceholder": "Wpisz swój numer telefonu *",
+        "companyNamePlaceholder": "Wpisz nazwę swojej firmy *",
+        "jobPositionPlaceholder": "Wpisz swoje stanowisko *",
+        "emailPlaceholder": "Wpisz swój email *",
+        "messagePlaceholder": "Wpisz swoją wiadomość",
+        "over18Label": "Oświadczam, że mam ukończone 18 lat *",
+        "agreeProcessing1Label": "Wyrażam zgodę na przetwarzanie moich danych osobowych przez AMERIqube w celach związanych z usługami",
+        "agreeProcessing2Label": "Wyrażam zgodę na przetwarzanie moich danych osobowych zgodnie z RODO",
+        "privacyLinkText": "Pełna informacja o przetwarzaniu danych osobowych znajduje się tutaj.",
+        "submitButton": "Wyślij",
+        "requiredFieldsInfo": "Prosimy o uwagę: Wszystkie pola oznaczone gwiazdką (*) są obowiązkowe",
+        "validation": {
+          "nameRequired": "Imię jest wymagane",
+          "phoneNumberRequired": "Numer telefonu jest wymagany",
+          "companyNameRequired": "Nazwa firmy jest wymagana",
+          "jobPositionRequired": "Stanowisko jest wymagane",
+          "emailRequired": "Email jest wymagany",
+          "invalidEmail": "Nieprawidłowy adres email",
+          "messageRequired": "Wiadomość jest wymagana",
+          "over18Required": "Musisz mieć ukończone 18 lat",
+          "agreeProcessing1Required": "Musisz wyrazić zgodę na przetwarzanie danych",
+          "agreeProcessing2Required": "Musisz wyrazić zgodę na przetwarzanie danych zgodnie z RODO"
+        }
+      }
     }
   },
   "contactBanner": {

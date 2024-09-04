@@ -2,8 +2,6 @@
 
 .background {
   padding: 60px 0;
-  // background: var(--background-line);
-  // background: var(--background-dark);
   background-color: var(--color-secondary);
   text-align: left;
   color: var(--color-light);
@@ -13,6 +11,16 @@
     grid-template-columns: 1fr 1fr;
     gap: 50px;
     margin: 50px 0;
+
+    @media (max-width: 865px) {
+      gap: 20px;
+    }
+
+    @include md-max {
+      @include flex(column, stretch, center);
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
 
     .inputsWrap,
     .textareaWrap {
@@ -30,10 +38,6 @@
     .buttonSubmit {
       grid-column: span 2;
       width: 100%;
-    }
-
-    .buttonSubmit {
-      // background-color: var(--color-secondary);
     }
 
     input,
@@ -55,6 +59,10 @@
     .checkboxContent {
       @include flex(column, flex-start, flex-start);
 
+      margin: 0 0 20px 0;
+      @include md-max {
+      }
+
       input {
         width: auto;
         padding: 15px;
@@ -74,7 +82,22 @@
 }
 
 .inputError {
-  padding: 10px 10px 5px 10px;
+  padding: 10px 0px 5px 0px;
   background-color: rgba(4, 4, 4, 0.3);
   border-radius: 7px;
+  display: flex;
+  align-items: center;
+}
+
+.info {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.link {
+  color: var(--color-light);
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+  grid-column: span 2;
 }
