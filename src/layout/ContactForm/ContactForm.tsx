@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import React from 'react';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import { useTranslation } from 'react-i18next';
 import PhoneInput from 'react-phone-input-2';
@@ -13,6 +13,7 @@ import {
   ContactFormValidation,
   FormDataType,
 } from '../../types/contactPage-Types';
+import { useRegion } from '../../context/RegionContext';
 
 const initialValues = {
   name: '',
@@ -26,8 +27,9 @@ const initialValues = {
   agreeProcessing2: false,
 };
 
-export const ContactForm: FC = () => {
+export const ContactForm = () => {
   const { t } = useTranslation();
+  const { region } = useRegion();
 
   const validation: ContactFormValidation = t(
     'pages.contact.contactForm.validation',
@@ -39,8 +41,6 @@ export const ContactForm: FC = () => {
   const formContent: ContactFormType = t('pages.contact.contactForm', {
     returnObjects: true,
   });
-
-  console.log(formContent);
 
   const validationSchema = Yup.object({
     name: Yup.string().required(`${validation.nameRequired}`),
@@ -100,7 +100,7 @@ export const ContactForm: FC = () => {
                 >
                   <ErrorMessage name='phoneNumber' component='div' />
                   <PhoneInput
-                    country={'us'}
+                    country={region === 'USA' ? 'us' : 'pl'}
                     value={initialValues.phoneNumber}
                     inputProps={{
                       placeholder: `${formContent.phonePlaceholder}`,
