@@ -19,8 +19,6 @@ export const GlobalPartner = () => {
     returnObjects: true,
   });
 
-  console.log(partners);
-
   return (
     <section className={styles.globalPartner}>
       <div className={styles.headerWrap}>

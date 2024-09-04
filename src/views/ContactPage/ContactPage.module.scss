@@ -21,6 +21,15 @@
     @include sm-max {
       padding: 20px 10px;
     }
+
+    .header {
+      padding: 30px 0 0 30px;
+      text-align: left;
+    }
+
+    .ornament {
+      margin: 0 0 0 30px;
+    }
   }
 }
 
