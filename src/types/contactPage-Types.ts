@@ -9,6 +9,7 @@ export interface ContactType {
   usaAddress: AddressType;
   europeAddress: AddressType;
   globalPartners: GlobalPartnerType[];
+  mapTitle: string;
 }
 
 export interface GlobalPartnerType {
