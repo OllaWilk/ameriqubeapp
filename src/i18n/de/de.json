@@ -101,74 +101,6 @@
             "link": "/design-future"
           }
         }
-      ],
-      "globalPartners": [
-        {
-          "country": "USA",
-          "companyName": "ICEqube",
-          "contactName": "Grzegorz Górny",
-          "title": "Sales Director",
-          "phone": "(+48) 790 809 999",
-          "email": "info@smartqube.pl",
-          "website": "https://www.iceqube.com"
-        },
-        {
-          "country": "Poland / European Union",
-          "companyName": "SMARTqube",
-          "contactName": "Grzegorz Górny",
-          "title": "Sales Director",
-          "phone": "(+48) 790 809 999",
-          "email": "info@smartqube.pl",
-          "website": "https://www.smartqube.com"
-        },
-        {
-          "country": "Brazil",
-          "companyName": "Grupo São Carlos",
-          "contactName": "Daniel Helfensteller",
-          "title": "Sales Director",
-          "phone": ["(+55 51) 3473 9425", "(+55 51) 8421 9787"],
-          "email": "daniel@gruposaocarlos.com.br",
-          "website": "https://gruposaocarlos.com.br"
-        },
-        {
-          "country": "Egypt",
-          "companyName": "PICO Energy",
-          "contactName": "Amr Abou El Ella",
-          "address": "Block 13, Kamaen Algeer, Old Sokhna Road, Kattameya, Cairo, Egypt",
-          "phone": "+20227593445 Ext 210",
-          "cell": "+201222230959",
-          "email": "Amr.AbouElElla@picoenergy.com",
-          "website": "https://www.picoenergy.com"
-        },
-        {
-          "country": "Saudi Arabia",
-          "companyName": "Diversified Lines Petroleum Services Co. (DLPS)",
-          "contactName": "Pervaiz I. Kashmiri",
-          "title": "General Manager",
-          "address": "Building No. 39, Anas Bin Malik Street, Doha District, Dhahran, Al-Khobar-31952, Kingdom of Saudi Arabia",
-          "phone": ["+966 (13) 8617000 Ext. 1000", "+966 (13) 8617000"],
-          "cell": "+966 (0) 500193678",
-          "fax": "+966 (13) 8611222",
-          "email": ["kashmiri@dlps.net", "sales@dlps.net"],
-          "website": "https://www.dlps.net"
-        },
-        {
-          "country": "Singapore",
-          "companyName": "Analytical Systems Engineering Pte Ltd (ASE)",
-          "address": "448 Tagore Industrial Avenue, Singapore 787819",
-          "phone": "(+65) 6484 3202",
-          "fax": "(+65) 6484 2276",
-          "email": "sales@ase.sg"
-        },
-        {
-          "country": "Thailand",
-          "companyName": "Megex Co., Ltd.",
-          "contactName": "Chanwit Koomchokpaisam",
-          "address": "21, 18 Soi Bangna-Trad 13 Yak 2, 4 Bangna, Bangna, Bangkok, Thailand 10260",
-          "phone": "+668 1923 1008",
-          "email": "chanwit@megex.co.th",
-          "website": "https://www.megex.co.th"
-        }
       ]
     },
 
@@ -257,7 +189,35 @@
           "email": "chanwit@megex.co.th",
           "website": "www.megex.co.th"
         }
-      ]
+      ],
+      "contactForm": {
+        "title": "Zögern Sie nicht, uns jederzeit zu kontaktieren.",
+        "submitSuccess": "Formular erfolgreich abgeschickt!",
+        "namePlaceholder": "Geben Sie Ihren vollständigen Namen ein *",
+        "phonePlaceholder": "Geben Sie Ihre Telefonnummer ein *",
+        "companyNamePlaceholder": "Geben Sie den Namen Ihres Unternehmens ein *",
+        "jobPositionPlaceholder": "Geben Sie Ihre Position ein *",
+        "emailPlaceholder": "Geben Sie Ihre E-Mail-Adresse ein *",
+        "messagePlaceholder": "Geben Sie Ihre Nachricht ein",
+        "over18Label": "Ich erkläre, dass ich über 18 Jahre alt bin *",
+        "agreeProcessing1Label": "Ich stimme der Verarbeitung meiner personenbezogenen Daten durch AMERIqube für dienstleistungsbezogene Zwecke zu",
+        "agreeProcessing2Label": "Ich stimme der Verarbeitung meiner personenbezogenen Daten gemäß der DSGVO zu",
+        "privacyLinkText": "Vollständige Informationen zur Verarbeitung personenbezogener Daten finden Sie hier.",
+        "submitButton": "Absenden",
+        "requiredFieldsInfo": "Bitte beachten Sie: Alle mit einem Stern (*) markierten Felder sind erforderlich",
+        "validation": {
+          "nameRequired": "Name ist erforderlich",
+          "phoneNumberRequired": "Telefonnummer ist erforderlich",
+          "companyNameRequired": "Firmenname ist erforderlich",
+          "jobPositionRequired": "Position ist erforderlich",
+          "emailRequired": "E-Mail ist erforderlich",
+          "invalidEmail": "Ungültige E-Mail-Adresse",
+          "messageRequired": "Nachricht ist erforderlich",
+          "over18Required": "Sie müssen über 18 Jahre alt sein",
+          "agreeProcessing1Required": "Sie müssen der Datenverarbeitung zustimmen",
+          "agreeProcessing2Required": "Sie müssen der Verarbeitung Ihrer Daten gemäß der DSGVO zustimmen"
+        }
+      }
     }
   },
   "contactBanner": {

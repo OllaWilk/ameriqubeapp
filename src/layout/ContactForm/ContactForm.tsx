@@ -1,12 +1,18 @@
 import React, { FC } from 'react';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
+import { useTranslation } from 'react-i18next';
 import PhoneInput from 'react-phone-input-2';
-import 'react-phone-input-2/lib/style.css';
 import * as Yup from 'yup';
-
-import { ButtonBlack, SectionHeader } from '../../components';
+import { Link } from 'react-router-dom';
 import { Container } from '../Container/Container';
+import { ButtonBlack, SectionHeader } from '../../components';
 import styles from './ContactForm.module.scss';
+import 'react-phone-input-2/lib/style.css';
+import {
+  ContactFormType,
+  ContactFormValidation,
+  FormDataType,
+} from '../../types/contactPage-Types';
 
 const initialValues = {
   name: '',
@@ -20,40 +26,53 @@ const initialValues = {
   agreeProcessing2: false,
 };
 
-const validationSchema = Yup.object({
-  name: Yup.string().required('Imię jest wymagane'),
-  phoneNumber: Yup.string().required('Numer telefonu jest wymagany'),
-  companyName: Yup.string().required('Nazwa firmy jest wymagana'),
-  jobPosition: Yup.string().required('Stanowisko jest wymagane'),
-  email: Yup.string()
-    .email('Nieprawidłowy adres email')
-    .required('Email jest wymagany'),
-  message: Yup.string().required('Wiadomość jest wymagana'),
-  over18: Yup.bool().oneOf([true], 'Musisz mieć ukończone 18 lat'),
-  agreeProcessing1: Yup.bool().oneOf(
-    [true],
-    'Musisz wyrazić zgodę na przetwarzanie danych'
-  ),
-  agreeProcessing2: Yup.bool().oneOf(
-    [true],
-    'Musisz wyrazić zgodę na przetwarzanie danych zgodnie z RODO'
-  ),
-});
-
 export const ContactForm: FC = () => {
+  const { t } = useTranslation();
+
+  const validation: ContactFormValidation = t(
+    'pages.contact.contactForm.validation',
+    {
+      returnObjects: true,
+    }
+  );
+
+  const formContent: ContactFormType = t('pages.contact.contactForm', {
+    returnObjects: true,
+  });
+
+  console.log(formContent);
+
+  const validationSchema = Yup.object({
+    name: Yup.string().required(`${validation.nameRequired}`),
+    phoneNumber: Yup.string().required(`${validation.phoneNumberRequired}`),
+    companyName: Yup.string().required(`${validation.companyNameRequired}`),
+    jobPosition: Yup.string().required(`${validation.jobPositionRequired}`),
+    email: Yup.string()
+      .email(`${validation.invalidEmail}`)
+      .required(`${validation.emailRequired}`),
+    message: Yup.string().required(`${validation.messageRequired}`),
+    over18: Yup.bool().oneOf([true], `${validation.over18Required}`),
+    agreeProcessing1: Yup.bool().oneOf(
+      [true],
+      `${validation.agreeProcessing1Required}`
+    ),
+    agreeProcessing2: Yup.bool().oneOf(
+      [true],
+      `${validation.agreeProcessing2Required}`
+    ),
+  });
+
   return (
     <section className={styles.background}>
       <Container>
-        <SectionHeader
-          className={styles.title}
-          text="Don't hesitate to contact us any time."
-        />
+        <SectionHeader className={styles.title} text={formContent.title} />
         <Formik
           initialValues={initialValues}
           validationSchema={validationSchema}
-          onSubmit={(values) => {
+          enableReinitialize
+          onSubmit={(values: FormDataType) => {
             console.log(values);
-            alert('Formularz wysłany pomyślnie!');
+            alert(formContent.submitSuccess);
           }}
         >
           {({ setFieldValue, errors, touched }) => (
@@ -69,7 +88,7 @@ export const ContactForm: FC = () => {
                     id='name'
                     name='name'
                     type='text'
-                    placeholder='Wpisz swoje imię i nazwisko *'
+                    placeholder={formContent.namePlaceholder}
                   />
                 </div>
                 <div
@@ -84,7 +103,7 @@ export const ContactForm: FC = () => {
                     country={'us'}
                     value={initialValues.phoneNumber}
                     inputProps={{
-                      placeholder: 'Wpisz swój telefon',
+                      placeholder: `${formContent.phonePlaceholder}`,
                       name: 'phoneNumber',
                       required: true,
                       className: `${
@@ -108,7 +127,7 @@ export const ContactForm: FC = () => {
                     id='companyName'
                     name='companyName'
                     type='text'
-                    placeholder='Wpisz nazwę firmy *'
+                    placeholder={formContent.companyNamePlaceholder}
                   />
                 </div>
 
@@ -124,7 +143,7 @@ export const ContactForm: FC = () => {
                     id='jobPosition'
                     name='jobPosition'
                     type='text'
-                    placeholder='Wpisz swoje stanowisko *'
+                    placeholder={formContent.jobPositionPlaceholder}
                   />
                 </div>
 
@@ -138,7 +157,7 @@ export const ContactForm: FC = () => {
                     id='email'
                     name='email'
                     type='email'
-                    placeholder='Wpisz swój email *'
+                    placeholder={formContent.emailPlaceholder}
                   />
                 </div>
               </div>
@@ -152,7 +171,7 @@ export const ContactForm: FC = () => {
                   id='message'
                   name='message'
                   as='textarea'
-                  placeholder='Wpisz swoją wiadomość'
+                  placeholder={formContent.messagePlaceholder}
                 />
               </div>
               <div className={styles.checkboxesWrap}>
@@ -168,9 +187,7 @@ export const ContactForm: FC = () => {
                       className={styles.errorMessage}
                     />
                     <Field type='checkbox' id='over18' name='over18' />
-                    <label htmlFor='over18'>
-                      Oświadczam, że mam ukończone 18 lat *
-                    </label>
+                    <label htmlFor='over18'>{formContent.over18Label}</label>
                   </div>
                 </div>
 
@@ -181,7 +198,6 @@ export const ContactForm: FC = () => {
                       : ''
                   }`}
                 >
-                  {' '}
                   <ErrorMessage
                     name='agreeProcessing1'
                     component='div'
@@ -194,8 +210,7 @@ export const ContactForm: FC = () => {
                       name='agreeProcessing1'
                     />
                     <label htmlFor='agreeProcessing1'>
-                      Wyrażam zgodę na przetwarzanie moich danych osobowych
-                      przez AMERIqube dla celów związanych z usługami
+                      {formContent.agreeProcessing1Label}
                     </label>
                   </div>
                 </div>
@@ -219,20 +234,23 @@ export const ContactForm: FC = () => {
                       name='agreeProcessing2'
                     />
                     <label htmlFor='agreeProcessing2'>
-                      Wyrażam zgodę na przetwarzanie moich danych osobowych
-                      zgodnie z RODO
+                      {formContent.agreeProcessing2Label}
                     </label>
                   </div>
                 </div>
               </div>
+              <Link to={'/privacy'} className={styles.link}>
+                {formContent.privacyLinkText}
+              </Link>
               <ButtonBlack
-                text='wyślij'
+                text={formContent.submitButton}
                 type='submit'
                 className={styles.buttonSubmit}
               />
             </Form>
           )}
         </Formik>
+        <p className={styles.info}>{formContent.requiredFieldsInfo}</p>
       </Container>
     </section>
   );
