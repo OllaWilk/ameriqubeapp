@@ -55,10 +55,11 @@
       border-radius: 7px 7px;
       padding: 20px;
       @include flex(column, center, center);
+      gap: 20px;
     }
 
     @include sm-max {
-      width: 100%;
+      min-width: 100%;
     }
 
     .partnerName {
