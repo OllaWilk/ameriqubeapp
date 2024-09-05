@@ -3,6 +3,11 @@
 .titles {
   text-transform: none;
   padding: 0 30px;
+
+  @include md-max {
+    padding: 40px;
+    background-color: white;
+  }
 }
 
 .distributorInfo {
@@ -18,10 +23,13 @@
     align-items: center;
     margin: 0;
     gap: 20px;
+
+    background-color: transparent;
   }
 
   @include md-max {
     padding: 0;
+    min-height: calc(80vh - 40px);
   }
 
   .map {
@@ -33,8 +41,9 @@
       width: 350px;
     }
 
-    @include sm-max {
+    @include md-max {
       width: 100%;
+      border-radius: 0;
     }
 
     img {
@@ -79,8 +88,9 @@
   margin: 20px auto;
   height: 1px;
 
-  @include sm-max {
+  @include md-max {
     width: 100%;
+    margin: 0;
   }
 
   &:last-of-type {

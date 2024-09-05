@@ -10,10 +10,8 @@
     background-color: rgba(0, 0, 0, 0.7);
   }
 
-  @include sm-max {
-    min-height: 100svh;
+  @include md-max {
     height: auto;
-    padding: 70px 0;
   }
 
   .container {
@@ -35,9 +33,18 @@
     gap: 20px;
     text-align: left;
 
+    @include sm-max {
+      min-height: calc(100vh - 300px);
+      height: 80vh;
+    }
+
     .logo {
       display: flex;
       justify-content: center;
+
+      @include sm-max {
+        align-items: end;
+      }
 
       img {
         max-width: 250px;
@@ -45,7 +52,7 @@
         margin: 0;
 
         @include sm-max {
-          max-width: 100%;
+          max-width: 60%;
         }
       }
     }
