@@ -66,3 +66,17 @@ export interface ContactFormType {
   requiredFieldsInfo: string;
   validation: ContactFormValidation;
 }
+
+export interface FieldProps {
+  name: string;
+  placeholder: string;
+  error: string | undefined;
+  touched: boolean | undefined;
+}
+
+export interface CheckboxProps {
+  name: string;
+  label: string;
+  error: string | undefined;
+  touched: boolean | undefined;
+}

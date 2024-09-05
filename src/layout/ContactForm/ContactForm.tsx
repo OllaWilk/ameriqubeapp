@@ -1,19 +1,26 @@
 import React from 'react';
-import { Formik, Form, Field, ErrorMessage } from 'formik';
+import { Formik, Form } from 'formik';
 import { useTranslation } from 'react-i18next';
-import PhoneInput from 'react-phone-input-2';
-import * as Yup from 'yup';
 import { Link } from 'react-router-dom';
-import { Container } from '../Container/Container';
-import { ButtonBlack, SectionHeader } from '../../components';
-import styles from './ContactForm.module.scss';
-import 'react-phone-input-2/lib/style.css';
 import {
   ContactFormType,
   ContactFormValidation,
   FormDataType,
 } from '../../types/contactPage-Types';
+import { getValidationSchema } from '../../utils/formValidation';
 import { useRegion } from '../../context/RegionContext';
+import { Container } from '../Container/Container';
+import {
+  ButtonBlack,
+  PhoneField,
+  SectionHeader,
+  TextAreaField,
+  TextField,
+  CheckboxField,
+} from '../../components';
+
+import 'react-phone-input-2/lib/style.css';
+import styles from './ContactForm.module.scss';
 
 const initialValues = {
   name: '',
@@ -42,25 +49,7 @@ export const ContactForm = () => {
     returnObjects: true,
   });
 
-  const validationSchema = Yup.object({
-    name: Yup.string().required(`${validation.nameRequired}`),
-    phoneNumber: Yup.string().required(`${validation.phoneNumberRequired}`),
-    companyName: Yup.string().required(`${validation.companyNameRequired}`),
-    jobPosition: Yup.string().required(`${validation.jobPositionRequired}`),
-    email: Yup.string()
-      .email(`${validation.invalidEmail}`)
-      .required(`${validation.emailRequired}`),
-    message: Yup.string().required(`${validation.messageRequired}`),
-    over18: Yup.bool().oneOf([true], `${validation.over18Required}`),
-    agreeProcessing1: Yup.bool().oneOf(
-      [true],
-      `${validation.agreeProcessing1Required}`
-    ),
-    agreeProcessing2: Yup.bool().oneOf(
-      [true],
-      `${validation.agreeProcessing2Required}`
-    ),
-  });
+  const validationSchema = getValidationSchema(validation);
 
   return (
     <section className={styles.background}>
@@ -78,166 +67,65 @@ export const ContactForm = () => {
           {({ setFieldValue, errors, touched }) => (
             <Form className={styles.contactForm}>
               <div className={styles.inputsWrap}>
-                <div
-                  className={`${styles.inputContent} ${
-                    errors.name && touched.name ? styles.inputError : ''
-                  }`}
-                >
-                  <ErrorMessage name='name' component='div' />
-                  <Field
-                    id='name'
-                    name='name'
-                    type='text'
-                    placeholder={formContent.namePlaceholder}
-                  />
-                </div>
-                <div
-                  className={`${styles.inputContent} ${
-                    errors.phoneNumber && touched.phoneNumber
-                      ? styles.inputError
-                      : ''
-                  }`}
-                >
-                  <ErrorMessage name='phoneNumber' component='div' />
-                  <PhoneInput
-                    country={region === 'USA' ? 'us' : 'pl'}
-                    value={initialValues.phoneNumber}
-                    inputProps={{
-                      placeholder: `${formContent.phonePlaceholder}`,
-                      name: 'phoneNumber',
-                      required: true,
-                      className: `${
-                        errors.phoneNumber && touched.phoneNumber
-                          ? styles.inputError
-                          : 'phoneInput'
-                      }`,
-                    }}
-                    onChange={(value) => setFieldValue('phoneNumber', value)}
-                  />
-                </div>
-                <div
-                  className={`${styles.inputContent} ${
-                    errors.companyName && touched.companyName
-                      ? styles.inputError
-                      : ''
-                  }`}
-                >
-                  <ErrorMessage name='companyName' component='div' />
-                  <Field
-                    id='companyName'
-                    name='companyName'
-                    type='text'
-                    placeholder={formContent.companyNamePlaceholder}
-                  />
-                </div>
-
-                <div
-                  className={`${styles.inputContent} ${
-                    errors.jobPosition && touched.jobPosition
-                      ? styles.inputError
-                      : ''
-                  }`}
-                >
-                  <ErrorMessage name='jobPosition' component='div' />
-                  <Field
-                    id='jobPosition'
-                    name='jobPosition'
-                    type='text'
-                    placeholder={formContent.jobPositionPlaceholder}
-                  />
-                </div>
-
-                <div
-                  className={`${styles.inputContent} ${
-                    errors.email && touched.email ? styles.inputError : ''
-                  }`}
-                >
-                  <ErrorMessage name='email' component='div' />
-                  <Field
-                    id='email'
-                    name='email'
-                    type='email'
-                    placeholder={formContent.emailPlaceholder}
-                  />
-                </div>
-              </div>
-              <div
-                className={`${styles.textareaWrap} ${
-                  errors.message && touched.message ? styles.inputError : ''
-                }`}
-              >
-                <ErrorMessage name='message' component='div' />
-                <Field
-                  id='message'
-                  name='message'
-                  as='textarea'
-                  placeholder={formContent.messagePlaceholder}
+                <TextField
+                  name='name'
+                  placeholder={formContent.namePlaceholder}
+                  error={errors.name}
+                  touched={touched.name}
+                />
+                <PhoneField
+                  name='phoneNumber'
+                  placeholder={formContent.phonePlaceholder}
+                  country={region === 'USA' ? 'us' : 'pl'}
+                  setFieldValue={setFieldValue}
+                  error={errors.phoneNumber}
+                  touched={touched.phoneNumber}
+                />
+                <TextField
+                  name='companyName'
+                  placeholder={formContent.companyNamePlaceholder}
+                  error={errors.companyName}
+                  touched={touched.companyName}
+                />
+                <TextField
+                  name='jobPosition'
+                  placeholder={formContent.jobPositionPlaceholder}
+                  error={errors.jobPosition}
+                  touched={touched.jobPosition}
+                />
+                <TextField
+                  name='email'
+                  placeholder={formContent.emailPlaceholder}
+                  error={errors.email}
+                  touched={touched.email}
+                  type='email'
                 />
               </div>
+              <TextAreaField
+                name='message'
+                placeholder={formContent.messagePlaceholder}
+                error={errors.message}
+                touched={touched.message}
+              />
               <div className={styles.checkboxesWrap}>
-                <div
-                  className={`${styles.checkboxContent} ${
-                    errors.over18 && touched.over18 ? styles.inputError : ''
-                  }`}
-                >
-                  <div>
-                    <ErrorMessage
-                      name='over18'
-                      component='div'
-                      className={styles.errorMessage}
-                    />
-                    <Field type='checkbox' id='over18' name='over18' />
-                    <label htmlFor='over18'>{formContent.over18Label}</label>
-                  </div>
-                </div>
-
-                <div
-                  className={`${styles.checkboxContent} ${
-                    errors.agreeProcessing1 && touched.agreeProcessing1
-                      ? styles.inputError
-                      : ''
-                  }`}
-                >
-                  <ErrorMessage
-                    name='agreeProcessing1'
-                    component='div'
-                    className={styles.errorMessage}
-                  />
-                  <div>
-                    <Field
-                      type='checkbox'
-                      id='agreeProcessing1'
-                      name='agreeProcessing1'
-                    />
-                    <label htmlFor='agreeProcessing1'>
-                      {formContent.agreeProcessing1Label}
-                    </label>
-                  </div>
-                </div>
-
-                <div
-                  className={`${styles.checkboxContent} ${
-                    errors.agreeProcessing2 && touched.agreeProcessing2
-                      ? styles.inputError
-                      : ''
-                  }`}
-                >
-                  <ErrorMessage
-                    name='agreeProcessing2'
-                    component='div'
-                    className={styles.errorMessage}
-                  />
-                  <div>
-                    <Field
-                      type='checkbox'
-                      id='agreeProcessing2'
-                      name='agreeProcessing2'
-                    />
-                    <label htmlFor='agreeProcessing2'>
-                      {formContent.agreeProcessing2Label}
-                    </label>
-                  </div>
-                </div>
+                <CheckboxField
+                  name='over18'
+                  label={formContent.over18Label}
+                  error={errors.over18}
+                  touched={touched.over18}
+                />
+                <CheckboxField
+                  name='agreeProcessing1'
+                  label={formContent.agreeProcessing1Label}
+                  error={errors.agreeProcessing1}
+                  touched={touched.agreeProcessing1}
+                />
+                <CheckboxField
+                  name='agreeProcessing2'
+                  label={formContent.agreeProcessing2Label}
+                  error={errors.agreeProcessing2}
+                  touched={touched.agreeProcessing2}
+                />
               </div>
               <Link to={'/privacy'} className={styles.link}>
                 {formContent.privacyLinkText}
