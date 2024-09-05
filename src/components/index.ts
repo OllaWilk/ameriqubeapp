@@ -1,4 +1,5 @@
 export { Card } from './Card/Card';
+export { PrivacyLegacyCard } from './PrivacyLegacyCard/PrivacyLegacyCard';
 export { ContactDetail } from './ContactDetail/ContactDetail';
 export { Logo } from './Logo/Logo';
 export { LogoText } from './LogoText/LogoText';
