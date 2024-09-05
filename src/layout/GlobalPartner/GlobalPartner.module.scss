@@ -8,6 +8,10 @@
   background-color: var(--color-cart);
   border-radius: 7px;
 
+  @include md-max {
+    gap: 0;
+  }
+
   .headerWrap {
     padding: 0 30px;
     @include flex(column, flex-start, flex-start);

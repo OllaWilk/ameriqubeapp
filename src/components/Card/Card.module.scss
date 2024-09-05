@@ -1,3 +1,5 @@
+@import '../../styles/mixins';
+
 .card {
   flex: 1;
   background-color: var(--color-light);
@@ -5,11 +7,19 @@
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
 
+  @include md-max {
+    flex: none;
+  }
+
   .description {
     line-height: 1.6;
     margin: 20px 0;
     text-align: justify;
     margin-bottom: 40px;
     min-height: 200px;
+
+    @include lg-max {
+      min-height: auto;
+    }
   }
 }

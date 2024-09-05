@@ -1,7 +1,7 @@
 import React from 'react';
-import styles from './Card.module.scss';
 import { Paragraph, Subtitle } from '../Typography';
 import { ButtonRedText } from '../Buttons';
+import styles from './Card.module.scss';
 
 interface Props {
   title: string;
