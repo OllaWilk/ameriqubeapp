@@ -9,7 +9,7 @@ interface LogoProps {
 
 export const Logo: FC<LogoProps> = ({ className }) => {
   return (
-    <Link to='/home'>
+    <Link to='/'>
       <h1 className={`${className} ${styles.logo}`}>
         <img src={photos.ameriqube} alt='ameri qube logo' />
       </h1>

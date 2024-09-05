@@ -1,0 +1,23 @@
+@import '../../styles/mixins';
+
+.notFound {
+  min-height: 100vh;
+  @include flex(column, center, center);
+}
+
+.blackBackground {
+  width: 100vw;
+  background-color: var(--color-dark);
+  height: 140px;
+  position: fixed;
+  @include sm-max {
+    height: 108px;
+  }
+}
+
+.error {
+  font-size: 100px;
+  font-weight: normal;
+  margin: 0;
+  padding: 0 0 50px;
+}
