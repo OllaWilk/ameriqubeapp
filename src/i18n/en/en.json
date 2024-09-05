@@ -231,7 +231,35 @@
           "email": "chanwit@megex.co.th",
           "website": "https://www.megex.co.th"
         }
-      ]
+      ],
+      "contactForm": {
+        "title": "Don't hesitate to contact us any time.",
+        "submitSuccess": "Form submitted successfully!",
+        "namePlaceholder": "Enter your full name *",
+        "phonePlaceholder": "Enter your phone number *",
+        "companyNamePlaceholder": "Enter your company name *",
+        "jobPositionPlaceholder": "Enter your job position *",
+        "emailPlaceholder": "Enter your email *",
+        "messagePlaceholder": "Enter your message",
+        "over18Label": "I declare that I am over 18 years old *",
+        "agreeProcessing1Label": "I agree to the processing of my personal data by AMERIqube for purposes related to services",
+        "agreeProcessing2Label": "I agree to the processing of my personal data in accordance with GDPR",
+        "privacyLinkText": "Full information on personal data processing is here.",
+        "submitButton": "Submit",
+        "requiredFieldsInfo": "Please note: All fields marked with an asterisk (*) are required",
+        "validation": {
+          "nameRequired": "Name is required",
+          "phoneNumberRequired": "Phone number is required",
+          "companyNameRequired": "Company name is required",
+          "jobPositionRequired": "Job position is required",
+          "emailRequired": "Email is required",
+          "invalidEmail": "Invalid email address",
+          "messageRequired": "Message is required",
+          "over18Required": "You must be over 18 years old",
+          "agreeProcessing1Required": "You must agree to the processing of your data",
+          "agreeProcessing2Required": "You must agree to the processing of your data in accordance with GDPR"
+        }
+      }
     }
   },
   "contactBanner": {

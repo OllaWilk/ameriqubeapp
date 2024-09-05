@@ -1,0 +1,39 @@
+@import '../../../styles/mixins';
+
+.checkboxContent {
+  @include flex(column, flex-start, center);
+  gap: 5px;
+
+  @include lg-max {
+    align-items: stretch;
+  }
+
+  .checkboxWrapper {
+    display: flex;
+    align-items: center;
+    border-radius: 7px;
+
+    @include md-max {
+      flex-direction: column;
+    }
+  }
+
+  input {
+    width: auto;
+    margin-right: 15px;
+  }
+
+  label {
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    width: 100%;
+    margin: 0;
+  }
+
+  .inputError {
+    background-color: rgba(4, 4, 4, 0.3);
+    border-radius: 7px;
+    padding: 10px;
+  }
+}
