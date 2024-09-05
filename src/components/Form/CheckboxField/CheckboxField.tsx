@@ -16,7 +16,11 @@ export const CheckboxField = ({
     }`}
   >
     <ErrorMessage name={name} component='div' className={styles.errorMessage} />
-    <div className={styles.checkboxWrapper}>
+    <div
+      className={`${styles.checkboxWrapper} ${
+        error && touched ? styles.inputError : ''
+      }`}
+    >
       <Field type='checkbox' id={name} name={name} />
       <label htmlFor={name}>{label}</label>
     </div>

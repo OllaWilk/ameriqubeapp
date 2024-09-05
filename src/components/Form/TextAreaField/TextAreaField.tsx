@@ -15,6 +15,12 @@ export const TextAreaField = ({
     }`}
   >
     <ErrorMessage name={name} component='div' />
-    <Field id={name} name={name} as='textarea' placeholder={placeholder} />
+    <Field
+      id={name}
+      name={name}
+      as='textarea'
+      placeholder={placeholder}
+      className={error && touched ? styles.inputError : ''}
+    />
   </div>
 );

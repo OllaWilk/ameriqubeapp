@@ -10,12 +10,14 @@ export const TextField = ({
   touched,
   type = 'text',
 }: FieldProps & { type?: string }) => (
-  <div
-    className={`${styles.inputContent} ${
-      error && touched ? styles.inputError : ''
-    }`}
-  >
+  <div className={styles.inputContent}>
     <ErrorMessage name={name} component='div' />
-    <Field id={name} name={name} type={type} placeholder={placeholder} />
+    <Field
+      id={name}
+      name={name}
+      type={type}
+      placeholder={placeholder}
+      className={error && touched ? styles.inputError : ''}
+    />
   </div>
 );
