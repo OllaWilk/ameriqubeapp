@@ -1,0 +1,20 @@
+.textareaWrap {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid var(--color-light);
+    height: 100%;
+    flex-grow: 1;
+    min-height: 200px;
+  }
+
+  .inputError {
+    border: 2px solid var(--color-primary);
+  }
+}
