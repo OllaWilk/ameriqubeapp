@@ -4,14 +4,14 @@
   gap: 5px;
 }
 
-.inputError {
-  color: var(--color-white);
-}
-
 input {
   width: 100%;
   padding: 10px;
   font-size: 14px;
   border-radius: 5px;
   border: 1px solid var(--color-light);
+}
+
+.inputError {
+  border: 2px solid var(--color-primary);
 }

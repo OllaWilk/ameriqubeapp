@@ -18,11 +18,7 @@ export const PhoneField = ({
   error,
   touched,
 }: PhoneFieldProps) => (
-  <div
-    className={`${styles.inputContent} ${
-      error && touched ? styles.inputError : ''
-    }`}
-  >
+  <div className={styles.inputContent}>
     <ErrorMessage name={name} component='div' />
     <PhoneInput
       country={country}
