@@ -2,7 +2,7 @@
 
 .buttonBlack {
   @include btn;
-  background-color: var(--color-dark);
+  background-color: var(--color-black);
   border: none;
   color: var(--color-light);
   font-size: 1rem;
