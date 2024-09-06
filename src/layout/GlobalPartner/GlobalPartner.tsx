@@ -5,7 +5,7 @@ import {
   Partner,
   SectionHeader,
 } from '../../components';
-import { GlobalPartnerType } from '../../types/contactPage-Types';
+import { GlobalPartnerType } from '../../types/contactPage-types';
 import { useTranslation } from 'react-i18next';
 import styles from './GlobalPartner.module.scss';
 

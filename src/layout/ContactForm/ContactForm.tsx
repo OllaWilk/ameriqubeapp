@@ -6,7 +6,7 @@ import {
   ContactFormType,
   ContactFormValidation,
   FormDataType,
-} from '../../types/contactPage-Types';
+} from '../../types/contactPage-types';
 import { getValidationSchema } from '../../utils/formValidation';
 import { useRegion } from '../../context/RegionContext';
 import { Container } from '../Container/Container';

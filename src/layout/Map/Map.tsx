@@ -1,5 +1,5 @@
 import React from 'react';
-import { AddressType } from '../../types/contactPage-Types';
+import { AddressType } from '../../types/contactPage-types';
 import { photos } from '../../img';
 import styles from './Map.module.scss';
 

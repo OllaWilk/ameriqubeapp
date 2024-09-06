@@ -243,6 +243,60 @@
           "url": "/cookies"
         }
       ]
+    },
+    "cookiePolicy": {
+      "title": "Cookie-Richtlinie",
+      "paragraphs": [
+        {
+          "id": 1,
+          "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Praesent commodo ultricies risus, a egestas libero."
+        },
+        {
+          "id": 2,
+          "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus bibendum dolor sit amet nulla sollicitudin, id cursus turpis tincidunt."
+        },
+        {
+          "id": 3,
+          "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra lacus at nibh ultrices, a gravida nunc viverra."
+        },
+        {
+          "id": 4,
+          "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam in sapien vel enim mollis placerat. Nulla facilisi."
+        },
+        {
+          "id": 5,
+          "content": "a) Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vehicula malesuada nunc, et volutpat libero convallis vel."
+        },
+        {
+          "id": 6,
+          "content": "b) Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum viverra justo vitae neque faucibus, id tempus leo luctus."
+        },
+        {
+          "id": 7,
+          "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut lacinia justo ac lectus consectetur, vitae sollicitudin eros volutpat."
+        },
+        {
+          "id": 8,
+          "content": "a) Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vitae libero vehicula, blandit ex id, malesuada orci."
+        },
+        {
+          "id": 9,
+          "content": "b) Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam id lacus nec lectus sodales tincidunt id sit amet metus."
+        },
+        {
+          "id": 10,
+          "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla fermentum orci nec arcu efficitur, ut gravida nunc ullamcorper."
+        },
+        {
+          "id": 11,
+          "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras at felis dapibus, tincidunt tortor at, finibus nunc."
+        },
+        {
+          "id": 12,
+          "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer scelerisque lorem id dolor ultrices, ac facilisis nunc tincidunt."
+        }
+      ],
+      "button": "Zustimmung widerrufen"
     }
   },
   "contactBanner": {

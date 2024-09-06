@@ -1,6 +1,6 @@
 import React from 'react';
 import { ErrorMessage } from 'formik';
-import { FieldProps } from '../../../types/contactPage-Types';
+import { FieldProps } from '../../../types/contactPage-types';
 import PhoneInput from 'react-phone-input-2';
 import styles from './PhoneField.module.scss';
 

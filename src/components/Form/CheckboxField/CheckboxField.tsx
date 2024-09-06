@@ -1,5 +1,5 @@
 import React from 'react';
-import { CheckboxProps } from '../../../types/contactPage-Types';
+import { CheckboxProps } from '../../../types/contactPage-types';
 import { ErrorMessage, Field } from 'formik';
 
 import styles from './CheckboxField.module.scss';

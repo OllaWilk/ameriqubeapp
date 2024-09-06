@@ -7,7 +7,7 @@ import {
   TextSplash,
   ContactForm,
 } from '../../layout';
-import { ContactType } from '../../types/contactPage-Types';
+import { ContactType } from '../../types/contactPage-types';
 import { LineOrnament, SectionHeader } from '../../components';
 import styles from './ContactPage.module.scss';
 
