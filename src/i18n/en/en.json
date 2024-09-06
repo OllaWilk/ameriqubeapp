@@ -260,6 +260,32 @@
           "agreeProcessing2Required": "You must agree to the processing of your data in accordance with GDPR"
         }
       }
+    },
+    "privacy": {
+      "title": "Legal Guidelines and Your Privacy",
+      "sections": [
+        {
+          "type": "document",
+          "title": "GDPR",
+          "description": "Our dedication to data protection and compliance with the General Data Protection Regulation (GDPR)",
+          "btnText": "Download PDF (English)",
+          "downloadLink": "/gdpr-download-link"
+        },
+        {
+          "type": "document",
+          "title": "Privacy Policy",
+          "description": "Discover our commitment to privacy and learn how we protect your personal information",
+          "btnText": "Download PDF (English)",
+          "downloadLink": "/privacy-policy-download-link"
+        },
+        {
+          "type": "document",
+          "title": "Cookie Policy",
+          "description": "Gain insights into our approach to cookies and manage your preferences by engaging with our comprehensive guide",
+          "btnText": "Explore Cookie Policy",
+          "url": "/cookies"
+        }
+      ]
     }
   },
   "contactBanner": {

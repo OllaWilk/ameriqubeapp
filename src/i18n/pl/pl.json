@@ -260,6 +260,32 @@
           "agreeProcessing2Required": "Musisz wyrazić zgodę na przetwarzanie danych zgodnie z RODO"
         }
       }
+    },
+    "privacy": {
+      "title": "Wytyczne prawne i Twoja prywatność",
+      "sections": [
+        {
+          "type": "document",
+          "title": "RODO",
+          "description": "Nasze zaangażowanie w ochronę danych i zgodność z Ogólnym Rozporządzeniem o Ochronie Danych (RODO)",
+          "btnText": "Pobierz PDF (Polski)",
+          "downloadLink": "/gdpr-download-link"
+        },
+        {
+          "type": "document",
+          "title": "Polityka prywatności",
+          "description": "Odkryj nasze zaangażowanie w ochronę prywatności i dowiedz się, jak chronimy Twoje dane osobowe",
+          "btnText": "Pobierz PDF (Polski)",
+          "downloadLink": "/privacy-policy-download-link"
+        },
+        {
+          "type": "document",
+          "title": "Polityka plików cookie",
+          "description": "Uzyskaj wgląd w nasze podejście do plików cookie i zarządzaj swoimi preferencjami, korzystając z naszego przewodnika",
+          "btnText": "Zobacz Politykę plików cookie",
+          "url": "/cookies"
+        }
+      ]
     }
   },
   "contactBanner": {
