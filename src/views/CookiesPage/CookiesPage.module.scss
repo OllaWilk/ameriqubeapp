@@ -1,12 +1,16 @@
 @import '../../styles/mixins';
 
 .documnts {
-  @include flex(column, flex-start, space-around);
+  @include flex(column, center, stretch);
   gap: 30px;
   text-align: justify;
   padding: 60px 0;
+
+  div {
+    width: 70%;
+  }
 }
 
 .button {
-  margin: 60px 0;
+  margin: 30px 0;
 }

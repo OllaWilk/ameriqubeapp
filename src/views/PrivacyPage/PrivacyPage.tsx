@@ -4,7 +4,7 @@ import { PrivacyLegacyCard } from '../../components';
 
 import styles from './PrivacyPage.module.scss';
 import { useTranslation } from 'react-i18next';
-import { PrivacyPageSection } from '../../types/privacyLegacyPAge-types';
+import { PrivacyPageSection } from '../../types/privacyLegacyPage-types';
 
 export const PrivacyPage = () => {
   const { t } = useTranslation();
