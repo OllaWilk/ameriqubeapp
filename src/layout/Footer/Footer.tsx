@@ -9,7 +9,7 @@ export const Footer = () => {
     <footer className={styles.footer}>
       <Container>
         <div className={styles.topFooter}>
-          {/* <nav className={styles.nav}>
+          <nav className={styles.nav}>
             <Link to='/' className={styles.link}>
               Home
             </Link>
@@ -22,7 +22,7 @@ export const Footer = () => {
             <Link to='/contact' className={styles.link}>
               Contact
             </Link>
-          </nav> */}
+          </nav>
           <div className={styles.address}>
             <Logo />
             <p>
@@ -32,12 +32,10 @@ export const Footer = () => {
             </p>
           </div>
         </div>
-        {/* <div className={styles.certifications}>
-          {/* Add the certifications images/logos here */}
-        {/* <img src='/path-to-cert1' alt='Certification 1' /> */}
-        {/* <img src='/path-to-cert2' alt='Certification 2' /> */}
-        {/* Add more certification logos as necessary */}
-        {/* </div> */}
+        <div className={styles.certifications}>
+          <img src='/path-to-cert1' alt='Certification 1' />
+          <img src='/path-to-cert2' alt='Certification 2' />
+        </div>
         <div className={styles.bottomFooter}>
           <p>ISO 9001:2015 Certificate Number: 017884</p>
           <p>&copy; 2024 AMERIqube. All Rights Reserved</p>
