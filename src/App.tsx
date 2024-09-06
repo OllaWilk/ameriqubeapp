@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import { Navbar } from './layout';
+import { Navbar, Footer } from './layout';
 import {
   AboutPage,
   ContactPage,
@@ -22,6 +22,7 @@ function App() {
         <Route path='/privacy' element={<PrivacyPage />} />
         <Route path='*' element={<NotFoundPage />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   );
 }
