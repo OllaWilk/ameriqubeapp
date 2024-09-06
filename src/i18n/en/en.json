@@ -287,7 +287,6 @@
         }
       ]
     },
-
     "cookiePolicy": {
       "title": "Cookie Policy",
       "paragraphs": [
@@ -305,11 +304,11 @@
         },
         {
           "id": 4,
-          "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam in sapien vel enim mollis placerat. Nulla facilisi. a) Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vehicula malesuada nunc, et volutpat libero convallis vel. b) Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum viverra justo vitae neque faucibus, id tempus leo luctus."
+          "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut lacinia justo ac lectus consectetur, vitae sollicitudin eros volutpat.<ul><li>a) Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vitae libero vehicula, blandit ex id, malesuada orci.</li><li>b) Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam id lacus nec lectus sodales tincidunt id sit amet metus.</li></ul>"
         },
         {
           "id": 7,
-          "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut lacinia justo ac lectus consectetur, vitae sollicitudin eros volutpat.a) Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vitae libero vehicula, blandit ex id, malesuada orci.b) Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam id lacus nec lectus sodales tincidunt id sit amet metus."
+          "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut lacinia justo ac lectus consectetur, vitae sollicitudin eros volutpat.<ul><li>a) Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vitae libero vehicula, blandit ex id, malesuada orci.</li><li>b) Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam id lacus nec lectus sodales tincidunt id sit amet metus.</li></ul>"
         },
         {
           "id": 10,
