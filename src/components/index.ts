@@ -2,6 +2,7 @@ export { Card } from './Card/Card';
 export { ContactDetail } from './ContactDetail/ContactDetail';
 export { CookieBanner } from './CookieBanner/CookieBanner';
 export { Dropdown } from './Dropdown/Dropdown';
+export { FooterNavigation } from './FooterNavigation/FooterNavigation';
 export * from './Form/index';
 export * from './Buttons';
 export * from './Navigation';

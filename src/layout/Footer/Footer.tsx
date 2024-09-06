@@ -1,29 +1,25 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import styles from './Footer.module.scss';
+import { useTranslation } from 'react-i18next';
 import { Container } from '../Container/Container';
-import { ButtonChat, Logo } from '../../components';
-import { isoImg } from '../../img/images/iso';
+import {
+  ButtonChat,
+  FooterNavigation,
+  IsoImg,
+  Logo,
+  Paragraph,
+} from '../../components';
+import styles from './Footer.module.scss';
 
 export const Footer = () => {
+  const { t } = useTranslation();
+
+  const chat: string = t('contactBanner.chat');
   return (
     <footer className={styles.footer}>
       <Container>
         <div className={styles.topFooter}>
-          <nav className={styles.nav}>
-            <Link to='/' className={styles.link}>
-              Home
-            </Link>
-            <Link to='/about' className={styles.link}>
-              About
-            </Link>
-            <Link to='/products' className={styles.link}>
-              Products & Services
-            </Link>
-            <Link to='/contact' className={styles.link}>
-              Contact
-            </Link>
-          </nav>
+          <FooterNavigation />
           <div className={styles.address}>
             <Logo />
             <p>
@@ -33,19 +29,15 @@ export const Footer = () => {
             </p>
           </div>
         </div>
-        <div className={styles.certifications}>
-          {Object.entries(isoImg).map(([key, src], index) => (
-            <img key={key} src={src} alt={`Certification ${index + 1}`} />
-          ))}
-        </div>
+        <IsoImg />
         <div className={styles.bottomFooter}>
-          <p>ISO 9001:2015 Certificate Number: 017884</p>
-          <p>&copy; 2024 AMERIqube. All Rights Reserved</p>
+          <Paragraph text='ISO 9001:2015 Certificate Number: 017884' />
+          <Paragraph text='&copy; 2024 AMERIqube. All Rights Reserved' />
           <Link to='/privacy' className={styles.legalLink}>
             Privacy & Legal
           </Link>
         </div>
-        <ButtonChat />
+        <ButtonChat text={chat} />
       </Container>
     </footer>
   );

@@ -4,49 +4,4 @@
   padding: 60px 0;
   background-color: var(--color-secondary);
   color: var(--color-light);
-
-  .contactForm {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 50px;
-    margin: 50px 0;
-
-    @media (max-width: 865px) {
-      gap: 20px;
-    }
-
-    @include md-max {
-      @include flex(column, stretch, center);
-    }
-
-    .inputsWrap {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-    }
-
-    .checkboxesWrap {
-      grid-column: span 2;
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-      width: 100%;
-    }
-  }
-}
-
-.info {
-  text-align: center;
-}
-
-.link {
-  color: var(--color-light);
-  text-align: center;
-  width: 100%;
-  grid-column: span 2;
-}
-
-.buttonSubmit {
-  grid-column: span 2;
-  width: 100%;
 }

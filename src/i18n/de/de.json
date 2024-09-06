@@ -3,10 +3,10 @@
   "login": "AmeriQube",
   "navigation": {
     "navLinks": [
-      { "label": "STARTSEITE", "path": "/" },
-      { "label": "ÜBER UNS", "path": "/about" },
-      { "label": "PRODUKTE & DIENSTLEISTUNGEN", "path": null },
-      { "label": "KONTAKT", "path": "/contact" }
+      { "label": "Startseite", "path": "/" },
+      { "label": "Über uns", "path": "/about" },
+      { "label": "Produkte & Dienstleistungen", "path": null },
+      { "label": "Kontakt", "path": "/contact" }
     ],
     "productLinks": [
       {
@@ -303,7 +303,8 @@
     "title": "Zögern Sie nicht, uns jederzeit zu kontaktieren.",
     "subtitle": "Haben Sie Fragen ?",
     "button": "KONTAKTIEREN SIE UNS",
-    "to": "contact"
+    "to": "contact",
+    "chat": "Chatte mit uns"
   },
   "notFound": "Die von Ihnen gesuchte Seite scheint verschoben, gelöscht worden zu sein oder existiert nicht. Wir entschuldigen uns für die Unannehmlichkeiten."
 }
