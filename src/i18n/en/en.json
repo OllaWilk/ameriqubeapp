@@ -31,6 +31,7 @@
     "acceptButton": {
       "text": "accept"
     },
+    "revokeButton": "revoke consent",
     "asterixInfo": {
       "url": "/cookies",
       "text": "more about our cookie policy can be read here"

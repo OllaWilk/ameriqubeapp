@@ -1,18 +1,31 @@
-import React from 'react';
+import React, { useCallback, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { ParagraphType } from '../../types/cookiesPage-types';
+import { handleAcceptCookies, handleRemoveCookies } from '../../utils/cookie';
 import { Container, TextSplash } from '../../layout';
 import { ButtonBlack, Paragraph } from '../../components';
 import styles from './CookiesPage.module.scss';
 
 export const CookiesPage = () => {
+  const [isAccepted, setIsAccepted] = useState(true);
+
   const { t } = useTranslation();
 
   const header: string = t('pages.cookiePolicy.title');
-  const button: string = t('pages.cookiePolicy.button');
+  const acceptButton: string = t('cookies.acceptButton.text');
+  const revokeButton: string = t('cookies.revokeButton');
   const documents: ParagraphType[] = t('pages.cookiePolicy.paragraphs', {
     returnObjects: true,
   });
+
+  const handleRemove = useCallback(() => {
+    handleRemoveCookies();
+    setIsAccepted(false);
+  }, []);
+
+  const handleAccept = useCallback(() => {
+    handleAcceptCookies();
+  }, []);
 
   return (
     <>
@@ -23,7 +36,19 @@ export const CookiesPage = () => {
             {documents.map((document, index) => (
               <Paragraph key={`paragraph-${index}`} text={document.content} />
             ))}
-            <ButtonBlack text={button} className={styles.button} />
+            {isAccepted ? (
+              <ButtonBlack
+                text={revokeButton}
+                className={styles.button}
+                onClick={handleRemove}
+              />
+            ) : (
+              <ButtonBlack
+                text={acceptButton}
+                className={styles.button}
+                onClick={handleAccept}
+              />
+            )}
           </div>
         </section>
       </Container>

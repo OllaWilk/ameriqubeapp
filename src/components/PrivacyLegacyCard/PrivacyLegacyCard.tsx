@@ -42,6 +42,8 @@ export const PrivacyLegacyCard = ({
         ) : (
           <a
             href={downloadLink}
+            download
+            target='_blank'
             rel='noopener noreferrer'
             className={styles.downloadLink}
           >

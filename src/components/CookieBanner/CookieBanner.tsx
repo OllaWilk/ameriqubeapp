@@ -2,13 +2,16 @@ import React, { useCallback, useEffect, useState } from 'react';
 import { CookiePolicy } from '../../types/navigation-types';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import Cookies from 'js-cookie';
 import { Modal } from '../Modal/Modal';
 import { Container } from '../../layout';
 import { Paragraph, Subtitle } from '../Typography';
 import { ButtonBlack } from '../Buttons';
 
 import styles from './CookieBanner.module.scss';
+import {
+  handleAcceptCookies,
+  hasUserAcceptedCookies,
+} from '../../utils/cookie';
 
 export const CookieBanner = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -19,16 +22,14 @@ export const CookieBanner = () => {
   });
 
   useEffect(() => {
-    const userAcceptedCookies = Cookies.get('userAcceptedCookies');
-
-    if (!userAcceptedCookies) {
+    if (!hasUserAcceptedCookies()) {
       setIsVisible(true);
     }
   }, []);
 
   const handleAccept = useCallback(() => {
-    Cookies.set('userAcceptedCookies', 'true', { expires: 365 });
-    window.location.reload(); //reload window after cookie accept
+    handleAcceptCookies();
+    window.location.reload();
     setIsVisible(false);
   }, []);
 
