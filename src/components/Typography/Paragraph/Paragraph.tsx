@@ -1,4 +1,5 @@
 import React, { FC } from 'react';
+import parse from 'html-react-parser';
 
 interface Props {
   text: string;
@@ -6,5 +7,5 @@ interface Props {
 }
 
 export const Paragraph: FC<Props> = ({ text, className }) => (
-  <div className={className}>{text}</div>
+  <div className={className}>{parse(text)}</div>
 );
