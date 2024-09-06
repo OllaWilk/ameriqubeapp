@@ -3,33 +3,37 @@ import { Container, TextSplash } from '../../layout';
 import { PrivacyLegacyCard } from '../../components';
 
 import styles from './PrivacyPage.module.scss';
+import { PrivacyPageSection } from '../../types/privacyLegacyPAge-types';
+import { useTranslation } from 'react-i18next';
 
-export const PrivacyPage = () => (
-  <>
-    <TextSplash splashHeading={'Legal Guidelines and Your Privacy'} />
-    <Container>
-      <section className={styles.section}>
-        <div className={styles.documnts}>
-          <PrivacyLegacyCard
-            title='GDPR'
-            description='Our dedication to data protection and compliance with the General Data Protection Regulation'
-            downloadLink='/lorem'
-            btnTExt='Download PDF (English)'
-          />
-          <PrivacyLegacyCard
-            title='Privacy Policy'
-            description='Privacy Policy - Discover our commitment to privacy and learn how we protect your personal information'
-            downloadLink='/lorem'
-            btnTExt='Download PDF (English)'
-          />
-          <PrivacyLegacyCard
-            title='Cookie Policy'
-            description='Cookie Policy - Gain insights into our approach to cookies and manage your preferences by engaging with our comprehensive guide'
-            url='/cookies'
-            btnTExt='Explore Cookie Policy'
-          />
-        </div>
-      </section>
-    </Container>
-  </>
-);
+export const PrivacyPage = () => {
+  const { t } = useTranslation();
+
+  const header: string = t('pages.privacy.title');
+
+  const documents: PrivacyPageSection[] = t('pages.privacy.sections', {
+    returnObjects: true,
+  });
+
+  return (
+    <>
+      <TextSplash splashHeading={header} />
+      <Container>
+        <section className={styles.section}>
+          <div className={styles.documnts}>
+            {documents.map((document, key) => (
+              <PrivacyLegacyCard
+                title={document.title}
+                description={document.description}
+                downloadLink={document.downloadLink}
+                url={document.url}
+                btnTExt={document.btnText}
+                key={document.title}
+              />
+            ))}
+          </div>
+        </section>
+      </Container>
+    </>
+  );
+};

@@ -2,6 +2,7 @@
 
 .notFound {
   min-height: 100vh;
+  padding-top: 140px;
   @include flex(column, center, center);
 }
 
@@ -19,5 +20,5 @@
   font-size: 100px;
   font-weight: normal;
   margin: 0;
-  padding: 0 0 50px;
+  padding: 0 0 10px 0;
 }

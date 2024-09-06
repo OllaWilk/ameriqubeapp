@@ -103,7 +103,6 @@
         }
       ]
     },
-
     "about": {
       "title": "AmeriQube",
       "intro": "Innovation, die die Zukunft verbindet",
@@ -218,6 +217,32 @@
           "agreeProcessing2Required": "Sie müssen der Verarbeitung Ihrer Daten gemäß der DSGVO zustimmen"
         }
       }
+    },
+    "privacy": {
+      "title": "Rechtliche Richtlinien und Ihre Privatsphäre",
+      "sections": [
+        {
+          "type": "document",
+          "title": "DSGVO",
+          "description": "Unser Engagement für den Datenschutz und die Einhaltung der Datenschutz-Grundverordnung (DSGVO)",
+          "btnText": "PDF herunterladen (Deutsch)",
+          "downloadLink": "/gdpr-download-link"
+        },
+        {
+          "type": "document",
+          "title": "Datenschutzrichtlinie",
+          "description": "Erfahren Sie mehr über unser Engagement für den Datenschutz und wie wir Ihre persönlichen Daten schützen",
+          "btnText": "PDF herunterladen (Deutsch)",
+          "downloadLink": "/privacy-policy-download-link"
+        },
+        {
+          "type": "document",
+          "title": "Cookie-Richtlinie",
+          "description": "Erfahren Sie mehr über unseren Umgang mit Cookies und verwalten Sie Ihre Einstellungen mithilfe unseres Leitfadens",
+          "btnText": "Cookie-Richtlinie ansehen",
+          "url": "/cookies"
+        }
+      ]
     }
   },
   "contactBanner": {

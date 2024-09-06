@@ -1,9 +1,10 @@
 import React from 'react';
 import { PiCookieLight, PiFilePdfDuotone } from 'react-icons/pi';
-import styles from './PrivacyLegacyCard.module.scss';
+
 import { Paragraph, Subtitle } from '../Typography';
 import { Link } from 'react-router-dom';
 import { LineOrnament } from '../LineOrnament/LineOrnament';
+import styles from './PrivacyLegacyCard.module.scss';
 
 interface Props {
   title: string;
@@ -20,6 +21,7 @@ export const PrivacyLegacyCard = ({
   url,
   btnTExt,
 }: Props) => {
+  console.log(url);
   return (
     <article key={`document-${title}`} className={styles.card}>
       <div className={styles.cartContent}>
@@ -34,18 +36,12 @@ export const PrivacyLegacyCard = ({
       </div>
       <div className={styles.btnDownloadWrap}>
         {url ? (
-          <Link
-            to={url}
-            target='_blank'
-            rel='noopener noreferrer'
-            className={styles.downloadLink}
-          >
+          <Link to={url} className={styles.downloadLink}>
             {btnTExt}
           </Link>
         ) : (
           <a
             href={downloadLink}
-            target='_blank'
             rel='noopener noreferrer'
             className={styles.downloadLink}
           >
