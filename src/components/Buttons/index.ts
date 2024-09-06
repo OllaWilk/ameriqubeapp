@@ -1,7 +1,8 @@
-export { ButtonNavBar } from './ButtonNavBar/ButtonNavBar';
 export { ButtonBlack } from './ButtonBlack/ButtonBlack';
-export { ButtonRed } from './ButtonRed/ButtonRed';
-export { DropdownToggleButton } from './DropdownToggleButton/DropdownToggleButton';
-export { ButtonTransparent } from './ButtonTransparent/ButtonTransparent';
-export { ButtonRedText } from './ButtonRedText/ButtonRedText';
+export { ButtonChat } from './ButtonChat/ButtonChat';
 export { ButtonLinkPage } from './ButtonLinkPage/ButtonLinkPage';
+export { ButtonNavBar } from './ButtonNavBar/ButtonNavBar';
+export { ButtonRed } from './ButtonRed/ButtonRed';
+export { ButtonRedText } from './ButtonRedText/ButtonRedText';
+export { ButtonTransparent } from './ButtonTransparent/ButtonTransparent';
+export { DropdownToggleButton } from './DropdownToggleButton/DropdownToggleButton';

@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import styles from './Footer.module.scss';
 import { Container } from '../Container/Container';
-import { Logo } from '../../components';
+import { ButtonChat, Logo } from '../../components';
 
 export const Footer = () => {
   return (
@@ -43,6 +43,7 @@ export const Footer = () => {
             Privacy & Legal
           </Link>
         </div>
+        <ButtonChat />
       </Container>
     </footer>
   );
