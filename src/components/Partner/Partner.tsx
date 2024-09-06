@@ -1,5 +1,5 @@
 import React from 'react';
-import { GlobalPartnerType } from '../../types/contactPage-Types';
+import { GlobalPartnerType } from '../../types/contactPage-types';
 import { partnersLogo } from '../../img/partnersLogo';
 import { countryImages } from '../../img/maps';
 import { LineOrnament } from '../LineOrnament/LineOrnament';

@@ -1,6 +1,6 @@
 // utils/formValidation.ts
 import * as Yup from 'yup';
-import { ContactFormValidation } from '../types/contactPage-Types';
+import { ContactFormValidation } from '../types/contactPage-types';
 
 export const getValidationSchema = (validation: ContactFormValidation) => {
   return Yup.object({

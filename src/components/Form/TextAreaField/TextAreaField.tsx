@@ -1,5 +1,5 @@
 import React from 'react';
-import { FieldProps } from '../../../types/contactPage-Types';
+import { FieldProps } from '../../../types/contactPage-types';
 import { ErrorMessage, Field } from 'formik';
 import styles from './TextAreaField.module.scss';
 
