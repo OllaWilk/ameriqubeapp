@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import styles from './Footer.module.scss';
 import { Container } from '../Container/Container';
 import { ButtonChat, Logo } from '../../components';
+import { isoImg } from '../../img/images/iso';
 
 export const Footer = () => {
   return (
@@ -33,8 +34,9 @@ export const Footer = () => {
           </div>
         </div>
         <div className={styles.certifications}>
-          <img src='/path-to-cert1' alt='Certification 1' />
-          <img src='/path-to-cert2' alt='Certification 2' />
+          {Object.entries(isoImg).map(([key, src], index) => (
+            <img key={key} src={src} alt={`Certification ${index + 1}`} />
+          ))}
         </div>
         <div className={styles.bottomFooter}>
           <p>ISO 9001:2015 Certificate Number: 017884</p>
