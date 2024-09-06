@@ -3,8 +3,8 @@ import { Container, TextSplash } from '../../layout';
 import { PrivacyLegacyCard } from '../../components';
 
 import styles from './PrivacyPage.module.scss';
-import { PrivacyPageSection } from '../../types/privacyLegacyPAge-types';
 import { useTranslation } from 'react-i18next';
+import { PrivacyPageSection } from '../../types/privacyLegacyPAge-types';
 
 export const PrivacyPage = () => {
   const { t } = useTranslation();

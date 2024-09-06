@@ -1,11 +1,11 @@
 import React from 'react';
-import { GlobalPartnerType } from '../../types/contactPage-types';
 import { partnersLogo } from '../../img/partnersLogo';
 import { countryImages } from '../../img/maps';
 import { LineOrnament } from '../LineOrnament/LineOrnament';
 import { Subtitle } from '../Typography';
 import { ContactDetail } from '../ContactDetail/ContactDetail';
 import styles from './Partner.module.scss';
+import { GlobalPartnerType } from '../../types/contactPage-types';
 
 interface Props {
   partner: GlobalPartnerType;
