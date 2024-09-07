@@ -33,6 +33,8 @@ export const Navbar = () => {
         <nav className={styles.navigation}>
           <NavigationPanel className={styles.navigationPanel} />
           <LocalizedPanel className={styles.display} />
+          <Logo className={styles.logoCenter} />
+
           <SideNavigation className={styles.sideNavigation} />
         </nav>
       </Container>

@@ -37,6 +37,7 @@
     @include flex(row, center, center);
     text-align: center;
     transition: var(--transition);
+    text-transform: uppercase;
 
     &:hover {
       color: var(--color-light);

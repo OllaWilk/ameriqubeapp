@@ -19,21 +19,23 @@
     @include flex(row, flex-end, space-between);
     overflow: visible;
 
-    .logoLeft {
-      display: block;
-    }
-
     @include sm-max {
       gap: 0;
     }
 
-    @include sm-max {
-      .logoLeft {
-        display: block;
-      }
+    .logoLeft {
+      display: block;
 
-      .logoCenter {
+      @include lg-max {
         display: none;
+      }
+    }
+
+    .logoCenter {
+      display: none;
+
+      @include lg-max {
+        display: block;
       }
     }
 
@@ -41,12 +43,18 @@
       width: calc(100% - 100px);
       @include flex(row, center, flex-end);
 
+      .optionsWrap {
+        @include flex(row, center, space-between);
+        width: 100%;
+      }
+
       .sideNavigation {
         display: none;
       }
 
       @include lg-max {
         width: 100%;
+        justify-content: space-between;
 
         .navigationPanel {
           display: none;
