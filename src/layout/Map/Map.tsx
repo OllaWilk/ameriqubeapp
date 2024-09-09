@@ -27,5 +27,21 @@ export const Map = ({ usaAddress, europeAddress }: MapProps) => (
         </div>
       </div>
     </div>
+    <div>
+      <div className={styles.smallDevicesAdres}>
+        <div>
+          <h3>USA</h3>
+          <p>{usaAddress.line1}</p>
+          <p>{usaAddress.line2}</p>
+        </div>
+        <div>
+          <div>
+            <h3>Poland / European Union </h3>
+            <p>{europeAddress.line1}</p>
+            <p>{europeAddress.line2}</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 );
