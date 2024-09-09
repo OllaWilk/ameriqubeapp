@@ -1,10 +1,8 @@
-import React, { useState } from 'react';
-import { IoChatboxEllipsesOutline, IoClose } from 'react-icons/io5';
+import React, { useEffect, useState } from 'react';
+import { IoChatboxEllipsesOutline } from 'react-icons/io5';
 
-import { FormComponent } from '../../Form';
 import styles from './ButtonChat.module.scss';
-import { Subtitle } from '../../Typography';
-import { LineOrnament } from '../../LineOrnament/LineOrnament';
+import { PopupForm } from '../../PopupForm/PopupForm';
 
 interface Props {
   text: string;
@@ -17,6 +15,18 @@ export const ButtonChat = ({ text }: Props) => {
     setIsOpen(!isOpen);
   };
 
+  useEffect(() => {
+    if (isOpen) {
+      document.body.classList.add(styles.noScroll);
+    } else {
+      document.body.classList.remove(styles.noScroll);
+    }
+
+    return () => {
+      document.body.classList.remove(styles.noScroll);
+    };
+  }, [isOpen]);
+
   return (
     <div className={styles.chatButton}>
       <button className={styles.chat} onClick={togglePopup}>
@@ -26,16 +36,7 @@ export const ButtonChat = ({ text }: Props) => {
 
       {isOpen && (
         <div className={styles.popupOverlay}>
-          <div className={styles.popup}>
-            <Subtitle text={'Message'} />
-            <LineOrnament />
-            <button className={styles.closeButton} onClick={togglePopup}>
-              <IoClose className={styles.closeIcon} />
-            </button>
-            <div className={styles.background}>
-              <FormComponent />
-            </div>
-          </div>
+          <PopupForm isOpen={isOpen} togglePopup={togglePopup} />
         </div>
       )}
     </div>

@@ -241,7 +241,7 @@
         "companyNamePlaceholder": "Enter your company name *",
         "jobPositionPlaceholder": "Enter your job position *",
         "emailPlaceholder": "Enter your email *",
-        "messagePlaceholder": "Enter your message",
+        "messagePlaceholder": "Enter your message *",
         "over18Label": "I declare that I am over 18 years old *",
         "agreeProcessing1Label": "I agree to the processing of my personal data by AMERIqube for purposes related to services",
         "agreeProcessing2Label": "I agree to the processing of my personal data in accordance with GDPR",
@@ -336,7 +336,8 @@
     "subtitle": "Have any questions ?",
     "button": "contact us",
     "to": "contact",
-    "chat": "Chat with us"
+    "chat": "Chat with us",
+    "link": "Privacy & Legal"
   },
   "notFound": "The page you're looking for appears to have been moved, deleted, or doesn't exist. We apologize for the inconveniences."
 }

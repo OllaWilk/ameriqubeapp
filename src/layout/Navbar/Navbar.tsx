@@ -32,8 +32,8 @@ export const Navbar = () => {
         <Logo className={styles.logoLeft} />
         <nav className={styles.navigation}>
           <NavigationPanel className={styles.navigationPanel} />
-          <LocalizedPanel className={styles.display} />
           <Logo className={styles.logoCenter} />
+          <LocalizedPanel className={styles.display} />
 
           <SideNavigation className={styles.sideNavigation} />
         </nav>

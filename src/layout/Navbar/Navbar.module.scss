@@ -43,11 +43,6 @@
       width: calc(100% - 100px);
       @include flex(row, center, flex-end);
 
-      .optionsWrap {
-        @include flex(row, center, space-between);
-        width: 100%;
-      }
-
       .sideNavigation {
         display: none;
       }
@@ -55,6 +50,7 @@
       @include lg-max {
         width: 100%;
         justify-content: space-between;
+        height: 100%;
 
         .navigationPanel {
           display: none;
@@ -68,7 +64,10 @@
 
       @include sm-max {
         flex-direction: row;
-        gap: 0;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        gap: 20px;
       }
     }
   }

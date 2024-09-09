@@ -14,6 +14,7 @@ export { Logo } from './Logo/Logo';
 export { LogoText } from './LogoText/LogoText';
 export { Modal } from './Modal/Modal';
 export { Partner } from './Partner/Partner';
+export { PopupForm } from './PopupForm/PopupForm';
 export { PrivacyLegacyCard } from './PrivacyLegacyCard/PrivacyLegacyCard';
 export { RegionOptions } from './LocalizedPanel/RegionOptions/RegionOptions';
 export * from './Typography';
