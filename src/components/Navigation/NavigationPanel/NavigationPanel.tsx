@@ -23,6 +23,17 @@ export const NavigationPanel: FC<NavigationPanelProps> = ({ className }) => {
 
   const toggleDropdown = () => setDropdownVisible((prev) => !prev);
 
+  const handleItemClick = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+
+    if (dropdownVisible) {
+      setDropdownVisible(false);
+    }
+  };
+
   return (
     <ul className={`${styles.navigationList} ${className}`}>
       {navLinks.map(({ label, path }, index) => {
@@ -33,6 +44,7 @@ export const NavigationPanel: FC<NavigationPanelProps> = ({ className }) => {
             className={`${isDropdown ? styles.dropLink : styles.link} ${
               dropdownVisible && isDropdown ? styles.activeDropdown : ''
             }`}
+            onClick={handleItemClick}
           >
             {isDropdown ? (
               <>
