@@ -119,3 +119,14 @@
     display: none;
   }
 }
+
+.smallDevicesAdres {
+  display: none;
+
+  @include sm-max {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 0 30px 0;
+  }
+}

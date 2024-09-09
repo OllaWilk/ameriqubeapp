@@ -8,9 +8,10 @@ import styles from './PopupForm.module.scss';
 interface Props {
   togglePopup: () => void;
   isOpen: boolean;
+  subtitle: string;
 }
 
-export const PopupForm = ({ togglePopup, isOpen }: Props) => {
+export const PopupForm = ({ togglePopup, isOpen, subtitle }: Props) => {
   const popupClass = isOpen ? `${styles.popup} ${styles.open}` : styles.popup;
 
   return (
@@ -18,7 +19,7 @@ export const PopupForm = ({ togglePopup, isOpen }: Props) => {
       <button className={styles.closeButton} onClick={togglePopup}>
         <IoClose className={styles.closeIcon} />
       </button>
-      <Subtitle text={'Message'} className={styles.subtitle} />
+      <Subtitle text={subtitle} className={styles.subtitle} />
       <LineOrnament className={styles.ornametn} />
       <FormComponent />
     </div>
