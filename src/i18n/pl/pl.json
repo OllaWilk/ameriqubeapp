@@ -240,7 +240,7 @@
         "companyNamePlaceholder": "Wpisz nazwę swojej firmy *",
         "jobPositionPlaceholder": "Wpisz swoje stanowisko *",
         "emailPlaceholder": "Wpisz swój email *",
-        "messagePlaceholder": "Wpisz swoją wiadomość",
+        "messagePlaceholder": "Wpisz swoją wiadomość *",
         "over18Label": "Oświadczam, że mam ukończone 18 lat *",
         "agreeProcessing1Label": "Wyrażam zgodę na przetwarzanie moich danych osobowych przez AMERIqube w celach związanych z usługami",
         "agreeProcessing2Label": "Wyrażam zgodę na przetwarzanie moich danych osobowych zgodnie z RODO",
@@ -348,7 +348,8 @@
     "subtitle": "Masz jakieś pytania ?",
     "button": "SKONTAKTUJ SIĘ Z NAMI",
     "to": "contact",
-    "chat": "Napisz do nas"
+    "chat": "Napisz do nas",
+    "link": "Prywatność i kwestie prawne"
   },
   "notFound": "Strona, której szukasz, najwyraźniej została przeniesiona, usunięta lub nie istnieje. Przepraszamy za niedogodności."
 }

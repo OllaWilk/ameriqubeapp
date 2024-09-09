@@ -197,7 +197,7 @@
         "companyNamePlaceholder": "Geben Sie den Namen Ihres Unternehmens ein *",
         "jobPositionPlaceholder": "Geben Sie Ihre Position ein *",
         "emailPlaceholder": "Geben Sie Ihre E-Mail-Adresse ein *",
-        "messagePlaceholder": "Geben Sie Ihre Nachricht ein",
+        "messagePlaceholder": "Geben Sie Ihre Nachricht ein *",
         "over18Label": "Ich erkläre, dass ich über 18 Jahre alt bin *",
         "agreeProcessing1Label": "Ich stimme der Verarbeitung meiner personenbezogenen Daten durch AMERIqube für dienstleistungsbezogene Zwecke zu",
         "agreeProcessing2Label": "Ich stimme der Verarbeitung meiner personenbezogenen Daten gemäß der DSGVO zu",
@@ -304,7 +304,8 @@
     "subtitle": "Haben Sie Fragen ?",
     "button": "KONTAKTIEREN SIE UNS",
     "to": "contact",
-    "chat": "Chatte mit uns"
+    "chat": "Chatte mit uns",
+    "link": "Datenschutz & Rechtliche Hinweise"
   },
   "notFound": "Die von Ihnen gesuchte Seite scheint verschoben, gelöscht worden zu sein oder existiert nicht. Wir entschuldigen uns für die Unannehmlichkeiten."
 }

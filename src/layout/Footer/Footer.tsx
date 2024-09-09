@@ -15,6 +15,7 @@ export const Footer = () => {
   const { t } = useTranslation();
 
   const chat: string = t('contactBanner.chat');
+  const privacyLink: string = t('contactBanner.link');
   return (
     <footer className={styles.footer}>
       <Container>
@@ -31,11 +32,11 @@ export const Footer = () => {
         </div>
         <IsoImg />
         <div className={styles.bottomFooter}>
+          <Link to='/privacy' className={styles.legalLink}>
+            {privacyLink}
+          </Link>
           <Paragraph text='ISO 9001:2015 Certificate Number: 017884' />
           <Paragraph text='&copy; 2024 AMERIqube. All Rights Reserved' />
-          <Link to='/privacy' className={styles.legalLink}>
-            Privacy & Legal
-          </Link>
         </div>
         <ButtonChat text={chat} />
       </Container>

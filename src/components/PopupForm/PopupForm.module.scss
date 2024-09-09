@@ -1,0 +1,50 @@
+@import '../../styles/mixins';
+
+.popup {
+  background-color: var(--color-grey);
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 1400px;
+  max-height: 90vh;
+  position: relative;
+  color: var(--color-dark);
+  box-shadow: 0 0 9px 9px rgba($color: #000000, $alpha: 0.5);
+  overflow-y: auto;
+  text-align: left;
+
+  @media (max-width: 750px) {
+    width: 90vw;
+  }
+
+  a {
+    color: var(--color-dark);
+  }
+
+  .ornametn {
+    margin: 10px 0;
+  }
+
+  .subtitle {
+    text-align: left;
+  }
+
+  form {
+    gap: 15px;
+    margin: 20px 0 20px 0;
+  }
+}
+
+.closeButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.closeIcon {
+  font-size: 24px;
+  color: var(--color-dark);
+}

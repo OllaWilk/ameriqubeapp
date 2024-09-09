@@ -2,23 +2,15 @@
 
 .dropdown {
   position: relative;
-  padding: 16px 25px;
+  padding: 0px 25px;
   z-index: 2000;
 
   &:first-child {
     border-right: 1px solid var(--color-light);
-
-    @include sm-max {
-      padding: 16px 15px 16px 0;
-    }
-
-    @include lg-max {
-      padding-left: 0;
-    }
   }
 
   @include sm-max {
-    padding: 16px 16px 16px 15px;
+    padding: 0 10px;
   }
 }
 
